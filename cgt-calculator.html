@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Australian CGT Calculator — 2025 Budget Reforms</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #1a56db;
+      --blue-light: #dbeafe;
+      --blue-dark: #1e3a8a;
+      --green: #0e9f6e;
+      --green-light: #dcfce7;
+      --amber: #d97706;
+      --amber-light: #fffbeb;
+      --gray-50: #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-400: #9ca3af;
+      --gray-500: #6b7280;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --gray-900: #111827;
+      --r: 8px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--gray-50);
+      color: var(--gray-900);
+      line-height: 1.5;
+      font-size: 15px;
+    }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 32px 16px 64px; }
+
+    /* ── Header ── */
+    .header { margin-bottom: 8px; }
+    .header h1 { font-size: 1.5rem; font-weight: 700; }
+    .header p { color: var(--gray-500); font-size: 0.875rem; margin-top: 2px; }
+
+    /* ── Disclaimer ── */
+    .disclaimer {
+      background: var(--amber-light);
+      border: 1px solid #fcd34d;
+      border-radius: var(--r);
+      padding: 12px 16px;
+      font-size: 0.8125rem;
+      color: #78350f;
+      margin: 16px 0 24px;
+      line-height: 1.6;
+    }
+    .disclaimer strong { font-weight: 600; }
+
+    /* ── Cards ── */
+    .card {
+      background: #fff;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--r);
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    .card h2 {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--gray-500);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 20px;
+    }
+
+    /* ── Grid ── */
+    .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+    @media (max-width: 620px) { .g2, .g3 { grid-template-columns: 1fr; } }
+
+    /* ── Fields ── */
+    .field { display: flex; flex-direction: column; gap: 5px; }
+    .field label { font-size: 0.8125rem; font-weight: 500; color: var(--gray-700); }
+    .field input, .field select {
+      padding: 9px 12px;
+      border: 1px solid var(--gray-200);
+      border-radius: 6px;
+      font-size: 0.9375rem;
+      font-family: inherit;
+      color: var(--gray-900);
+      background: #fff;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .field input:focus, .field select:focus {
+      outline: none;
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.12);
+    }
+    .field .hint { font-size: 0.75rem; color: var(--gray-400); }
+
+    /* ── Checkbox ── */
+    .chk { display: flex; align-items: flex-start; gap: 10px; padding: 2px 0; }
+    .chk input[type=checkbox] { width: 16px; height: 16px; margin-top: 2px; accent-color: var(--blue); flex-shrink: 0; cursor: pointer; }
+    .chk label { font-size: 0.875rem; color: var(--gray-700); cursor: pointer; line-height: 1.5; }
+
+    /* ── Conditional fields ── */
+    .cond { display: none; }
+    .cond.show { display: block; }
+
+    /* ── Calculate button ── */
+    .btn-calc {
+      width: 100%;
+      padding: 13px;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: var(--r);
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.15s;
+      margin-top: 8px;
+    }
+    .btn-calc:hover { background: #1640b0; }
+
+    /* ── Results ── */
+    #results { display: none; margin-top: 28px; }
+
+    /* ── Scenario badge ── */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 16px;
+      border-radius: 100px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .badge.s1 { background: var(--green-light); color: #166534; }
+    .badge.s2 { background: var(--blue-light); color: var(--blue-dark); }
+    .badge.s3 { background: #fef3c7; color: #92400e; }
+    .badge.exempt { background: #f0fdf4; color: #15803d; border: 1px solid #86efac; }
+
+    /* ── Result rows ── */
+    .rr {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--gray-100);
+      gap: 16px;
+    }
+    .rr:last-child { border-bottom: none; }
+    .rr .rl { color: var(--gray-600); font-size: 0.9rem; }
+    .rr .rv { font-weight: 500; text-align: right; }
+    .rr.bold .rl { font-weight: 600; color: var(--gray-900); }
+    .rr.bold .rv { font-size: 1.0625rem; font-weight: 700; color: var(--blue); }
+    .rr.total { border-top: 2px solid var(--gray-200); padding-top: 12px; margin-top: 4px; }
+
+    /* ── Section labels inside results ── */
+    .slabel {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--gray-400);
+      margin: 20px 0 8px;
+    }
+    .slabel:first-child { margin-top: 0; }
+
+    /* ── Comparison table ── */
+    .cmp-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+    .cmp-table th {
+      background: var(--gray-50);
+      padding: 10px 14px;
+      text-align: right;
+      font-weight: 600;
+      color: var(--gray-600);
+      border-bottom: 2px solid var(--gray-200);
+      font-size: 0.8125rem;
+    }
+    .cmp-table th:first-child { text-align: left; }
+    .cmp-table td {
+      padding: 11px 14px;
+      border-bottom: 1px solid var(--gray-100);
+      text-align: right;
+    }
+    .cmp-table td:first-child { text-align: left; font-weight: 500; color: var(--gray-700); }
+    .cmp-table tr:last-child td { border-bottom: none; }
+    .cmp-table tr.selected td { background: #eff6ff; }
+    .cmp-table tr.best-tax td:nth-child(4) { color: var(--green); font-weight: 700; }
+    .tag {
+      display: inline-block;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 100px;
+      margin-left: 6px;
+    }
+    .tag.selected { background: var(--blue); color: #fff; }
+    .tag.lowest { background: var(--green-light); color: #166534; }
+
+    /* ── New build comparison ── */
+    .nb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 12px 0; }
+    .nb-opt {
+      padding: 14px;
+      border: 1px solid var(--gray-200);
+      border-radius: 6px;
+    }
+    .nb-opt.winner { border-color: var(--green); background: #f0fdf4; }
+    .nb-opt .nb-label { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--gray-400); margin-bottom: 4px; }
+    .nb-opt.winner .nb-label { color: var(--green); }
+    .nb-opt .nb-tax { font-size: 1.25rem; font-weight: 700; color: var(--gray-900); }
+    .nb-opt .nb-sub { font-size: 0.8125rem; color: var(--gray-500); margin-top: 2px; }
+
+    /* ── Notes ── */
+    .note-warn {
+      background: var(--amber-light);
+      border-left: 3px solid #f59e0b;
+      padding: 10px 14px;
+      font-size: 0.8125rem;
+      color: #78350f;
+      border-radius: 0 4px 4px 0;
+      margin-top: 12px;
+      line-height: 1.6;
+    }
+    .note-info {
+      background: #eff6ff;
+      border-left: 3px solid var(--blue);
+      padding: 10px 14px;
+      font-size: 0.8125rem;
+      color: var(--blue-dark);
+      border-radius: 0 4px 4px 0;
+      margin-top: 12px;
+      line-height: 1.6;
+    }
+    .note-ok {
+      background: #f0fdf4;
+      border-left: 3px solid var(--green);
+      padding: 10px 14px;
+      font-size: 0.8125rem;
+      color: #166534;
+      border-radius: 0 4px 4px 0;
+      margin-top: 12px;
+      line-height: 1.6;
+    }
+
+    .divider { border: none; border-top: 1px solid var(--gray-200); margin: 20px 0; }
+    .mt8 { margin-top: 8px; }
+    .flex-gap { display: flex; flex-direction: column; gap: 12px; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <h1>Australian CGT Calculator</h1>
+    <p>2025 Budget Reforms &mdash; new rules effective 1&nbsp;July 2027</p>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Disclaimer:</strong> This calculator is for illustrative and educational purposes only. It does not constitute tax advice.
+    Calculations reflect proposed legislation as announced in the 2025&ndash;26 Federal Budget. The ATO has not yet published
+    guidance on exact indexation methods, transitional apportionment formulas, trust minimum tax mechanics, or company indexation
+    treatment &mdash; relevant fields are flagged accordingly. The 12-month CGT discount eligibility requirement is not modelled.
+    Always consult a qualified tax adviser before making investment or disposal decisions.
+  </div>
+
+  <!-- ═══════════ INPUTS ═══════════ -->
+
+  <div class="card">
+    <h2>Asset Details</h2>
+    <div class="g2">
+      <div class="field">
+        <label for="purchasePrice">Purchase price</label>
+        <input type="text" id="purchasePrice" placeholder="500,000" inputmode="numeric">
+      </div>
+      <div class="field">
+        <label for="purchaseDate">Purchase date</label>
+        <input type="date" id="purchaseDate">
+      </div>
+      <div class="field">
+        <label for="salePrice">Sale price (or expected)</label>
+        <input type="text" id="salePrice" placeholder="900,000" inputmode="numeric">
+      </div>
+      <div class="field">
+        <label for="saleDate">Sale date (or expected)</label>
+        <input type="date" id="saleDate">
+      </div>
+    </div>
+
+    <!-- Transitional: July 2027 value -->
+    <div id="july2027Wrap" class="cond" style="margin-top:16px;">
+      <div class="field">
+        <label for="july2027Value">Market value at 1&nbsp;July 2027</label>
+        <input type="text" id="july2027Value" placeholder="700,000" inputmode="numeric">
+        <span class="hint">Required for transitional assets. Use a professional valuation or ATO apportionment when published. Actual ATO method pending.</span>
+      </div>
+    </div>
+
+    <!-- New build checkbox (post-2027 only) -->
+    <div id="newBuildWrap" class="cond" style="margin-top:16px;">
+      <div class="chk">
+        <input type="checkbox" id="newBuild">
+        <label for="newBuild">New build / new dwelling &mdash; eligible to choose either 50% discount or CPI indexation after 1&nbsp;July 2027. The calculator will auto-select the better outcome.</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Income &amp; Structure</h2>
+    <div class="g2">
+      <div class="field">
+        <label for="salary" id="salaryLabel">Annual income / salary</label>
+        <input type="text" id="salary" placeholder="120,000" inputmode="numeric">
+        <span class="hint">Excluding the capital gain. Used to determine your marginal rate bracket.</span>
+      </div>
+      <div class="field">
+        <label for="structure">Ownership structure</label>
+        <select id="structure">
+          <option value="individual">Individual</option>
+          <option value="trust">Trust / Family Trust</option>
+          <option value="company">Company</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="cpi">Annual CPI assumption (%)</label>
+        <input type="number" id="cpi" value="2.5" min="0" max="30" step="0.1">
+        <span class="hint">Default 2.5%. Actual ATO indexation method is pending.</span>
+      </div>
+      <div class="field">
+        <label for="losses">Carried forward capital losses</label>
+        <input type="text" id="losses" placeholder="0" inputmode="numeric">
+        <span class="hint">Optional. Applied against the capital gain before discount or indexation.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Exemptions &amp; Adjustments</h2>
+    <div class="flex-gap">
+      <div class="chk">
+        <input type="checkbox" id="mainResidence">
+        <label for="mainResidence">Main residence exemption &mdash; this is (or was) your primary home. The gain is fully exempt from CGT.</label>
+      </div>
+      <div class="chk" id="incomeSupportRow">
+        <input type="checkbox" id="incomeSupport">
+        <label for="incomeSupport">Income support recipient &mdash; exempt from the 30% minimum tax floor.</label>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn-calc" onclick="calculate()">Calculate CGT</button>
+
+  <!-- ═══════════ RESULTS ═══════════ -->
+
+  <div id="results">
+    <div id="rBadge"></div>
+    <div id="rMain"></div>
+    <div id="rComparison"></div>
+  </div>
+
+</div><!-- /wrap -->
+
+<script>
+// ─────────────────────────────────────────────
+// Constants
+// ─────────────────────────────────────────────
+const REFORM   = new Date('2027-07-01');
+const TRUSTFLR = new Date('2028-07-01');
+
+// ─────────────────────────────────────────────
+// Tax maths
+// ─────────────────────────────────────────────
+function bracketTax(inc) {
+  if (inc <= 0)      return 0;
+  if (inc <= 18200)  return 0;
+  if (inc <= 45000)  return (inc - 18200) * 0.19;
+  if (inc <= 120000) return 5092 + (inc - 45000) * 0.325;
+  if (inc <= 180000) return 29467 + (inc - 120000) * 0.37;
+  return 51667 + (inc - 180000) * 0.45;
+}
+
+function totalTax(inc, medicare) {
+  const i = Math.max(0, inc);
+  return bracketTax(i) + (medicare ? i * 0.02 : 0);
+}
+
+function gainMarginalTax(base, gain, medicare) {
+  if (gain <= 0) return 0;
+  return totalTax(base + gain, medicare) - totalTax(base, medicare);
+}
+
+function gainTaxWithFloor(base, gain, applyFloor, incomeSupport, medicare) {
+  if (gain <= 0) return { tax: 0, floorApplied: false };
+  const marginal = gainMarginalTax(base, gain, medicare);
+  if (applyFloor && !incomeSupport && marginal / gain < 0.30) {
+    return { tax: gain * 0.30, floorApplied: true };
+  }
+  return { tax: marginal, floorApplied: false };
+}
+
+function cpiGrow(base, cpiPct, days) {
+  return base * Math.pow(1 + cpiPct / 100, days / 365.25);
+}
+
+function daysBetween(a, b) {
+  return (b - a) / 86400000;
+}
+
+// ─────────────────────────────────────────────
+// Scenario detection
+// ─────────────────────────────────────────────
+function detectScenario(purchase, sale) {
+  if (sale < REFORM)    return 1;
+  if (purchase < REFORM) return 2;
+  return 3;
+}
+
+// ─────────────────────────────────────────────
+// Calculators — return a normalised result object
+// ─────────────────────────────────────────────
+
+function calcS1(p, structure) {
+  const nominalGain = p.salePrice - p.purchasePrice;
+  if (nominalGain <= 0) return lossResult(nominalGain, p.salePrice);
+
+  const gainAfterLosses = Math.max(0, nominalGain - p.losses);
+  const excessLosses    = Math.max(0, p.losses - nominalGain);
+  let taxableGain, tax;
+
+  if (structure === 'company') {
+    taxableGain = gainAfterLosses;
+    tax         = gainAfterLosses * 0.30;
+  } else {
+    taxableGain = gainAfterLosses * 0.50;
+    tax = gainMarginalTax(p.salary, taxableGain, true); // medicare for individual & trust
+  }
+
+  return {
+    nominalGain, taxableGain, tax,
+    effectiveRate: nominalGain > 0 ? tax / nominalGain : 0,
+    netProceeds: p.salePrice - tax,
+    excessLosses,
+    method: structure === 'company' ? 'company-flat' : 'discount50',
+    floorApplied: false,
+  };
+}
+
+function calcS2(p, structure) {
+  const nominalGain = p.salePrice - p.purchasePrice;
+
+  // Company: no split, 30% flat, indexation pending
+  if (structure === 'company') {
+    const gainAL = Math.max(0, nominalGain - p.losses);
+    const tax    = gainAL * 0.30;
+    return {
+      nominalGain,
+      taxableGain: gainAL,
+      tax,
+      effectiveRate: nominalGain > 0 ? tax / nominalGain : 0,
+      netProceeds: p.salePrice - tax,
+      excessLosses: Math.max(0, p.losses - nominalGain),
+      method: 'company-flat',
+      floorApplied: false,
+      isTransitional: true,
+      companyNote: true,
+    };
+  }
+
+  // Individual / Trust split calculation
+  const pre_nom     = p.july2027Value - p.purchasePrice;
+  const pre_reduced = Math.max(0, pre_nom - p.losses);
+  const rem_losses  = Math.max(0, p.losses - Math.max(0, pre_nom));
+  const pre_taxable = pre_reduced * 0.50; // 50% discount
+
+  const daysPost     = daysBetween(REFORM, p.saleDate);
+  const indexedJuly  = cpiGrow(p.july2027Value, p.cpi, daysPost);
+  const post_nom     = p.salePrice - indexedJuly;
+  const post_reduced = Math.max(0, post_nom - rem_losses);
+  const post_taxable = post_reduced; // no discount
+
+  const excessLosses = Math.max(0, rem_losses - Math.max(0, post_nom));
+
+  const applyFloor = structure === 'individual'
+    || (structure === 'trust' && p.saleDate >= TRUSTFLR);
+  const medicare   = true;
+
+  const pre_tax  = gainMarginalTax(p.salary, pre_taxable, medicare);
+  const basePost = p.salary + pre_taxable;
+  const { tax: post_tax, floorApplied } = gainTaxWithFloor(basePost, post_taxable, applyFloor, p.incomeSupport, medicare);
+  const tax = pre_tax + post_tax;
+
+  const totalTaxableGain = pre_taxable + post_taxable;
+
+  const trustNoFloorYet = structure === 'trust' && p.saleDate < TRUSTFLR;
+
+  return {
+    nominalGain,
+    taxableGain: totalTaxableGain,
+    tax,
+    effectiveRate: nominalGain > 0 ? tax / nominalGain : 0,
+    netProceeds: p.salePrice - tax,
+    excessLosses,
+    method: 'transitional',
+    floorApplied,
+    isTransitional: true,
+    pre: {
+      nominal: pre_nom,
+      afterLosses: pre_reduced,
+      taxable: pre_taxable,
+      tax: pre_tax,
+      lossesApplied: Math.min(p.losses, Math.max(0, pre_nom)),
+    },
+    post: {
+      nominal: post_nom,
+      afterLosses: post_reduced,
+      taxable: post_taxable,
+      tax: post_tax,
+      indexedBase: indexedJuly,
+      lossesApplied: Math.min(rem_losses, Math.max(0, post_nom)),
+    },
+    trustNoFloorYet,
+  };
+}
+
+function calcS3(p, structure) {
+  const nominalGain = p.salePrice - p.purchasePrice;
+  const days        = daysBetween(p.purchaseDate, p.saleDate);
+
+  if (structure === 'company') {
+    const gainAL = Math.max(0, nominalGain - p.losses);
+    const tax    = gainAL * 0.30;
+    return {
+      nominalGain,
+      taxableGain: gainAL,
+      tax,
+      effectiveRate: nominalGain > 0 ? tax / nominalGain : 0,
+      netProceeds: p.salePrice - tax,
+      excessLosses: Math.max(0, p.losses - nominalGain),
+      method: 'company-flat',
+      floorApplied: false,
+      companyNote: true,
+    };
+  }
+
+  const applyFloor = structure === 'individual'
+    || (structure === 'trust' && p.saleDate >= TRUSTFLR);
+  const medicare   = true;
+
+  // CPI indexation method
+  const indexedCostBase  = cpiGrow(p.purchasePrice, p.cpi, days);
+  const realGain         = p.salePrice - indexedCostBase;
+  const indexedGainAL    = Math.max(0, realGain - p.losses);
+  const { tax: taxIdx, floorApplied: floorIdx } =
+    gainTaxWithFloor(p.salary, indexedGainAL, applyFloor, p.incomeSupport, medicare);
+
+  // 50% discount method (new build only)
+  let discountResult = null;
+  if (p.isNewBuild) {
+    const gainAL50    = Math.max(0, nominalGain - p.losses);
+    const taxable50   = gainAL50 * 0.50;
+    const { tax: tax50, floorApplied: floor50 } =
+      gainTaxWithFloor(p.salary, taxable50, applyFloor, p.incomeSupport, medicare);
+    discountResult = { taxableGain: taxable50, tax: tax50, floorApplied: floor50 };
+  }
+
+  const trustNoFloorYet = structure === 'trust' && p.saleDate < TRUSTFLR;
+
+  // For new build, auto-select lower tax
+  if (p.isNewBuild && discountResult !== null && discountResult.tax < taxIdx) {
+    return {
+      nominalGain,
+      taxableGain: discountResult.taxableGain,
+      tax: discountResult.tax,
+      effectiveRate: nominalGain > 0 ? discountResult.tax / nominalGain : 0,
+      netProceeds: p.salePrice - discountResult.tax,
+      excessLosses: Math.max(0, p.losses - nominalGain),
+      method: 'discount50',
+      floorApplied: discountResult.floorApplied,
+      indexedCostBase,
+      isNewBuild: true,
+      newBuildWinner: 'discount',
+      newBuildComparison: {
+        discount:   discountResult,
+        indexation: { taxableGain: indexedGainAL, tax: taxIdx, floorApplied: floorIdx },
+      },
+      trustNoFloorYet,
+    };
+  }
+
+  return {
+    nominalGain,
+    taxableGain: indexedGainAL,
+    tax: taxIdx,
+    effectiveRate: nominalGain > 0 ? taxIdx / nominalGain : 0,
+    netProceeds: p.salePrice - taxIdx,
+    excessLosses: Math.max(0, p.losses - Math.max(0, realGain)),
+    method: 'indexation',
+    floorApplied: floorIdx,
+    indexedCostBase,
+    isNewBuild: p.isNewBuild || false,
+    newBuildWinner: p.isNewBuild ? 'indexation' : null,
+    newBuildComparison: p.isNewBuild && discountResult ? {
+      discount:   discountResult,
+      indexation: { taxableGain: indexedGainAL, tax: taxIdx, floorApplied: floorIdx },
+    } : null,
+    trustNoFloorYet,
+  };
+}
+
+function lossResult(nominalGain, salePrice) {
+  return {
+    nominalGain, taxableGain: 0, tax: 0,
+    effectiveRate: 0, netProceeds: salePrice,
+    excessLosses: 0, method: 'loss', floorApplied: false,
+  };
+}
+
+// ─────────────────────────────────────────────
+// Formatters
+// ─────────────────────────────────────────────
+const $$ = (n) => n < 0
+  ? `-$${Math.abs(Math.round(n)).toLocaleString('en-AU')}`
+  : `$${Math.round(n).toLocaleString('en-AU')}`;
+const pct = (n) => (n * 100).toFixed(1) + '%';
+
+// ─────────────────────────────────────────────
+// HTML row helpers
+// ─────────────────────────────────────────────
+function rr(label, value, cls = '') {
+  return `<div class="rr ${cls}"><span class="rl">${label}</span><span class="rv">${value}</span></div>`;
+}
+function rrbold(label, value) { return rr(label, value, 'bold'); }
+
+// ─────────────────────────────────────────────
+// Render: detailed results card
+// ─────────────────────────────────────────────
+function renderDetailed(scenario, res, structure, p) {
+  const sLabel = { individual: 'Individual', trust: 'Trust', company: 'Company' }[structure];
+  let h = `<div class="card"><h2>Breakdown &mdash; ${sLabel}</h2>`;
+
+  if (res.method === 'loss') {
+    h += `<p style="color:var(--gray-600)">Capital loss — no CGT payable. The loss may be carried forward against future gains.</p>`;
+    h += `</div>`;
+    return h;
+  }
+
+  // ── Scenario 2 individual/trust split ──
+  if (scenario === 2 && res.isTransitional && structure !== 'company') {
+    h += `<div class="slabel">Pre-2027 Portion &mdash; 50% discount applies</div>`;
+    h += rr('Original cost base', $$(p.purchasePrice));
+    h += rr('Market value at 1 July 2027', $$(p.july2027Value));
+    h += rr('Nominal gain (pre-2027)', $$(res.pre.nominal));
+    if (res.pre.lossesApplied > 0) h += rr('Carried forward losses applied', $$(-res.pre.lossesApplied));
+    h += rr('After losses', $$(res.pre.afterLosses));
+    h += rr('50% CGT discount', '&minus;50%');
+    h += rr('Taxable gain (pre-2027)', $$(res.pre.taxable));
+    h += rrbold('Tax on pre-2027 portion', $$(res.pre.tax));
+
+    h += `<hr class="divider">`;
+    h += `<div class="slabel">Post-2027 Portion &mdash; CPI indexed, 30% floor</div>`;
+    h += rr('Sale price', $$(p.salePrice));
+    h += rr(`CPI-indexed July 2027 value (${p.cpi}% p.a., ${Math.round(daysBetween(REFORM, p.saleDate) / 365.25 * 10) / 10} yrs)`, $$(res.post.indexedBase));
+    h += rr('Nominal gain (post-2027)', $$(res.post.nominal));
+    if (res.post.lossesApplied > 0) h += rr('Remaining losses applied', $$(-res.post.lossesApplied));
+    h += rr('Taxable gain (post-2027)', $$(res.post.taxable));
+    if (res.floorApplied) {
+      h += `<div class="note-info">30% minimum floor applied to post-2027 portion — marginal effective rate was below 30%.</div>`;
+    }
+    h += rrbold('Tax on post-2027 portion', $$(res.post.tax));
+    if (res.trustNoFloorYet) {
+      h += `<div class="note-warn">Trust 30% minimum tax applies from 1 July 2028. Sale date is before that threshold — no floor applied to this sale.</div>`;
+    }
+
+    h += `<hr class="divider">`;
+    h += `<div class="slabel">Combined</div>`;
+    h += rr('Total nominal gain', $$(res.nominalGain));
+    h += rr('Total taxable gain', $$(res.taxableGain));
+    h += rrbold('Total tax payable', $$(res.tax));
+    h += rr('Effective rate on nominal gain', pct(res.effectiveRate));
+    h += rrbold('Net proceeds after tax', $$(res.netProceeds));
+
+  // ── Scenario 3 new build ──
+  } else if (scenario === 3 && res.isNewBuild && res.newBuildComparison) {
+    const { discount, indexation } = res.newBuildComparison;
+    const winner = res.newBuildWinner;
+
+    h += `<div class="slabel">New Build &mdash; auto-selecting lower tax method</div>`;
+    h += `<div class="nb-grid">
+      <div class="nb-opt ${winner === 'discount' ? 'winner' : ''}">
+        <div class="nb-label">50% Discount${winner === 'discount' ? ' ✓ Selected' : ''}</div>
+        <div class="nb-tax">${$$(discount.tax)}</div>
+        <div class="nb-sub">Taxable gain: ${$$(discount.taxableGain)}</div>
+      </div>
+      <div class="nb-opt ${winner === 'indexation' ? 'winner' : ''}">
+        <div class="nb-label">CPI Indexation${winner === 'indexation' ? ' ✓ Selected' : ''}</div>
+        <div class="nb-tax">${$$(indexation.tax)}</div>
+        <div class="nb-sub">Taxable gain: ${$$(indexation.taxableGain)}</div>
+      </div>
+    </div>`;
+    h += `<div class="note-warn">The interaction between the new build method election and the 30% minimum floor is pending ATO guidance. Both methods above apply the floor where the marginal rate falls below 30%.</div>`;
+
+    h += `<hr class="divider">`;
+    h += `<div class="slabel">Result &mdash; ${winner === 'discount' ? '50% Discount Method' : 'CPI Indexation Method'}</div>`;
+    h += rr('Sale price', $$(p.salePrice));
+    h += rr('Purchase price', $$(p.purchasePrice));
+    h += rr('Nominal gain', $$(res.nominalGain));
+    if (p.losses > 0) h += rr('Carried forward losses applied', $$(-Math.min(p.losses, res.nominalGain)));
+    if (winner === 'indexation' && res.indexedCostBase) {
+      const days = daysBetween(p.purchaseDate, p.saleDate);
+      h += rr(`CPI-indexed cost base (${p.cpi}% p.a., ${Math.round(days / 365.25 * 10) / 10} yrs)`, $$(res.indexedCostBase));
+    }
+    h += rr('Taxable gain', $$(res.taxableGain));
+    if (res.floorApplied) h += `<div class="note-info">30% minimum floor applied — marginal rate on gain was below 30%.</div>`;
+    h += rrbold('Tax payable', $$(res.tax));
+    h += rr('Effective rate on nominal gain', pct(res.effectiveRate));
+    h += rrbold('Net proceeds after tax', $$(res.netProceeds));
+
+  // ── Standard display (S1, S3 non-new-build, S2 company) ──
+  } else {
+    h += rr('Sale price', $$(p.salePrice));
+    h += rr('Purchase price / cost base', $$(p.purchasePrice));
+    h += rr('Nominal gain', $$(res.nominalGain));
+    if (p.losses > 0) {
+      const applied = Math.min(p.losses, Math.max(0, res.nominalGain));
+      if (applied > 0) h += rr('Carried forward losses applied', $$(-applied));
+    }
+    if (scenario === 3 && res.indexedCostBase) {
+      const days = daysBetween(p.purchaseDate, p.saleDate);
+      h += rr(`CPI-indexed cost base (${p.cpi}% p.a., ${Math.round(days / 365.25 * 10) / 10} yrs)`, $$(res.indexedCostBase));
+      const realGain = p.salePrice - res.indexedCostBase;
+      if (realGain <= 0) {
+        h += `<div class="note-ok">No real gain after CPI indexation — sale price does not exceed indexed cost base. No CGT payable.</div>`;
+      }
+    }
+    if (scenario === 1 && structure !== 'company') h += rr('50% CGT discount applied', '&minus;50%');
+    h += rr('Taxable gain', $$(res.taxableGain));
+    if (res.floorApplied) h += `<div class="note-info">30% minimum floor applied — marginal rate on gain was below 30%.</div>`;
+    if (res.trustNoFloorYet) {
+      h += `<div class="note-warn">Trust 30% minimum tax applies from 1 July 2028. Sale date is before that threshold — no floor applied.</div>`;
+    }
+    h += rrbold('Tax payable', $$(res.tax));
+    h += rr('Effective rate on nominal gain', pct(res.effectiveRate));
+    h += rrbold('Net proceeds after tax', $$(res.netProceeds));
+
+    if (res.companyNote) {
+      h += `<div class="note-warn">Company: CPI indexation treatment for post-reform assets is pending ATO guidance. Calculated as 30% on nominal gain (after losses), no indexation applied.</div>`;
+    }
+  }
+
+  // Excess losses note
+  if (res.excessLosses > 0) {
+    h += `<div class="note-warn">Losses exceed the capital gain by ${$$(res.excessLosses)}. The excess may be carried forward against future capital gains.</div>`;
+  }
+
+  // Trust disclaimer
+  if (structure === 'trust') {
+    h += `<div class="note-warn" style="margin-top:8px;">Trust: the income figure is treated as the beneficiary's income for marginal rate purposes. Actual tax outcome depends on the trust deed, annual distribution resolution, and beneficiary circumstances. Consult a tax adviser.</div>`;
+  }
+
+  h += `</div>`;
+  return h;
+}
+
+// ─────────────────────────────────────────────
+// Render: comparison table
+// ─────────────────────────────────────────────
+function renderComparison(scenario, allResults, selectedStructure) {
+  const structures = ['individual', 'trust', 'company'];
+  const labels     = { individual: 'Individual', trust: 'Trust', company: 'Company' };
+
+  // Find lowest tax (excluding losses)
+  const taxes = structures.map(s => allResults[s].tax);
+  const minTax = Math.min(...taxes);
+
+  let h = `<div class="card"><h2>Side-by-Side Comparison</h2>
+    <table class="cmp-table">
+      <thead><tr>
+        <th>Structure</th>
+        <th>Nominal Gain</th>
+        <th>Taxable Gain</th>
+        <th>Tax Payable</th>
+        <th>Eff. Rate</th>
+        <th>Net Proceeds</th>
+      </tr></thead>
+      <tbody>`;
+
+  for (const s of structures) {
+    const r          = allResults[s];
+    const isSelected = s === selectedStructure;
+    const isLowest   = r.tax === minTax && r.nominalGain > 0;
+
+    h += `<tr class="${isSelected ? 'selected' : ''} ${isLowest ? 'best-tax' : ''}">
+      <td>
+        ${labels[s]}
+        ${isSelected ? `<span class="tag selected">selected</span>` : ''}
+        ${isLowest   ? `<span class="tag lowest">lowest tax</span>` : ''}
+      </td>
+      <td>${$$(r.nominalGain)}</td>
+      <td>${$$(r.taxableGain)}</td>
+      <td><strong>${$$(r.tax)}</strong></td>
+      <td>${pct(r.effectiveRate)}</td>
+      <td>${$$(r.netProceeds)}</td>
+    </tr>`;
+  }
+
+  h += `</tbody></table>`;
+
+  if (scenario === 2 || scenario === 3) {
+    h += `<div class="note-warn" style="margin-top:12px;">Company column: 30% flat on nominal gain. CPI indexation benefit for company post-reform assets is pending ATO guidance and is not modelled here.</div>`;
+  }
+  if (scenario === 2) {
+    h += `<div class="note-warn" style="margin-top:8px;">Trust column: 30% minimum tax floor applies from 1 July 2028. If sale date is before that, trust is calculated at individual marginal rates with no floor. Check detailed breakdown above.</div>`;
+  }
+
+  h += `</div>`;
+  return h;
+}
+
+// ─────────────────────────────────────────────
+// Main calculate handler
+// ─────────────────────────────────────────────
+function calculate() {
+  const purchasePrice = numVal('purchasePrice');
+  const salePrice     = numVal('salePrice');
+  const purchaseDateV = document.getElementById('purchaseDate').value;
+  const saleDateV     = document.getElementById('saleDate').value;
+  const salary        = numVal('salary');
+  const cpi           = parseFloat(document.getElementById('cpi').value) || 2.5;
+  const losses        = numVal('losses');
+  const structure     = document.getElementById('structure').value;
+  const mainResidence = document.getElementById('mainResidence').checked;
+  const incomeSupport = document.getElementById('incomeSupport').checked;
+  const isNewBuild    = document.getElementById('newBuild').checked;
+  const july2027Value = numVal('july2027Value');
+
+  // Validate
+  if (!purchaseDateV || !saleDateV || !purchasePrice || !salePrice) {
+    alert('Please enter purchase price, sale price, purchase date, and sale date.');
+    return;
+  }
+  const purchaseDate = new Date(purchaseDateV);
+  const saleDate     = new Date(saleDateV);
+  if (saleDate <= purchaseDate) {
+    alert('Sale date must be after purchase date.');
+    return;
+  }
+
+  const scenario = detectScenario(purchaseDate, saleDate);
+
+  if (scenario === 2 && !july2027Value) {
+    alert('Please enter the market value at 1 July 2027 for a transitional asset.');
+    return;
+  }
+
+  // Show results section
+  document.getElementById('results').style.display = 'block';
+  document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  // Main residence exemption — fully exempt
+  if (mainResidence) {
+    document.getElementById('rBadge').innerHTML =
+      `<span class="badge exempt">&#10003; Main Residence Exemption &mdash; Fully Exempt from CGT</span>`;
+    document.getElementById('rMain').innerHTML =
+      `<div class="card"><p style="color:var(--gray-600)">The main residence exemption applies. No CGT is payable on this disposal. Net proceeds equal the full sale price: <strong>${$$(salePrice)}</strong>.</p></div>`;
+    document.getElementById('rComparison').innerHTML = '';
+    return;
+  }
+
+  const badgeClass  = ['', 's1', 's2', 's3'][scenario];
+  const badgeLabels = [
+    '',
+    'Scenario 1 &mdash; Sold before 1 July 2027 &mdash; 50% discount applies',
+    'Scenario 2 &mdash; Transitional asset &mdash; split pre/post 2027 calculation',
+    'Scenario 3 &mdash; Post-reform asset &mdash; bought after 1 July 2027',
+  ];
+  document.getElementById('rBadge').innerHTML =
+    `<span class="badge ${badgeClass}">${badgeLabels[scenario]}</span>`;
+
+  const p = {
+    purchasePrice, salePrice, purchaseDate, saleDate,
+    salary, cpi, losses, incomeSupport, isNewBuild, july2027Value,
+  };
+
+  const calc = scenario === 1 ? calcS1 : scenario === 2 ? (p2, s) => calcS2(p2, s) : (p2, s) => calcS3(p2, s);
+
+  // Calculate for all three structures
+  const allResults = {};
+  for (const s of ['individual', 'trust', 'company']) {
+    allResults[s] = scenario === 1 ? calcS1(p, s) : scenario === 2 ? calcS2(p, s) : calcS3(p, s);
+  }
+
+  document.getElementById('rMain').innerHTML       = renderDetailed(scenario, allResults[structure], structure, p);
+  document.getElementById('rComparison').innerHTML = renderComparison(scenario, allResults, structure);
+}
+
+// ─────────────────────────────────────────────
+// Dynamic UI: show/hide conditional fields
+// ─────────────────────────────────────────────
+function syncUI() {
+  const pdv = document.getElementById('purchaseDate').value;
+  const sdv = document.getElementById('saleDate').value;
+  const str = document.getElementById('structure').value;
+
+  if (pdv && sdv) {
+    const pd = new Date(pdv), sd = new Date(sdv);
+    if (sd > pd) {
+      const s = detectScenario(pd, sd);
+      document.getElementById('july2027Wrap').classList.toggle('show', s === 2);
+      document.getElementById('newBuildWrap').classList.toggle('show', s === 3);
+    }
+  }
+
+  // Salary label
+  document.getElementById('salaryLabel').textContent =
+    str === 'trust'
+      ? "Beneficiary's annual income (for marginal rate)"
+      : 'Annual income / salary';
+
+  // Hide income support for company (floor doesn't apply)
+  document.getElementById('incomeSupportRow').style.display =
+    str === 'company' ? 'none' : 'flex';
+}
+
+['purchaseDate', 'saleDate', 'structure'].forEach(id => {
+  document.getElementById(id).addEventListener('change', syncUI);
+});
+
+// ─────────────────────────────────────────────
+// Dollar input formatting (commas on blur)
+// ─────────────────────────────────────────────
+const DOLLAR_IDS = ['purchasePrice', 'salePrice', 'july2027Value', 'salary', 'losses'];
+
+function numVal(id) {
+  return parseFloat(document.getElementById(id).value.replace(/,/g, '')) || 0;
+}
+
+function fmtInput(el) {
+  const raw = parseFloat(el.value.replace(/,/g, ''));
+  if (!isNaN(raw) && raw > 0) {
+    el.value = Math.round(raw).toLocaleString('en-AU');
+  }
+}
+
+DOLLAR_IDS.forEach(id => {
+  const el = document.getElementById(id);
+  el.addEventListener('focus', () => {
+    el.value = el.value.replace(/,/g, '');
+  });
+  el.addEventListener('blur', () => fmtInput(el));
+  el.addEventListener('keydown', e => {
+    if (e.key === 'Enter') fmtInput(el);
+  });
+});
+</script>
+</body>
+</html>
