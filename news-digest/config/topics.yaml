@@ -38,6 +38,14 @@ topics:
       - rba_media
       - livewire_markets
       - macrobusiness
+      - abc_business
+      - afr_business
+      - rba_speeches
+      - rba_bulletin
+      - rba_smp
+      - rba_fsr
+      - livewire_markets
+      - macrobusiness
     global_feeds:
       - reuters_business
       - ap_business
