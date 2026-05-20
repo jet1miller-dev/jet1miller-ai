@@ -19,10 +19,6 @@ abc_qld:
   url: https://www.abc.net.au/news/feed/51120/rss.xml    # [VERIFY] ABC Queensland state feed
   label: ABC Queensland
 
-afr_business:
-  url: https://www.afr.com/rss.xml
-  label: AFR
-
 rba_media:
   url: https://www.rba.gov.au/rss/rss-cb-media-releases.xml
   label: RBA
@@ -30,18 +26,6 @@ rba_media:
 rba_speeches:
   url: https://www.rba.gov.au/rss/rss-cb-speeches.xml
   label: RBA Speeches
-
-rba_bulletin:
-  url: https://www.rba.gov.au/rss/rss-cb-bulletin.xml
-  label: RBA Bulletin
-
-rba_smp:
-  url: https://www.rba.gov.au/rss/rss-cb-smp.xml
-  label: RBA Statement on Monetary Policy
-
-rba_fsr:
-  url: https://www.rba.gov.au/rss/rss-cb-fsr.xml
-  label: RBA Financial Stability Review
 
 # ── AU finance / macro ───────────────────────────────────────────────────────
 
@@ -52,6 +36,14 @@ livewire_markets:
 macrobusiness:
   url: https://www.macrobusiness.com.au/feed/
   label: MacroBusiness
+
+ft_markets:
+  url: https://www.ft.com/rss/home/us
+  label: Financial Times
+
+marketwatch_top:
+  url: https://feeds.marketwatch.com/marketwatch/topstories/
+  label: MarketWatch
 
 # ── AU property ──────────────────────────────────────────────────────────────
 
@@ -70,6 +62,14 @@ property_council:
 hia_news:
   url: https://hia.com.au/rss                            # [VERIFY]
   label: HIA
+
+planning_qld:
+  url: https://www.planning.qld.gov.au/rss   # [VERIFY] - may need checking
+  label: QLD Planning
+
+bcc_news:
+  url: https://www.brisbane.qld.gov.au/news/rss.xml   # [VERIFY]
+  label: Brisbane City Council
 
 # ── AU politics / commentary ─────────────────────────────────────────────────
 

@@ -34,21 +34,15 @@ topics:
     regions: [au, global]
     au_feeds:
       - abc_business
-      - afr_business
       - rba_media
       - livewire_markets
       - macrobusiness
-      - abc_business
-      - afr_business
       - rba_speeches
-      - rba_bulletin
-      - rba_smp
-      - rba_fsr
-      - livewire_markets
-      - macrobusiness
     global_feeds:
       - reuters_business
       - ap_business
+      - marketwatch_top
+      - ft_markets
     au_queries:
       - "RBA interest rates Australia"
       - "ASX Australian shares market"
@@ -57,13 +51,15 @@ topics:
       - "Federal Reserve interest rates global economy"
       - "China economy trade Australia"
       - "global macro inflation recession"
+      - "S&P 500 US economy impact Australia trade"
+      - "Federal Reserve rate decision AUD impact"
+      - "US China trade tariffs Australia"
 
   - id: finance_personal
     name: "Finance — Personal"
     regions: [au, global]
     au_feeds:
       - abc_business
-      - afr_business
       - macrobusiness
       - domain_news
     global_feeds: []
@@ -80,7 +76,6 @@ topics:
     au_feeds:
       - domain_news
       - urban_developer
-      - abc_business
       - property_council
     global_feeds:
       - reuters_business
@@ -99,17 +94,20 @@ topics:
       - property_council
       - hia_news
       - domain_news
+      - planning_qld
+      - bcc_news
     global_feeds: []
     au_queries:
       - "Brisbane Gold Coast DA approval development"
-      - "Queensland property development construction"
       - "Queensland planning legislation zoning changes"
+      - "Queensland planning legislation amendment"
+      - "Queensland development approval major project"
     global_queries:
       - "commercial property development construction"
 
   - id: ai
     name: AI
-    max_items: 5
+    max_items: 3
     feeds:
       - verge_ai
       - ars_technica
@@ -119,6 +117,20 @@ topics:
       - "artificial intelligence OpenAI Anthropic"
       - "AI coding tools developer"
       - "large language model release"
+      - "AI model release announced GPT Claude Gemini Grok"
+      - "AI breakthrough major announcement 2025"
+    include_keywords:
+      - "model release"
+      - "new model"
+      - "launches"
+      - "announced"
+      - "GPT"
+      - "Claude"
+      - "Gemini"
+      - "Grok"
+      - "o3"
+      - "reasoning model"
+
 
   - id: politics
     name: Australian politics
@@ -160,14 +172,15 @@ topics:
 
   - id: ufc
     name: UFC / MMA
-    max_items: 4
+    max_items: 3
     feeds:
       - ufc_news
       - mmajunkie
       - mma_fighting
     queries:
       - "UFC fight announced ranked fighter"
-      - "MMA title fight contender"
+      - "UFC main event card confirmed"
+      - "UFC fighter released retired stripped title"
     include_keywords:
       - UFC
       - "title fight"
