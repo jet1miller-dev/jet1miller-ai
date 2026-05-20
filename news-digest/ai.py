@@ -82,6 +82,24 @@ def refine_stories(
     return out, True
 
 
+def friendly_error(exc: BaseException) -> str:
+    """Short message for Telegram when AI is skipped."""
+    raw = str(exc)
+    lower = raw.lower()
+    if "insufficient_quota" in lower or "exceeded your current quota" in lower:
+        return (
+            "OpenAI quota — add billing/credits at platform.openai.com/account/billing "
+            "(digest still sent without AI blurbs)"
+        )
+    if "invalid_api_key" in lower or "incorrect api key" in lower:
+        return "Invalid OpenAI API key — check OPENAI_API_KEY in GitHub Secrets"
+    if "rate_limit" in lower or "429" in raw:
+        return "OpenAI rate limit — try again later"
+    if len(raw) > 120:
+        return raw[:117] + "…"
+    return raw or "unknown error"
+
+
 def try_refine(
     candidates: list[dict[str, Any]],
     recent_sent: list[dict[str, str]],
@@ -89,9 +107,9 @@ def try_refine(
     """Returns (decisions, ai_ok, error_message)."""
     api_key = os.environ.get("OPENAI_API_KEY", "").strip()
     if not api_key:
-        return {}, False, "OPENAI_API_KEY not set"
+        return {}, False, "OPENAI_API_KEY not set in GitHub Secrets"
     try:
         decisions, _ = refine_stories(candidates, recent_sent, api_key=api_key)
         return decisions, True, None
     except Exception as exc:
-        return {}, False, str(exc)
+        return {}, False, friendly_error(exc)

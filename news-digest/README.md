@@ -12,6 +12,17 @@ Telegram digest at **7:00 AM Brisbane** via GitHub Actions.
 | `TELEGRAM_CHAT_ID` | Yes |
 | `OPENAI_API_KEY` | Optional (blurbs + smarter dedup; works without) |
 
+### Fix OpenAI “quota” / AI skipped
+
+1. Log in at [platform.openai.com](https://platform.openai.com).
+2. **Settings → Billing** (or [account/billing](https://platform.openai.com/account/billing)).
+3. Add a **payment method** and **credits** (or enable pay-as-you-go).
+4. Create an API key at [API keys](https://platform.openai.com/api-keys) if needed.
+5. GitHub repo → **Settings → Secrets → Actions** → set or update `OPENAI_API_KEY` (starts with `sk-`).
+6. **Actions → Morning digest → Run workflow** — intro should not say “AI skipped”.
+
+Typical cost for this digest: about **one small request per day** (`gpt-4o-mini`), usually cents per month.
+
 ## Test
 
 **Actions → Morning digest → Run workflow**
