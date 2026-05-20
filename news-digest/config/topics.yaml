@@ -1,0 +1,120 @@
+schedule:
+  timezone: Australia/Brisbane
+  hour: 7
+  minute: 0
+
+defaults:
+  au_max: 3
+  global_max: 2
+  excerpt_max_chars: 220
+
+blocklist:
+  - celebrity
+  - horoscope
+  - rumour
+  - rumor
+  - kardashian
+  - reality tv
+
+topics:
+  - id: finance_markets
+    name: "Finance — Markets & macro"
+    regions: [au, global]
+    au_queries:
+      - "RBA interest rates Australia"
+      - "ASX Australian shares"
+    global_queries:
+      - "Federal Reserve markets"
+      - "global stock markets"
+
+  - id: finance_personal
+    name: "Finance — Personal"
+    regions: [au, global]
+    au_queries:
+      - "Australian mortgage rates housing"
+      - "superannuation Australia"
+    global_queries:
+      - "personal finance"
+
+  - id: property
+    name: Property
+    regions: [au, global]
+    au_queries:
+      - "Australian property market prices"
+      - "housing affordability Australia"
+    global_queries:
+      - "global housing market"
+
+  - id: property_dev
+    name: Property development
+    regions: [au, global]
+    au_queries:
+      - "property development Australia zoning"
+      - "Queensland development planning"
+    global_queries:
+      - "commercial property development"
+
+  - id: ai
+    name: AI
+    max_items: 5
+    queries:
+      - "artificial intelligence OpenAI Anthropic"
+      - "AI coding tools Cursor Copilot"
+
+  - id: politics
+    name: Australian politics
+    subsections:
+      au_national:
+        label: National
+        max: 2
+        queries:
+          - "Australian federal politics"
+          - "Parliament Australia policy"
+      au_qld:
+        label: Queensland
+        max: 2
+        queries:
+          - "Queensland politics"
+          - "Queensland government policy"
+      global_major:
+        label: "Global (major only)"
+        max: 2
+        locale: global
+        queries:
+          - "world politics breaking"
+        include_keywords:
+          - election
+          - war
+          - sanctions
+          - NATO
+          - "United Nations"
+          - G7
+          - summit
+          - "prime minister"
+          - president
+          - invasion
+          - ceasefire
+
+  - id: ufc
+    name: UFC
+    max_items: 2
+    feeds:
+      - "https://www.ufc.com/rss/news"
+    queries:
+      - "UFC fight announced"
+      - "UFC main event title fight"
+    include_keywords:
+      - UFC
+      - "title fight"
+      - championship
+      - "main event"
+      - ranked
+      - rankings
+    exclude_keywords:
+      - women
+      - women's
+      - WMMA
+      - female
+      - "women's bantamweight"
+      - "women's flyweight"
+      - "women's strawweight"

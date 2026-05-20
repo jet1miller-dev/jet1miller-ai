@@ -1,0 +1,27 @@
+name: Morning digest
+
+on:
+  schedule:
+    # 07:00 Australia/Brisbane (UTC+10) = 21:00 UTC previous day
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r news-digest/requirements.txt
+
+      - name: Run morning digest
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DIGEST_TIMEZONE: Australia/Brisbane
+        run: python news-digest/digest.py
