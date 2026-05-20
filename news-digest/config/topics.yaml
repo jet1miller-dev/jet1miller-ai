@@ -6,7 +6,7 @@ schedule:
 defaults:
   au_max: 3
   global_max: 2
-  excerpt_max_chars: 220
+  excerpt_max_chars: 130
   max_age_hours: 36
   history_days: 14
   link_label: Read
@@ -20,6 +20,13 @@ blocklist:
   - kardashian
   - reality tv
   - listicle
+  - podcast
+  - newsletter
+  - live blog
+  - free app
+  - explainer
+  - quiz
+  - roundup
 
 topics:
   - id: finance_markets
@@ -29,51 +36,68 @@ topics:
       - abc_business
       - afr_business
       - rba_media
+      - livewire_markets
+      - macrobusiness
     global_feeds:
       - reuters_business
+      - ap_business
     au_queries:
       - "RBA interest rates Australia"
-      - "ASX Australian shares"
+      - "ASX Australian shares market"
+      - "AUD dollar exchange rate"
     global_queries:
-      - "Federal Reserve markets"
+      - "Federal Reserve interest rates global economy"
+      - "China economy trade Australia"
+      - "global macro inflation recession"
 
   - id: finance_personal
     name: "Finance — Personal"
     regions: [au, global]
     au_feeds:
       - abc_business
+      - afr_business
+      - macrobusiness
       - domain_news
     global_feeds: []
     au_queries:
-      - "Australian mortgage rates housing"
-      - "superannuation Australia"
+      - "Australian mortgage rates housing affordability"
+      - "superannuation Australia changes"
+      - "cost of living Australia"
     global_queries:
-      - "personal finance"
+      - "personal finance investing"
 
   - id: property
     name: Property
     regions: [au, global]
     au_feeds:
       - domain_news
+      - urban_developer
       - abc_business
+      - property_council
     global_feeds:
       - reuters_business
     au_queries:
-      - "Australian property market prices"
+      - "Brisbane property market Gold Coast"
+      - "Queensland housing prices development"
+      - "Queensland planning legislation zoning ruling"
     global_queries:
-      - "global housing market"
+      - "global housing market rates"
 
   - id: property_dev
     name: Property development
     regions: [au, global]
     au_feeds:
       - urban_developer
+      - property_council
+      - hia_news
       - domain_news
     global_feeds: []
     au_queries:
-      - "property development Australia Queensland"
+      - "Brisbane Gold Coast DA approval development"
+      - "Queensland property development construction"
+      - "Queensland planning legislation zoning changes"
     global_queries:
-      - "commercial property development"
+      - "commercial property development construction"
 
   - id: ai
     name: AI
@@ -82,9 +106,11 @@ topics:
       - verge_ai
       - ars_technica
       - techcrunch_ai
+      - mit_tech_review
     queries:
-      - "artificial intelligence OpenAI"
-      - "AI coding tools"
+      - "artificial intelligence OpenAI Anthropic"
+      - "AI coding tools developer"
+      - "large language model release"
 
   - id: politics
     name: Australian politics
@@ -94,16 +120,18 @@ topics:
         max: 2
         feeds:
           - abc_politics
-          - guardian_au
+          - the_conversation_au
         queries:
-          - "Australian federal politics"
+          - "Australian federal politics parliament"
       au_qld:
         label: Queensland
         max: 2
         feeds:
           - qld_gov_news
+          - abc_qld
         queries:
-          - "Queensland politics government"
+          - "Queensland politics government legislation"
+          - "Queensland budget policy announcement"
       global_major:
         label: "Global (major only)"
         max: 2
@@ -123,19 +151,29 @@ topics:
           - ceasefire
 
   - id: ufc
-    name: UFC
-    max_items: 2
+    name: UFC / MMA
+    max_items: 4
     feeds:
       - ufc_news
+      - mmajunkie
+      - mma_fighting
     queries:
-      - "UFC fight announced title"
+      - "UFC fight announced ranked fighter"
+      - "MMA title fight contender"
     include_keywords:
       - UFC
       - "title fight"
       - championship
       - "main event"
       - ranked
-      - rankings
+      - "interim title"
+      - "No. 1 contender"
+      - "title eliminator"
+      - contender
+      - retirement
+      - stripped
+      - suspended
+      - contract
     exclude_keywords:
       - women
       - women's
@@ -144,3 +182,6 @@ topics:
       - "women's bantamweight"
       - "women's flyweight"
       - "women's strawweight"
+      - "pound-for-pound"
+      - weigh-in
+      - USADA
