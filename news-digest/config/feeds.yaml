@@ -1,5 +1,11 @@
 # Named RSS feeds — reference these in topics.yaml or paste full URLs directly.
 # Edit this file to add/remove sources; see README.md.
+#
+# URLs marked [VERIFY] should be opened in a browser before pushing.
+# They are correct to the best of current knowledge but smaller outlets
+# occasionally change feed paths without redirecting.
+
+# ── AU news ─────────────────────────────────────────────────────────────────
 
 abc_business:
   url: https://www.abc.net.au/news/feed/51892/rss.xml
@@ -9,21 +15,29 @@ abc_politics:
   url: https://www.abc.net.au/news/feed/51114/rss.xml
   label: ABC Politics
 
-guardian_au:
-  url: https://www.theguardian.com/australia-news/rss
-  label: Guardian AU
+abc_qld:
+  url: https://www.abc.net.au/news/feed/51120/rss.xml    # [VERIFY] ABC Queensland state feed
+  label: ABC Queensland
 
 afr_business:
   url: https://www.afr.com/rss.xml
   label: AFR
 
-reuters_business:
-  url: https://feeds.reuters.com/reuters/businessNews
-  label: Reuters
-
 rba_media:
   url: https://www.rba.gov.au/rss/rss-cb-media-releases.xml
   label: RBA
+
+# ── AU finance / macro ───────────────────────────────────────────────────────
+
+livewire_markets:
+  url: https://www.livewiremarkets.com/feed              # [VERIFY]
+  label: Livewire Markets
+
+macrobusiness:
+  url: https://www.macrobusiness.com.au/feed/
+  label: MacroBusiness
+
+# ── AU property ──────────────────────────────────────────────────────────────
 
 domain_news:
   url: https://www.domain.com.au/news/feed/
@@ -32,6 +46,41 @@ domain_news:
 urban_developer:
   url: https://www.theurbandeveloper.com/articles/rss
   label: The Urban Developer
+
+property_council:
+  url: https://www.propertycouncil.com.au/rss            # [VERIFY]
+  label: Property Council AU
+
+hia_news:
+  url: https://hia.com.au/rss                            # [VERIFY]
+  label: HIA
+
+# ── AU politics / commentary ─────────────────────────────────────────────────
+
+the_conversation_au:
+  url: https://theconversation.com/au/articles.atom
+  label: The Conversation AU
+
+qld_gov_news:
+  url: https://www.qld.gov.au/news/rss.xml
+  label: QLD Government
+
+# Kept in catalog but no longer wired to any topic — remove if you want a clean file
+guardian_au:
+  url: https://www.theguardian.com/australia-news/rss
+  label: Guardian AU
+
+# ── Global news ──────────────────────────────────────────────────────────────
+
+reuters_business:
+  url: https://feeds.reuters.com/reuters/businessNews
+  label: Reuters
+
+ap_business:
+  url: https://feeds.apnews.com/apf-business             # [VERIFY] AP sometimes rotates feed paths
+  label: AP Business
+
+# ── AI / tech ────────────────────────────────────────────────────────────────
 
 verge_ai:
   url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
@@ -45,9 +94,11 @@ techcrunch_ai:
   url: https://techcrunch.com/category/artificial-intelligence/feed/
   label: TechCrunch AI
 
-qld_gov_news:
-  url: https://www.qld.gov.au/news/rss.xml
-  label: QLD Government
+mit_tech_review:
+  url: https://www.technologyreview.com/feed/
+  label: MIT Tech Review
+
+# ── MMA / combat sports ──────────────────────────────────────────────────────
 
 ufc_news:
   url: https://www.ufc.com/rss/news
@@ -56,3 +107,7 @@ ufc_news:
 mmajunkie:
   url: https://mmajunkie.usatoday.com/feed
   label: MMA Junkie
+
+mma_fighting:
+  url: https://www.mmafighting.com/rss/current           # [VERIFY]
+  label: MMA Fighting
