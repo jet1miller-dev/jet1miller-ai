@@ -480,7 +480,7 @@ def format_story_html(story: Story, link_label: str) -> str:
     lines = [f"• <b>{esc(story.title)}</b> — {esc(story.source)}{age}"]
     if body:
         lines.append(f"<i>{esc(body)}</i>")
-    safe_url = esc(story.link, quote=True)
+    safe_url = html.escape(story.link or "", quote=True)
     lines.append(f'<a href="{safe_url}">{esc(link_label)}</a>')
     return "\n".join(lines)
 
