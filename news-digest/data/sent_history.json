@@ -1,3 +1,166 @@
 {
-  "entries": []
+  "entries": [
+    {
+      "url": "https://www.abc.net.au/news/2026-05-20/core-lithium-restarts-darwin-mine/106700190",
+      "title": "Core Lithium restarts Northern Territory mine as price rallies",
+      "title_fp": "corelithiumrestartsnorthernterritorymineaspricerallies",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-05-20/anglo-american-sale-dhilmar-sparks-community-concern/106697588",
+      "title": "Apprehension as UK mining company enters Australian coal",
+      "title_fp": "apprehensionasukminingcompanyentersaustraliancoal",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-05-20/avg-travels-tour-company-cancellations-refunds/106597488",
+      "title": "Tour company fallout deepens as more travellers speak out",
+      "title_fp": "tourcompanyfalloutdeepensasmoretravellersspeakout",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSk52V3A5Y0FhS05YQ3Vlemw1Ym1ITWw4ZXdnZnlWMGI2M3VmTzRXWmhXOTBIekQ4M3daY2puWV8zNzJTLW9JRVd2aGdjeWNpYkJWbEE3em5PM3lUY0VHV1RnNDMtUTlTUzNIMkRUeXNmdVlJclZGMk5uckZiTTU5dml5YWRNOEJZUVlvTndsYmtObzdfY0JXRkxGS3NMVUtlcmc",
+      "title": "Navigating Uncertainty: Inflation, Labor Markets, and the Stance of Monetary Policy - Philadelphia Federal Reserve Bank",
+      "title_fp": "navigatinguncertaintyinflationlabormarketsandthestanceofmonetarypolicyphiladelphiafederalreservebank",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOajZDdmNVQ1pCU2FGd09uTWcxdjQ4MlVoTTBJRFdBNjZ4V0M4QlYyRzhHZWFBQ0YtaXRNTjhiQVMxQUhkSW1mNjlFcllPMUxYXzlteVM3Q3pUNlQxMDBCQkdHRUNIb2xzdldDWUFuaGdYTUoxQjZrZl9pS1hUY2VtZHZ2dzYzcGRVczRHYXFuZ0F1eEFSREdBN3QyTmhqV1BuMHVUMWdPVHV2QXNhQ3l5b2xoRDQ0bFBQNUx5SVo4R1lfQlNCczRVNUFB",
+      "title": "Bond Markets Give Yippy Vibes Just as Kevin Warsh Is Set to Become Fed Chair - Bloomberg.com",
+      "title_fp": "bondmarketsgiveyippyvibesjustaskevinwarshissettobecomefedchairbloombergcom",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-05-20/core-lithium-restarts-darwin-mine/106700190",
+      "title": "Core Lithium restarts Northern Territory mine as price rallies",
+      "title_fp": "corelithiumrestartsnorthernterritorymineaspricerallies",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-05-20/anglo-american-sale-dhilmar-sparks-community-concern/106697588",
+      "title": "Apprehension as UK mining company enters Australian coal",
+      "title_fp": "apprehensionasukminingcompanyentersaustraliancoal",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-05-20/avg-travels-tour-company-cancellations-refunds/106597488",
+      "title": "Tour company fallout deepens as more travellers speak out",
+      "title_fp": "tourcompanyfalloutdeepensasmoretravellersspeakout",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQc0RTbTBjN2Q5a0JYdzdxampDNEM2Y1l6RS1Tamp2dDRlTDd1aVo4VW5PMHJkUlh1UDRWMF9RaHdpNVpWTnR4aWFBYkNMOXZSbjAwVkhvNDRoYzQyLXdCVV9FdlBXTG1OemZtd3dnUGVUSGI2eVRWb0ozdHBtU2VVSm9ITVU3b19pd3lmU0hhdnM2YjUzUVpHMTd6dThhc2xqcmU4R21KbDJrTW9IMXBOdGdn",
+      "title": "These Parents Are Buying Homes for Their Kids\u2014With Strings Attached - WSJ",
+      "title_fp": "theseparentsarebuyinghomesfortheirkidswithstringsattachedwsj",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZHJYX2RNWWY2VmcyaFRadXhmTjFrM2czV0U2Mm92enJIYUM0T29WWklKMVlkM0RGbG9DX2xFTE50OW5RcEFFTy0tUlNicV9HQUZkQkpOY2Y5ZkZ3UHpLb3I0blQtZngwMHRPcTBIQU04QmdKUU9KS0tuQ0VrX09keDJZTzIxOURkUkQ4dldpTmZacWdCNlhpaDFKYl9NN2lSQ1o0TE9mX3o0TXRHYlFQNFJPNzE1QTRNUDBDT2Q4Mko",
+      "title": "'Buy now, pay later' has gone mainstream, but personal finance expert warns of risks - WBFF",
+      "title_fp": "buynowpaylaterhasgonemainstreambutpersonalfinanceexpertwarnsofriskswbff",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-05-20/core-lithium-restarts-darwin-mine/106700190",
+      "title": "Core Lithium restarts Northern Territory mine as price rallies",
+      "title_fp": "corelithiumrestartsnorthernterritorymineaspricerallies",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-05-20/anglo-american-sale-dhilmar-sparks-community-concern/106697588",
+      "title": "Apprehension as UK mining company enters Australian coal",
+      "title_fp": "apprehensionasukminingcompanyentersaustraliancoal",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-05-20/avg-travels-tour-company-cancellations-refunds/106597488",
+      "title": "Tour company fallout deepens as more travellers speak out",
+      "title_fp": "tourcompanyfalloutdeepensasmoretravellersspeakout",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNTV4U3NrandQMHpaaHFaR1dpOHRlamxxckJ6UmhkTmo3ZHFId1ZYYWRQQkp1cnVNMl9WVDhlYU5QSVU4OEE3NW5aakRDZ19pbk9tRmNzTkJPV3pOeEsxNmF5Ym5MM2VkclJ2ZmNnTDdtOUZ2WF9ZdGJZNEpBSnVfMmRjb0RTY2htSkhNV1Q1OVlMaEdtVUVoUmVqc3o2Q282QU5CYkJkNi0",
+      "title": "ASB Economists: Housing Confidence Dips As Global Pressures Build - Scoop - New Zealand News",
+      "title_fp": "asbeconomistshousingconfidencedipsasglobalpressuresbuildscoopnewzealandnews",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQkthY2RGaG5SVEJqV1M0ZlppUGNaVjJrWi13MG85OHhkNktITk9wNjVVTkdhQ0JFRW9QR19TUDFPdmNOSEJKZHBUZjlVNFpTMW1tczYzRkZheElWYnYxUHJCQ0FvZElNOXVWdTRLeXRrcDJCSUJsREpscF9DZEM3UE9LUUxaTzVCSkJqYWs3V2xmQkgyTHNPTTk2Y25VRURrbmhkSU1vZlpTS0owbzB5N2hlcnN2dzdjMGwzX3NB",
+      "title": "Housing confidence hit as higher rate expectations, global uncertainty weigh - mpamag.com",
+      "title_fp": "housingconfidencehitashigherrateexpectationsglobaluncertaintyweighmpamagcom",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBIcUxROFVvcEp6UXY5X05yNERsdDNuQTJlWVRfenZBc2lwNXhobllSenZTLWxRVjFUM0pPQk1CSWFuaUV0d0k3Sk9PTkVHR2x3REZzaVZDLXVVMGVxWFhiQmZaWXhOM1ZCVl9j",
+      "title": "Construction Pipeline Continues to Bottom Out as AI Expansion Adds to Uncertainty in Office Sector - CommercialCafe",
+      "title_fp": "constructionpipelinecontinuestobottomoutasaiexpansionaddstouncertaintyinofficesectorcommercialcafe",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcVpwYkY0VUFnVi1MRHVoUC1kbGFmdldsdkJQaHRNSVFBeVdlSFI4X3RGOUNESndyai1GQzMzM0pLd0hxRERyS0N2LTV5dG1BMnh5RUYzYW1pR1Q2djZPMzl3U1FKTDU4cnAwX2RiUU1YWGtieG1HcXM2dkhfcDROdzdtckpvXzFqYjQ3cEItMnNwaGpLOWxRdHNXNWNDVGdVSGMzS0ZLUG9mTTRyVGc",
+      "title": "Quarterra, MacNaughton Advance Construction on 796-Unit Seattle MF Project - connectcre.com",
+      "title_fp": "quarterramacnaughtonadvanceconstructionon796unitseattlemfprojectconnectcrecom",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://www.theverge.com/tech/934260/google-io-ai-singularity-demis-hassabis",
+      "title": "Demis Hassabis said this might be the \u2018foothills of the singularity.\u2019 What?",
+      "title_fp": "demishassabissaidthismightbethefoothillsofthesingularitywhat",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://techcrunch.com/2026/05/19/ai-design-tools-are-the-next-big-battleground-and-google-is-going-all-in-at-io-2026/",
+      "title": "Google just declared itself a contender in AI design at IO 2026",
+      "title_fp": "googlejustdeclareditselfacontenderinaidesignatio2026",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://techcrunch.com/2026/05/19/you-can-now-talk-to-your-gmail-inbox-as-seen-at-google-io-2026/",
+      "title": "You can now talk to your Gmail inbox, as seen at Google IO 2026",
+      "title_fp": "youcannowtalktoyourgmailinboxasseenatgoogleio2026",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://www.theverge.com/tech/934217/google-search-box-does-everything-ai-io-2026",
+      "title": "The future of Google is a search box that does everything",
+      "title_fp": "thefutureofgoogleisasearchboxthatdoeseverything",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://techcrunch.com/2026/05/19/how-to-use-googles-new-ai-agents-to-go-beyond-your-standard-searches/",
+      "title": "How to use Google\u2019s new AI agents to go beyond your standard searches",
+      "title_fp": "howtousegooglesnewaiagentstogobeyondyourstandardsearches",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/live/2026/may/20/federal-budget-tim-wilson-reply-national-press-club-coalition-liberal-national-angus-taylor-labor-anthony-albanese-jim-chalmers-ntwnfb",
+      "title": "News live: PM meets with Kumanjayi Little Baby\u2019s family in NT; Wilson calls for Australia that doesn\u2019t favour \u2018big super fund oligarchs\u2019",
+      "title_fp": "newslivepmmeetswithkumanjayilittlebabysfamilyinntwilsoncallsforaustraliathatdoesntfavourbigsuperfund",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/may/20/sydney-fatal-shooting-canley-heights-nsw-ntwnfb",
+      "title": "\u2018Brazen\u2019 alleged shooting in Sydney\u2019s south-west that left one dead and four in hospital was targeted, police believe",
+      "title_fp": "brazenallegedshootinginsydneyssouthwestthatleftonedeadandfourinhospitalwastargetedpolicebelieve",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQN003LThBSU9Zb0JRMXJWMlF3YkFSZVFxYTJQaU16SzBVekUzaFVkc0JQYVIyYVd2VlVxaVl1TjdUSVl1OGJqV2VseFBpSlM0Zk8wazFkb0pIa1JBaTNqekFyMmJaemhxeC1iTTBOWFBGU2twU29nTmRSaU5GTTh3RHpHTG80M2FTODgtcEFUS3I4dHJRa0FtY0MwVmlBMUdaNC1NMURGVGYzd1NHdWdnWEFGS2IzQkJPZktXbjJ3",
+      "title": "Crisafulli loosens the shackles, flips the script on Queensland drama - AFR",
+      "title_fp": "crisafulliloosenstheshacklesflipsthescriptonqueenslanddramaafr",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://www.ufc.com/news/ufc-bjj-8-musumeci-vs-dantzler-full-fight-card-start-time-how-watch",
+      "title": "UFC BJJ 8: Musumeci vs Dantzler | Full Fight Card, Start Time & How to Watch",
+      "title_fp": "ufcbjj8musumecivsdantzlerfullfightcardstarttimehowtowatch",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    },
+    {
+      "url": "https://www.ufc.com/news/ea-sports-ufc-6-reveals-major-changes-fighter-likeness-gameplay-physics-and-presentation",
+      "title": "EA Sports UFC 6 Reveals Major Changes To Fighter Likeness, Gameplay Physics And Presentation",
+      "title_fp": "easportsufc6revealsmajorchangestofighterlikenessgameplayphysicsandpresentation",
+      "sent_at": "2026-05-20T05:55:28.788259+00:00"
+    }
+  ]
 }
