@@ -7,6 +7,10 @@ defaults:
   au_max: 3
   global_max: 2
   excerpt_max_chars: 220
+  max_age_hours: 36
+  history_days: 14
+  link_label: Read
+  fallback_min_items: 2
 
 blocklist:
   - celebrity
@@ -15,21 +19,31 @@ blocklist:
   - rumor
   - kardashian
   - reality tv
+  - listicle
 
 topics:
   - id: finance_markets
     name: "Finance — Markets & macro"
     regions: [au, global]
+    au_feeds:
+      - abc_business
+      - afr_business
+      - rba_media
+    global_feeds:
+      - reuters_business
     au_queries:
       - "RBA interest rates Australia"
       - "ASX Australian shares"
     global_queries:
       - "Federal Reserve markets"
-      - "global stock markets"
 
   - id: finance_personal
     name: "Finance — Personal"
     regions: [au, global]
+    au_feeds:
+      - abc_business
+      - domain_news
+    global_feeds: []
     au_queries:
       - "Australian mortgage rates housing"
       - "superannuation Australia"
@@ -39,27 +53,38 @@ topics:
   - id: property
     name: Property
     regions: [au, global]
+    au_feeds:
+      - domain_news
+      - abc_business
+    global_feeds:
+      - reuters_business
     au_queries:
       - "Australian property market prices"
-      - "housing affordability Australia"
     global_queries:
       - "global housing market"
 
   - id: property_dev
     name: Property development
     regions: [au, global]
+    au_feeds:
+      - urban_developer
+      - domain_news
+    global_feeds: []
     au_queries:
-      - "property development Australia zoning"
-      - "Queensland development planning"
+      - "property development Australia Queensland"
     global_queries:
       - "commercial property development"
 
   - id: ai
     name: AI
     max_items: 5
+    feeds:
+      - verge_ai
+      - ars_technica
+      - techcrunch_ai
     queries:
-      - "artificial intelligence OpenAI Anthropic"
-      - "AI coding tools Cursor Copilot"
+      - "artificial intelligence OpenAI"
+      - "AI coding tools"
 
   - id: politics
     name: Australian politics
@@ -67,19 +92,23 @@ topics:
       au_national:
         label: National
         max: 2
+        feeds:
+          - abc_politics
+          - guardian_au
         queries:
           - "Australian federal politics"
-          - "Parliament Australia policy"
       au_qld:
         label: Queensland
         max: 2
+        feeds:
+          - qld_gov_news
         queries:
-          - "Queensland politics"
-          - "Queensland government policy"
+          - "Queensland politics government"
       global_major:
         label: "Global (major only)"
         max: 2
         locale: global
+        feeds: []
         queries:
           - "world politics breaking"
         include_keywords:
@@ -90,8 +119,6 @@ topics:
           - "United Nations"
           - G7
           - summit
-          - "prime minister"
-          - president
           - invasion
           - ceasefire
 
@@ -99,10 +126,9 @@ topics:
     name: UFC
     max_items: 2
     feeds:
-      - "https://www.ufc.com/rss/news"
+      - ufc_news
     queries:
-      - "UFC fight announced"
-      - "UFC main event title fight"
+      - "UFC fight announced title"
     include_keywords:
       - UFC
       - "title fight"

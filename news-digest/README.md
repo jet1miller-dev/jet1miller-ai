@@ -1,72 +1,103 @@
-# Morning news digest
+# Morning news digest (v2)
 
-Personal morning digest delivered to **Telegram** at **7:00 AM Brisbane**, built from RSS and Google News. Runs on **GitHub Actions** (no Mac required).
+Telegram digest at **7:00 AM Brisbane** via GitHub Actions.
 
-## Sections
+**v2 features:** curated RSS feeds, HTML **Read** links, 36h freshness, 14-day duplicate memory, optional OpenAI blurbs, one Telegram message per topic group.
 
-- Finance — Markets & macro (AU + Global)
-- Finance — Personal (AU + Global)
-- Property (AU + Global)
-- Property development (AU + Global)
-- AI (industry + dev tools)
-- Australian politics (National, Queensland, major global only)
-- UFC (max 2, ranked/title focus, no WMMA)
+## What you need on GitHub
 
-Each story: **headline + short excerpt + link**.
+| Secret | Required? |
+|--------|-----------|
+| `TELEGRAM_BOT_TOKEN` | Yes |
+| `TELEGRAM_CHAT_ID` | Yes |
+| `OPENAI_API_KEY` | Optional (blurbs + smarter dedup; works without) |
 
-## One-time setup
+## Test
 
-### Telegram (done if you have token + chat ID)
+**Actions → Morning digest → Run workflow**
 
-- `TELEGRAM_BOT_TOKEN` — from [@BotFather](https://t.me/BotFather)
-- `TELEGRAM_CHAT_ID` — e.g. from `getUpdates` after messaging your bot
+## Customising feeds and topics
 
-### GitHub secrets
+### 1. Named feeds (`config/feeds.yaml`)
 
-Repo → **Settings → Secrets and variables → Actions** → New repository secret:
+Add a nickname and URL:
 
-| Name | Value |
-|------|--------|
-| `TELEGRAM_BOT_TOKEN` | Your bot token |
-| `TELEGRAM_CHAT_ID` | Your chat ID |
+```yaml
+my_favourite_site:
+  url: https://example.com/rss.xml
+  label: Example News
+```
 
-### Actions settings
+### 2. Use feeds in a topic (`config/topics.yaml`)
 
-- Allow all actions
-- Workflow: read-only repo permissions
-- Enable Actions on the repo
+**By nickname:**
 
-## Test run
+```yaml
+au_feeds:
+  - abc_business
+  - my_favourite_site
+```
 
-1. Push this repo to GitHub.
-2. Add secrets above.
-3. **Actions → Morning digest → Run workflow**.
-4. Check Telegram.
+**Or paste a full URL** (no `feeds.yaml` entry needed):
 
-## Local test
+```yaml
+au_feeds:
+  - https://www.example.com/feed.xml
+```
+
+### 3. AU vs global
+
+For topics with `regions: [au, global]`:
+
+- `au_feeds` / `au_queries` — Australia first
+- `global_feeds` / `global_queries` — international
+- **Google News queries** run only if feeds don’t fill the section (`au_max` / `global_max`)
+
+### 4. Simple topics (AI, UFC)
+
+```yaml
+- id: ai
+  max_items: 5
+  feeds:
+    - verge_ai
+  queries:
+    - "AI startups"   # fallback only
+```
+
+### 5. Defaults (`defaults` in topics.yaml)
+
+| Key | Meaning |
+|-----|---------|
+| `max_age_hours` | Drop stories older than this (default 36) |
+| `history_days` | Don’t resend same story within N days (default 14) |
+| `au_max` / `global_max` | Max items per region |
+| `link_label` | Telegram link text (default `Read`) |
+| `blocklist` | Words that drop a story |
+
+### 6. After editing
+
+Push to GitHub (or commit on `main`). Next workflow run uses the new config.
+
+## Files
+
+| File | Purpose |
+|------|---------|
+| `config/topics.yaml` | Sections, feeds, queries, limits |
+| `config/feeds.yaml` | Named RSS catalog |
+| `data/sent_history.json` | Auto-updated “already sent” log |
+| `digest.py` | Main script |
+| `ai.py` | OpenAI batch step |
+
+## Local run
 
 ```bash
 cd news-digest
-pip install -r requirements.txt
-cp .env.example .env   # fill in token + chat ID
-export $(grep -v '^#' .env | xargs)
-python digest.py
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+cp .env.example .env   # fill in secrets
+set -a && source .env && set +a
+.venv/bin/python digest.py
 ```
 
 ## Schedule
 
-- Cron: `0 21 * * *` UTC = **7:00 AM Australia/Brisbane**
-- Private repos: runs may be delayed a few minutes.
-
-## Tuning
-
-Edit [`config/topics.yaml`](config/topics.yaml):
-
-- `blocklist` — words that drop a story
-- `au_queries` / `global_queries` — search terms per topic
-- UFC `include_keywords` / `exclude_keywords`
-
-## Failure alerts
-
-- GitHub emails you when the workflow fails (enable in notification settings).
-- The script also tries to send a Telegram error message.
+Cron `0 21 * * *` UTC = 7:00 AM Brisbane. Private repos may run a few minutes late.

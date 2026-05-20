@@ -1,0 +1,58 @@
+# Named RSS feeds — reference these in topics.yaml or paste full URLs directly.
+# Edit this file to add/remove sources; see README.md.
+
+abc_business:
+  url: https://www.abc.net.au/news/feed/51892/rss.xml
+  label: ABC Business
+
+abc_politics:
+  url: https://www.abc.net.au/news/feed/51114/rss.xml
+  label: ABC Politics
+
+guardian_au:
+  url: https://www.theguardian.com/australia-news/rss
+  label: Guardian AU
+
+afr_business:
+  url: https://www.afr.com/rss.xml
+  label: AFR
+
+reuters_business:
+  url: https://feeds.reuters.com/reuters/businessNews
+  label: Reuters
+
+rba_media:
+  url: https://www.rba.gov.au/rss/rss-cb-media-releases.xml
+  label: RBA
+
+domain_news:
+  url: https://www.domain.com.au/news/feed/
+  label: Domain
+
+urban_developer:
+  url: https://www.theurbandeveloper.com/articles/rss
+  label: The Urban Developer
+
+verge_ai:
+  url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
+  label: The Verge AI
+
+ars_technica:
+  url: https://feeds.arstechnica.com/arstechnica/technology-lab
+  label: Ars Technica
+
+techcrunch_ai:
+  url: https://techcrunch.com/category/artificial-intelligence/feed/
+  label: TechCrunch AI
+
+qld_gov_news:
+  url: https://www.qld.gov.au/news/rss.xml
+  label: QLD Government
+
+ufc_news:
+  url: https://www.ufc.com/rss/news
+  label: UFC
+
+mmajunkie:
+  url: https://mmajunkie.usatoday.com/feed
+  label: MMA Junkie

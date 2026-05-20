@@ -9,7 +9,7 @@ A collection of self-contained HTML apps plus a scheduled news digest. HTML file
 - `Test Work/cgt-calculator.html` — Australian Capital Gains Tax calculator (July 2027 reform scenarios)
 - `Test Work/Test.Shooter.html` — Canvas top-down shooter
 - `Test Work/Test.Tictactoe.html` — Two-player Tic Tac Toe
-- `news-digest/` — Morning Telegram digest (Python, GitHub Actions, see `news-digest/README.md`)
+- `news-digest/` — Morning Telegram digest v2 (RSS + optional OpenAI, GitHub Actions; see `news-digest/README.md`)
 
 ## Git Workflow
 
