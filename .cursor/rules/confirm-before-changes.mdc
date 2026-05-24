@@ -1,0 +1,36 @@
+---
+description: Ask for explicit approval before editing files, committing, or pushing
+alwaysApply: true
+---
+
+# Confirm before changing anything
+
+Do not modify the codebase, run git operations, or deploy without explicit user approval.
+
+## Before making changes
+
+1. **Explain first** — Summarize what you plan to change and why.
+2. **Ask** — End with a clear question, e.g. "Should I go ahead and make these changes?"
+3. **Wait** — Do not edit files, run terminal commands that change state, commit, or push until the user says yes (e.g. "yes", "go ahead", "do it", "push it").
+
+## What requires approval
+
+- Any file create, edit, or delete
+- `git commit`, `git push`, merge, or branch operations
+- Changes to `.github/workflows/` or other deployment/CI config
+- Running scripts or commands that send messages, write to remotes, or alter production data
+
+## What you may do without asking
+
+- Read files, search the codebase, explain how things work
+- Read-only git commands (`git status`, `git diff`, `git log`)
+- Answer questions and propose plans in Plan/Ask-style responses
+
+## Git specifically
+
+- **Never** commit or push unless the user explicitly asks in that conversation.
+- If the user asks to "fix" something, implement the fix only after they approve the plan — fixing does not imply permission to push.
+
+## If unclear
+
+When in doubt, ask. Default to no changes until confirmed.
