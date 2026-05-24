@@ -1,21 +1,29 @@
 ---
-description: Ask for explicit approval before editing files, committing, or pushing
+description: User must review and approve before any file edits, commits, or pushes
 alwaysApply: true
 ---
 
 # Confirm before changing anything
 
-Do not modify the codebase, run git operations, or deploy without explicit user approval.
+The user reviews every change before it is applied. Do not write to the filesystem until they approve.
 
-## Before making changes
+## Required workflow (every time)
 
-1. **Explain first** — Summarize what you plan to change and why.
-2. **Ask** — End with a clear question, e.g. "Should I go ahead and make these changes?"
-3. **Wait** — Do not edit files, run terminal commands that change state, commit, or push until the user says yes (e.g. "yes", "go ahead", "do it", "push it").
+1. **Investigate** — Read/search only. No file edits yet.
+2. **Propose** — Explain the problem, the planned fix, and which files will change. Show the intended diff or a clear before/after summary.
+3. **Ask** — End with: "Want me to apply these changes?" (or similar). Wait for an explicit yes.
+4. **Apply** — Only after approval: edit files, then tell the user what changed so they can review in the diff tab.
+5. **Commit/push** — Separate step. Never commit or push unless the user explicitly asks in that message.
+
+## What counts as approval
+
+- Yes: "yes", "go ahead", "apply it", "do it", "make those changes"
+- No: "fix this", "help", "what's wrong", describing a bug, or silence after a proposal
+- "Commit and push" approves git only for changes the user has already seen and accepted — not for new unreviewed edits
 
 ## What requires approval
 
-- Any file create, edit, or delete
+- Any file create, edit, or delete (including config, rules, and YAML)
 - `git commit`, `git push`, merge, or branch operations
 - Changes to `.github/workflows/` or other deployment/CI config
 - Running scripts or commands that send messages, write to remotes, or alter production data
@@ -24,13 +32,8 @@ Do not modify the codebase, run git operations, or deploy without explicit user 
 
 - Read files, search the codebase, explain how things work
 - Read-only git commands (`git status`, `git diff`, `git log`)
-- Answer questions and propose plans in Plan/Ask-style responses
-
-## Git specifically
-
-- **Never** commit or push unless the user explicitly asks in that conversation.
-- If the user asks to "fix" something, implement the fix only after they approve the plan — fixing does not imply permission to push.
+- Propose plans and show proposed diffs in chat (without writing files)
 
 ## If unclear
 
-When in doubt, ask. Default to no changes until confirmed.
+When in doubt, ask. Default to **no changes** until the user confirms.
