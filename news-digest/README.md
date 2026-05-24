@@ -111,4 +111,8 @@ set -a && source .env && set +a
 
 ## Schedule
 
-Cron `0 21 * * *` UTC = 7:00 AM Brisbane. Private repos may run a few minutes late.
+- **Target:** 7:00 AM **Australia/Brisbane** daily.
+- **Cron:** `0 7 * * *` with `timezone: Australia/Brisbane`.
+- **Private repo note:** GitHub’s scheduler is **unreliable** — it may *start* a workflow at 1:30 PM, 6:50 PM, etc. The workflow now **checks Brisbane time** and only sends Telegram during **7:00–7:59 AM**. Outside that window the run succeeds but **skips** the digest (no message).
+- **Manual test:** **Actions → Run workflow** always sends, any time of day.
+- If you miss too many mornings because GitHub fires after 8 AM, consider an external cron (e.g. [cron-job.org](https://cron-job.org)) hitting `workflow_dispatch` via the GitHub API.

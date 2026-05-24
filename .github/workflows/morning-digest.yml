@@ -2,8 +2,9 @@ name: Morning digest
 
 on:
   schedule:
-    # 07:00 Australia/Brisbane (UTC+10) = 21:00 UTC previous day
-    - cron: "0 21 * * *"
+    # Target 07:00 Australia/Brisbane (GitHub may still trigger late/early on private repos)
+    - cron: "0 7 * * *"
+      timezone: Australia/Brisbane
   workflow_dispatch:
 
 permissions:
@@ -15,14 +16,38 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Check if digest should run now
+        id: should_run
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "Manual run — always send digest."
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          HOUR=$(TZ=Australia/Brisbane date +%H)
+          MIN=$(TZ=Australia/Brisbane date +%M)
+          echo "Brisbane time: ${HOUR}:${MIN}"
+          # Only send on scheduled runs during the 7:00–7:59 AM window
+          if [ "$HOUR" = "07" ]; then
+            echo "Within 7 AM Brisbane window — sending digest."
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Scheduled job fired outside 7 AM Brisbane (hour=$HOUR). Skipping digest."
+            echo "This is normal on private repos — GitHub schedule timing is unreliable."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/setup-python@v5
+        if: steps.should_run.outputs.run == 'true'
         with:
           python-version: "3.12"
 
       - name: Install dependencies
+        if: steps.should_run.outputs.run == 'true'
         run: pip install -r news-digest/requirements.txt
 
       - name: Run morning digest
+        if: steps.should_run.outputs.run == 'true'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -31,6 +56,7 @@ jobs:
         run: python news-digest/digest.py
 
       - name: Commit sent history
+        if: steps.should_run.outputs.run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
