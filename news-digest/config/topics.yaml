@@ -27,101 +27,86 @@ blocklist:
   - explainer
   - quiz
   - roundup
+  - opinion
+  - commentary
+  - analysis piece
 
 topics:
   - id: finance_markets
     name: "Finance — Markets & macro"
     regions: [au, global]
     au_feeds:
-      - abc_business
       - rba_media
-      - livewire_markets
-      - macrobusiness
       - rba_speeches
+      - abc_business
+      - abs_economy
+      - macrobusiness        # lower priority — commentary, not hard news
     global_feeds:
       - reuters_business
       - ap_business
-      - marketwatch_top
-      - ft_markets
     au_queries:
-      - "RBA interest rates Australia"
-      - "ASX Australian shares market"
+      - "RBA cash rate decision Australia"
+      - "CPI inflation ABS Australia"
+      - "ASX Australian sharemarket"
       - "AUD dollar exchange rate"
     global_queries:
-      - "Federal Reserve interest rates global economy"
+      - "US Federal Reserve rate decision impact"
       - "China economy trade Australia"
-      - "global macro inflation recession"
-      - "S&P 500 US economy impact Australia trade"
-      - "Federal Reserve rate decision AUD impact"
-      - "US China trade tariffs Australia"
 
   - id: finance_personal
     name: "Finance — Personal"
-    regions: [au, global]
+    regions: [au]
     au_feeds:
       - abc_business
-      - macrobusiness
-      - domain_news
+      - ato_newsroom
     global_feeds: []
     au_queries:
-      - "Australian mortgage rates housing affordability"
-      - "superannuation Australia changes"
+      - "Australian mortgage rate change banks"
+      - "superannuation Australia changes 2025"
+      - "ATO tax announcement Australia"
       - "cost of living Australia"
-    global_queries:
-      - "personal finance investing"
+      - "ETF shares index fund investing Australia"
+    global_queries: []
 
   - id: property
-    name: Property
-    regions: [au, global]
+    name: "Property & Development"
+    regions: [au]
     au_feeds:
       - domain_news
-      - urban_developer
-      - property_council
-    global_feeds:
-      - reuters_business
-    au_queries:
-      - "Brisbane property market Gold Coast"
-      - "Queensland housing prices development"
-      - "Queensland planning legislation zoning ruling"
-    global_queries:
-      - "global housing market rates"
-
-  - id: property_dev
-    name: Property development
-    regions: [au, global]
-    au_feeds:
+      - rea_property_news
+      - reiq_news
+      - smart_property_investment
       - urban_developer
       - property_council
       - hia_news
-      - domain_news
       - planning_qld
       - bcc_news
     global_feeds: []
     au_queries:
+      - "Brisbane SEQ property market prices"
+      - "Gold Coast property prices rental"
+      - "Queensland rental market vacancy rates"
       - "Brisbane Gold Coast DA approval development"
       - "Queensland planning legislation zoning changes"
-      - "Queensland planning legislation amendment"
       - "Queensland development approval major project"
-    global_queries:
-      - "commercial property development construction"
+      - "construction costs Queensland builder"
+      - "BCC Brisbane City Council development"
+    global_queries: []
 
   - id: ai
     name: AI
     max_items: 3
     feeds:
+      - the_decoder
       - verge_ai
-      - ars_technica
       - techcrunch_ai
-      - mit_tech_review
     queries:
-      - "artificial intelligence OpenAI Anthropic"
-      - "AI coding tools developer"
-      - "large language model release"
-      - "AI model release announced GPT Claude Gemini Grok"
-      - "AI breakthrough major announcement 2025"
+      - "new AI model release announced"
+      - "OpenAI Anthropic Google DeepMind announcement"
+      - "GPT Claude Gemini Grok model release"
     include_keywords:
-      - "model release"
       - "new model"
+      - "model release"
       - "launches"
       - "announced"
       - "GPT"
@@ -129,8 +114,12 @@ topics:
       - "Gemini"
       - "Grok"
       - "o3"
+      - "OpenAI"
+      - "Anthropic"
+      - "Google DeepMind"
+      - "Meta AI"
       - "reasoning model"
-
+      - "frontier model"
 
   - id: politics
     name: Australian politics

@@ -34,8 +34,7 @@ USER_AGENT = "MorningDigest/2.0 (+https://github.com)"
 # Telegram message groups (topic ids)
 MESSAGE_GROUPS: list[tuple[str, list[str]]] = [
     ("Finance", ["finance_markets", "finance_personal"]),
-    ("Property", ["property"]),
-    ("Property development", ["property_dev"]),
+    ("Property & Development", ["property"]),
     ("AI", ["ai"]),
     ("Australian politics", ["politics"]),
     ("UFC", ["ufc"]),

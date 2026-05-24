@@ -29,27 +29,36 @@ rba_speeches:
 
 # ── AU finance / macro ───────────────────────────────────────────────────────
 
-livewire_markets:
-  url: https://www.livewiremarkets.com/feed              # [VERIFY]
-  label: Livewire Markets
+abs_economy:
+  url: https://www.abs.gov.au/rss.xml                    # [VERIFY] ABS statistical releases
+  label: ABS Economy
+
+ato_newsroom:
+  url: https://www.ato.gov.au/newsroom/rss               # [VERIFY] ATO media releases
+  label: ATO Newsroom
 
 macrobusiness:
   url: https://www.macrobusiness.com.au/feed/
   label: MacroBusiness
-
-ft_markets:
-  url: https://www.ft.com/rss/home/us
-  label: Financial Times
-
-marketwatch_top:
-  url: https://feeds.marketwatch.com/marketwatch/topstories/
-  label: MarketWatch
+  # Note: opinion-heavy macro commentary — lower priority, use with care
 
 # ── AU property ──────────────────────────────────────────────────────────────
 
 domain_news:
   url: https://www.domain.com.au/news/feed/
   label: Domain
+
+rea_property_news:
+  url: https://www.realestate.com.au/news/feed/          # [VERIFY] trailing slash required
+  label: REA Group News
+
+reiq_news:
+  url: https://www.reiq.com/resources/feed               # [VERIFY] REIQ Queensland news
+  label: REIQ
+
+smart_property_investment:
+  url: https://www.smartpropertyinvestment.com.au/feed
+  label: Smart Property Investment
 
 urban_developer:
   url: https://www.theurbandeveloper.com/articles/rss
@@ -64,11 +73,11 @@ hia_news:
   label: HIA
 
 planning_qld:
-  url: https://www.planning.qld.gov.au/rss   # [VERIFY] - may need checking
+  url: https://www.planning.qld.gov.au/rss               # [VERIFY]
   label: QLD Planning
 
 bcc_news:
-  url: https://www.brisbane.qld.gov.au/news/rss.xml   # [VERIFY]
+  url: https://www.brisbane.qld.gov.au/news/rss.xml      # [VERIFY]
   label: Brisbane City Council
 
 # ── AU politics / commentary ─────────────────────────────────────────────────
@@ -81,7 +90,7 @@ qld_gov_news:
   url: https://www.qld.gov.au/news/rss.xml
   label: QLD Government
 
-# Kept in catalog but no longer wired to any topic — remove if you want a clean file
+# Kept in catalog but not wired to any topic
 guardian_au:
   url: https://www.theguardian.com/australia-news/rss
   label: Guardian AU
@@ -98,17 +107,22 @@ ap_business:
 
 # ── AI / tech ────────────────────────────────────────────────────────────────
 
+the_decoder:
+  url: https://the-decoder.com/feed
+  label: The Decoder
+
 verge_ai:
   url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
   label: The Verge AI
 
-ars_technica:
-  url: https://feeds.arstechnica.com/arstechnica/technology-lab
-  label: Ars Technica
-
 techcrunch_ai:
   url: https://techcrunch.com/category/artificial-intelligence/feed/
   label: TechCrunch AI
+
+# Kept in catalog but not wired to any topic — too research-heavy / broad
+ars_technica:
+  url: https://feeds.arstechnica.com/arstechnica/technology-lab
+  label: Ars Technica
 
 mit_tech_review:
   url: https://www.technologyreview.com/feed/
