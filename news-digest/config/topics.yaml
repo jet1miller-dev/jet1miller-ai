@@ -40,7 +40,6 @@ topics:
       - rba_speeches
       - abc_business
       - abs_economy
-      - macrobusiness        # lower priority — commentary, not hard news
     global_feeds:
       - reuters_business
       - ap_business
@@ -52,6 +51,15 @@ topics:
     global_queries:
       - "US Federal Reserve rate decision impact"
       - "China economy trade Australia"
+    exclude_keywords:
+      - auction
+      - clearance rate
+      - first home buyer
+      - property market
+      - housing market
+      - real estate
+      - rental market
+      - mortgage broker
 
   - id: finance_personal
     name: "Finance — Personal"
@@ -67,6 +75,20 @@ topics:
       - "cost of living Australia"
       - "ETF shares index fund investing Australia"
     global_queries: []
+    exclude_keywords:
+      - auction
+      - clearance rate
+      - first home buyer
+      - property market
+      - housing market
+      - real estate
+      - rental market
+      - Iran
+      - war
+      - conflict
+      - invasion
+      - missile
+      - sovereign capability
 
   - id: property
     name: "Property & Development"
@@ -151,6 +173,7 @@ topics:
         include_keywords:
           - election
           - war
+          - conflict
           - sanctions
           - NATO
           - "United Nations"
@@ -158,6 +181,15 @@ topics:
           - summit
           - invasion
           - ceasefire
+          - Iran
+          - Ukraine
+          - missile
+          - strike
+          - troops
+          - diplomatic
+          - "Middle East"
+          - Gaza
+          - Israel
 
   - id: ufc
     name: UFC / MMA

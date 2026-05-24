@@ -327,7 +327,7 @@ def apply_base_filters(
     return dedupe_stories(out)
 
 
-def ufc_passes(story: Story, topic: dict) -> bool:
+def topic_keyword_filters(story: Story, topic: dict) -> bool:
     text = f"{story.title} {story.excerpt}"
     exclude = topic.get("exclude_keywords") or []
     include = topic.get("include_keywords") or []
@@ -335,6 +335,13 @@ def ufc_passes(story: Story, topic: dict) -> bool:
         return False
     if include and not matches_any(text, include):
         return False
+    return True
+
+
+def ufc_passes(story: Story, topic: dict) -> bool:
+    if not topic_keyword_filters(story, topic):
+        return False
+    text = f"{story.title} {story.excerpt}"
     if "ufc" not in text.lower():
         return False
     for kw in ("title fight", "championship", "main event", "ranked", "rankings"):
@@ -375,6 +382,8 @@ def collect_regional_topic(
         extra = apply_base_filters(extra, blocklist, history, max_age)
         gl = dedupe_stories(gl + extra)
 
+    au = [s for s in au if topic_keyword_filters(s, topic)]
+    gl = [s for s in gl if topic_keyword_filters(s, topic)]
     au = au[:au_max]
     gl = gl[:global_max]
     return au + gl
@@ -447,7 +456,10 @@ def collect_politics(
             )
         include_kw = sub.get("include_keywords")
         if include_kw:
-            batch = [s for s in batch if matches_any(f"{s.title} {s.excerpt}", include_kw)]
+            filtered = [s for s in batch if matches_any(f"{s.title} {s.excerpt}", include_kw)]
+            # Prefer keyword matches; if the query returned nothing matching, still show top hits
+            if filtered:
+                batch = filtered
         for s in batch[:cap]:
             s.region = _key
             all_stories.append(s)
@@ -491,22 +503,37 @@ def format_region_html(label: str, stories: list[Story], link_label: str) -> str
     return "\n\n".join(parts)
 
 
+def normalize_heading(text: str) -> str:
+    return re.sub(r"\s+", " ", (text or "").strip().lower())
+
+
+def short_topic_heading(topic_name: str, group_title: str) -> str:
+    if " — " in topic_name:
+        prefix, suffix = topic_name.split(" — ", 1)
+        if normalize_heading(prefix) == normalize_heading(group_title):
+            return suffix.strip()
+    return topic_name
+
+
 def format_topic_block(
     topic: dict,
     stories: list[Story],
     defaults: dict[str, Any],
     link_label: str,
+    *,
+    title_override: str | None = None,
+    show_title: bool = True,
 ) -> str:
     if not stories:
         return ""
     au_max = defaults.get("au_max", 3)
     global_max = defaults.get("global_max", 2)
+    display_name = title_override if title_override is not None else topic.get("name", "")
 
     if topic.get("subsections"):
-        parts = [f"<b>{esc(topic['name'])}</b>"]
-        by_region: dict[str, list[Story]] = {}
-        for s in stories:
-            by_region.setdefault(s.region, []).append(s)
+        parts = []
+        if show_title and display_name:
+            parts.append(f"<b>{esc(display_name)}</b>")
         for _key, sub in topic["subsections"].items():
             label = sub.get("label", _key)
             prefix = "🌐" if sub.get("locale") == "global" else "🇦🇺"
@@ -517,7 +544,9 @@ def format_topic_block(
         return "\n\n".join(parts)
 
     if topic.get("regions"):
-        parts = [f"<b>{esc(topic['name'])}</b>"]
+        parts = []
+        if show_title and display_name:
+            parts.append(f"<b>{esc(display_name)}</b>")
         au = [s for s in stories if s.region == "au"][:au_max]
         gl = [s for s in stories if s.region == "global"][:global_max]
         unlabeled = [s for s in stories if s.region not in ("au", "global")]
@@ -530,7 +559,9 @@ def format_topic_block(
             parts.append(format_region_html("🌐 Global", gl, link_label))
         return "\n\n".join(parts)
 
-    parts = [f"<b>{esc(topic['name'])}</b>"]
+    parts = []
+    if show_title and display_name:
+        parts.append(f"<b>{esc(display_name)}</b>")
     parts.extend(format_story_html(s, link_label) for s in stories)
     return "\n\n".join(parts)
 
@@ -666,20 +697,42 @@ def run_digest() -> None:
 
     for group_title, topic_ids in MESSAGE_GROUPS:
         blocks: list[str] = []
+        seen_in_group: set[str] = set()
+        multi_topic = len(topic_ids) > 1
         for tid in topic_ids:
             topic = topics_by_id.get(tid)
             if not topic:
                 continue
-            stories = per_topic.get(tid, [])
+            stories = [s for s in per_topic.get(tid, []) if s.story_id not in seen_in_group]
             if not stories:
                 continue
-            block = format_topic_block(topic, stories, defaults, link_label)
+            for s in stories:
+                seen_in_group.add(s.story_id)
+            topic_name = topic.get("name", "")
+            if multi_topic:
+                block_title = short_topic_heading(topic_name, group_title)
+            elif normalize_heading(group_title) == normalize_heading(topic_name):
+                block_title = topic_name
+            else:
+                block_title = topic_name
+            block = format_topic_block(
+                topic,
+                stories,
+                defaults,
+                link_label,
+                title_override=block_title,
+                show_title=not (multi_topic and normalize_heading(block_title) == normalize_heading(group_title)),
+            )
             if block:
                 blocks.append(block)
                 sent_stories.extend(stories)
-        if blocks:
+        if not blocks:
+            continue
+        if multi_topic:
             body = f"<b>{esc(group_title)}</b>\n\n" + "\n\n".join(blocks)
-            messages.extend(split_long_html(body))
+        else:
+            body = blocks[0]
+        messages.extend(split_long_html(body))
 
     if not messages:
         raise RuntimeError("Nothing to send after formatting.")
