@@ -2,9 +2,9 @@ name: Morning digest
 
 on:
   schedule:
-    # Target 07:00 Australia/Brisbane (GitHub may still trigger late/early on private repos)
-      # AEST = UTC+10 (no DST). 21:00 UTC = 07:00 Brisbane (next day).
-      cron: "0 21 * * *"
+    # Target 07:00 Australia/Brisbane (AEST = UTC+10, no DST).
+    # 21:00 UTC = 07:00 Brisbane (next day).
+    - cron: "0 21 * * *"
   workflow_dispatch:
 
 permissions:
@@ -27,13 +27,12 @@ jobs:
           HOUR=$(TZ=Australia/Brisbane date +%H)
           MIN=$(TZ=Australia/Brisbane date +%M)
           echo "Brisbane time: ${HOUR}:${MIN}"
-          # Only send on scheduled runs during the 7:00–7:59 AM window
-          if [ "$HOUR" = "07" ]; then
-            echo "Within 7 AM Brisbane window — sending digest."
+          # Only send on scheduled runs during the 6:00–8:59 AM Brisbane window.
+          if [ "$HOUR" -ge 6 ] && [ "$HOUR" -le 8 ]; then
+            echo "Within 6–8 AM Brisbane window — sending digest."
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
-            echo "Scheduled job fired outside 7 AM Brisbane (hour=$HOUR). Skipping digest."
-            echo "This is normal on private repos — GitHub schedule timing is unreliable."
+            echo "Scheduled job fired outside 6–8 AM Brisbane (hour=$HOUR). Skipping digest."
             echo "run=false" >> "$GITHUB_OUTPUT"
           fi
 
