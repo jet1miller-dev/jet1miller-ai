@@ -4,8 +4,8 @@ schedule:
   minute: 0
 
 defaults:
-  au_max: 3
-  global_max: 2
+  au_max: 4
+  global_max: 3
   excerpt_max_chars: 130
   max_age_hours: 36
   history_days: 14
@@ -39,16 +39,24 @@ topics:
       - rba_media
       - rba_speeches
       - abc_business
+      - macrobusiness
     global_feeds:
-      - reuters_business
+      - marketwatch
+      - cnbc_markets
+      - wsj_markets
+      - yahoo_finance
+      - investing_com
     au_queries:
       - "RBA cash rate decision Australia"
       - "CPI inflation ABS Australia"
-      - "ASX Australian sharemarket"
+      - "ASX 200 Australian sharemarket"
       - "AUD dollar exchange rate"
+      - "Australian federal budget economic policy"
     global_queries:
-      - "US Federal Reserve rate decision impact"
-      - "China economy trade Australia"
+      - "S&P 500 market today"
+      - "US Federal Reserve rate decision"
+      - "China economy trade Australia impact"
+      - "global markets stocks rally sell-off"
     exclude_keywords:
       - auction
       - clearance rate
@@ -64,13 +72,17 @@ topics:
     regions: [au]
     au_feeds:
       - abc_business
+      - finder_au
+      - motley_fool_au
     global_feeds: []
     au_queries:
       - "Australian mortgage rate change banks"
-      - "superannuation Australia changes 2025"
+      - "superannuation Australia changes"
       - "ATO tax announcement Australia"
+      - "CGT capital gains tax Australia"
       - "cost of living Australia"
       - "ETF shares index fund investing Australia"
+      - "Australian income tax bracket threshold"
     global_queries: []
     exclude_keywords:
       - auction
@@ -80,31 +92,41 @@ topics:
       - housing market
       - real estate
       - rental market
-      - Iran
-      - war
-      - conflict
-      - invasion
-      - missile
-      - sovereign capability
 
   - id: property
     name: "Property & Development"
     regions: [au]
     au_feeds:
-      - domain_news
       - rea_property_news
       - smart_property_investment
       - urban_developer
+      - your_investment_property
+      - property_update
+      - guardian_au_property
+      - prd_research
+      - propertyology
+      - udia_qld
+      - fifth_estate
+      - brisbane_times
     global_feeds: []
     au_queries:
-      - "Brisbane SEQ property market prices"
-      - "Gold Coast property prices rental"
-      - "Queensland rental market vacancy rates"
-      - "Brisbane Gold Coast DA approval development"
-      - "Queensland planning legislation zoning changes"
-      - "Queensland development approval major project"
-      - "construction costs Queensland builder"
-      - "BCC Brisbane City Council development"
+      # Brisbane / Gold Coast / SEQ market
+      - "Brisbane property market prices 2025"
+      - "Gold Coast property prices rental market"
+      - "SEQ southeast Queensland property development"
+      - "Brisbane Gold Coast new development project announced"
+      # QLD planning & legislation
+      - "Queensland property development legislation planning reform"
+      - "Queensland zoning planning approval DA"
+      - "QLD government housing development announcement"
+      - "Brisbane City Council development application approved"
+      # Construction & industry
+      - "construction costs Queensland builder shortage"
+      - "Queensland rental vacancy rate"
+      # Luxury / prestige
+      - "luxury prestige property Brisbane Gold Coast sold listed"
+      - "Queensland property sold 5 million 7 million 8 million"
+      - "prestige home Queensland auction result"
     global_queries: []
 
   - id: ai
@@ -140,21 +162,29 @@ topics:
     subsections:
       au_national:
         label: National
-        max: 2
+        max: 3
         feeds:
           - abc_politics
-          - the_conversation_au
+          - abc_business
+          - guardian_au_politics
+          - michael_west
+          - the_mandarin
+          - sbs_news
         queries:
           - "Australian federal politics parliament"
+          - "Australian government policy legislation"
       au_qld:
         label: Queensland
-        max: 2
+        max: 3
         feeds:
           - qld_gov_news
           - abc_qld
+          - brisbane_times_national
+          - udia_qld
         queries:
           - "Queensland politics government legislation"
           - "Queensland budget policy announcement"
+          - "Queensland Premier cabinet minister"
       global_major:
         label: "Global (major only)"
         max: 2
@@ -185,14 +215,18 @@ topics:
 
   - id: ufc
     name: UFC / MMA
-    max_items: 3
+    max_items: 4
     feeds:
       - ufc_news
       - mmajunkie
+      - sherdog
+      - low_kick_mma
+      - combat_press
     queries:
       - "UFC fight announced ranked fighter"
       - "UFC main event card confirmed"
       - "UFC fighter released retired stripped title"
+      - "UFC title fight championship bout"
     include_keywords:
       - UFC
       - "title fight"

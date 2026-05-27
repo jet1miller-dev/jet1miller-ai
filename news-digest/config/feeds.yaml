@@ -1,101 +1,190 @@
 # Named RSS feeds — reference these in topics.yaml or paste full URLs directly.
-# Edit this file to add/remove sources; see README.md.
-#
 # Last verified: 2026-05-27
+# Item counts from last check shown in comments.
 
 # ── AU news ─────────────────────────────────────────────────────────────────
 
 abc_business:
   url: https://www.abc.net.au/news/feed/51892/rss.xml
-  label: ABC Business
+  label: ABC Business                          # 25 items
 
 abc_politics:
   url: https://www.abc.net.au/news/feed/51114/rss.xml
-  label: ABC Politics
+  label: ABC Politics                          # Atom format, infrequent
 
 abc_qld:
   url: https://www.abc.net.au/news/feed/51120/rss.xml
-  label: ABC Queensland
+  label: ABC Queensland                        # 25 items
+
+sbs_news:
+  url: https://www.sbs.com.au/news/feed
+  label: SBS News                              # 24 items
+
+brisbane_times:
+  url: https://www.brisbanetimes.com.au/rss/feed.xml
+  label: Brisbane Times                        # 20 items
+
+brisbane_times_national:
+  url: https://www.brisbanetimes.com.au/rss/national.xml
+  label: Brisbane Times National               # 20 items
+
+smh_national:
+  url: https://www.smh.com.au/rss/national.xml
+  label: SMH National                          # 20 items
+
+guardian_au:
+  url: https://www.theguardian.com/australia-news/rss
+  label: Guardian AU                           # 23 items
 
 # ── AU finance / macro ───────────────────────────────────────────────────────
 
 rba_media:
   url: https://www.rba.gov.au/rss/rss-cb-media-releases.xml
-  label: RBA
+  label: RBA                                   # Infrequent publisher
 
 rba_speeches:
   url: https://www.rba.gov.au/rss/rss-cb-speeches.xml
-  label: RBA Speeches
+  label: RBA Speeches                          # Infrequent publisher
 
 macrobusiness:
   url: https://www.macrobusiness.com.au/feed/
-  label: MacroBusiness
-  # Note: opinion-heavy macro commentary — lower priority, use with care
+  label: MacroBusiness                         # 30 items — opinion-heavy, use with care
 
-# DEAD — abs_economy (https://www.abs.gov.au/rss.xml) returns 404
-# DEAD — ato_newsroom (https://www.ato.gov.au/newsroom/rss) returns 404
+motley_fool_au:
+  url: https://www.fool.com.au/feed/
+  label: Motley Fool AU                        # 20 items
+
+finder_au:
+  url: https://www.finder.com.au/feed
+  label: Finder AU                             # 10 items
+
+# ── Global markets / stocks ──────────────────────────────────────────────────
+
+marketwatch:
+  url: https://feeds.marketwatch.com/marketwatch/topstories/
+  label: MarketWatch                           # 10 items
+
+cnbc_markets:
+  url: https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114
+  label: CNBC Markets                          # 30 items
+
+yahoo_finance:
+  url: https://finance.yahoo.com/news/rssindex
+  label: Yahoo Finance                         # 42 items
+
+wsj_markets:
+  url: https://feeds.a.dj.com/rss/RSSMarketsMain.xml
+  label: WSJ Markets                           # 20 items
+
+investing_com:
+  url: https://www.investing.com/rss/news_25.rss
+  label: Investing.com                         # 10 items
+
+seeking_alpha:
+  url: https://seekingalpha.com/feed.xml
+  label: Seeking Alpha                         # 30 items
 
 # ── AU property ──────────────────────────────────────────────────────────────
 
-domain_news:
-  url: https://www.domain.com.au/news/feed/
-  label: Domain
-
 rea_property_news:
   url: https://www.realestate.com.au/news/feed/
-  label: REA Group News
+  label: REA Group News                        # 47 items
 
 smart_property_investment:
   url: https://www.smartpropertyinvestment.com.au/feed
-  label: Smart Property Investment
+  label: Smart Property Investment             # Infrequent publisher
 
 urban_developer:
   url: https://www.theurbandeveloper.com/articles/rss
-  label: The Urban Developer
+  label: The Urban Developer                   # Infrequent publisher
 
-# DEAD — reiq_news returns HTML not RSS
-# DEAD — property_council (403 blocked)
-# DEAD — hia_news (404)
-# DEAD — planning_qld (404)
-# DEAD — bcc_news (404)
+your_investment_property:
+  url: https://www.yourinvestmentpropertymag.com.au/feed/
+  label: Your Investment Property              # 50 items
+
+property_update:
+  url: https://propertyupdate.com.au/feed/
+  label: Property Update                       # 10 items
+
+guardian_au_property:
+  url: https://www.theguardian.com/australia-news/property+australia-news/rss
+  label: Guardian Property                     # 20 items
+
+prd_research:
+  url: https://www.prd.com.au/news/rss
+  label: PRD Research                          # 20 items — QLD-focused agency data
+
+propertyology:
+  url: https://www.propertyology.com.au/feed/
+  label: Propertyology                         # 10 items — Brisbane/QLD investor research
+
+udia_qld:
+  url: https://udiaqld.com.au/feed/
+  label: UDIA QLD                              # 10 items — QLD development industry body
+
+fifth_estate:
+  url: https://thefifthestate.com.au/feed/
+  label: The Fifth Estate                      # 27 items — planning, sustainability, development policy
 
 # ── AU politics / commentary ─────────────────────────────────────────────────
 
 the_conversation_au:
   url: https://theconversation.com/au/articles.atom
-  label: The Conversation AU
+  label: The Conversation AU                   # 50 items
 
 qld_gov_news:
   url: https://www.qld.gov.au/news/rss.xml
-  label: QLD Government
+  label: QLD Government                        # Infrequent publisher
 
-guardian_au:
-  url: https://www.theguardian.com/australia-news/rss
-  label: Guardian AU
+guardian_au_politics:
+  url: https://www.theguardian.com/australia-news/australian-politics/rss
+  label: Guardian AU Politics                  # 20 items
 
-# ── Global news ──────────────────────────────────────────────────────────────
+michael_west:
+  url: https://michaelwest.com.au/feed/
+  label: Michael West Media                    # 25 items — investigative political journalism
 
-reuters_business:
-  url: https://feeds.reuters.com/reuters/businessNews
-  label: Reuters
+the_mandarin:
+  url: https://www.themandarin.com.au/feed/
+  label: The Mandarin                          # 10 items — government policy & public sector
 
-# DEAD — ap_business (https://feeds.apnews.com/apf-business) no connection
+# ── MMA / combat sports ──────────────────────────────────────────────────────
+
+ufc_news:
+  url: https://www.ufc.com/rss/news
+  label: UFC                                   # 30 items
+
+mmajunkie:
+  url: https://mmajunkie.usatoday.com/feed
+  label: MMA Junkie                            # Infrequent publisher
+
+sherdog:
+  url: https://www.sherdog.com/rss/news.xml
+  label: Sherdog                               # 50 items
+
+low_kick_mma:
+  url: https://lowkickmma.com/feed/
+  label: Low Kick MMA                          # 10 items
+
+combat_press:
+  url: https://combatpress.com/feed/
+  label: Combat Press                          # 10 items
 
 # ── AI / tech ────────────────────────────────────────────────────────────────
 
 the_decoder:
   url: https://the-decoder.com/feed
-  label: The Decoder
+  label: The Decoder                           # 10 items
 
 verge_ai:
   url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
-  label: The Verge AI
+  label: The Verge AI                          # 10 items
 
 techcrunch_ai:
   url: https://techcrunch.com/category/artificial-intelligence/feed/
-  label: TechCrunch AI
+  label: TechCrunch AI                         # 20 items
 
-# Kept in catalog but not wired to any topic — too research-heavy / broad
+# Not wired to any topic — available if needed
 ars_technica:
   url: https://feeds.arstechnica.com/arstechnica/technology-lab
   label: Ars Technica
@@ -103,15 +192,3 @@ ars_technica:
 mit_tech_review:
   url: https://www.technologyreview.com/feed/
   label: MIT Tech Review
-
-# ── MMA / combat sports ──────────────────────────────────────────────────────
-
-ufc_news:
-  url: https://www.ufc.com/rss/news
-  label: UFC
-
-mmajunkie:
-  url: https://mmajunkie.usatoday.com/feed
-  label: MMA Junkie
-
-# DEAD — mma_fighting (https://www.mmafighting.com/rss/current) returns 404
