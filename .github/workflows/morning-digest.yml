@@ -1,11 +1,20 @@
 name: Morning digest
 
+# Automatic runs: cron-job.org POSTs to workflow_dispatch (see news-digest/README.md).
+# No GitHub schedule — avoids unreliable built-in cron timing.
 on:
-  schedule:
-    # Target 07:00 Australia/Brisbane (AEST = UTC+10, no DST).
-    # 21:00 UTC = 07:00 Brisbane (next day).
-    - cron: "0 21 * * *"
   workflow_dispatch:
+    inputs:
+      force_run:
+        description: Send digest now (skip 6–8 AM Brisbane check)
+        type: boolean
+        required: false
+        default: false
+      source:
+        description: Trigger source (cron-job, manual)
+        type: string
+        required: false
+        default: manual
 
 permissions:
   contents: write
@@ -19,20 +28,22 @@ jobs:
       - name: Check if digest should run now
         id: should_run
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "Manual run — always send digest."
+          echo "Trigger source: ${{ inputs.source }}"
+          if [ "${{ inputs.force_run }}" = "true" ]; then
+            echo "force_run enabled — sending digest."
             echo "run=true" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           HOUR=$(TZ=Australia/Brisbane date +%H)
           MIN=$(TZ=Australia/Brisbane date +%M)
           echo "Brisbane time: ${HOUR}:${MIN}"
-          # Only send on scheduled runs during the 6:00–8:59 AM Brisbane window.
+          # Only send during 6:00–8:59 AM Brisbane (cron-job.org should fire ~07:00).
           if [ "$HOUR" -ge 6 ] && [ "$HOUR" -le 8 ]; then
             echo "Within 6–8 AM Brisbane window — sending digest."
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
-            echo "Scheduled job fired outside 6–8 AM Brisbane (hour=$HOUR). Skipping digest."
+            echo "Outside 6–8 AM Brisbane window (hour=$HOUR). Skipping digest."
+            echo "To test anytime: re-run with force_run enabled."
             echo "run=false" >> "$GITHUB_OUTPUT"
           fi
 
@@ -50,7 +61,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           DIGEST_TIMEZONE: Australia/Brisbane
         run: python news-digest/digest.py
 

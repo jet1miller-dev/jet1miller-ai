@@ -619,7 +619,10 @@ def apply_ai_decisions(stories: list[Story], decisions: dict[str, dict[str, Any]
             continue
         if d.get("blurb"):
             s.blurb = d["blurb"]
+        if d.get("score") is not None:
+            s.score = float(d["score"])
         kept.append(s)
+    kept.sort(key=lambda s: s.score, reverse=True)
     return kept
 
 
