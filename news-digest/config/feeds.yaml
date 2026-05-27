@@ -1,9 +1,7 @@
 # Named RSS feeds — reference these in topics.yaml or paste full URLs directly.
 # Edit this file to add/remove sources; see README.md.
 #
-# URLs marked [VERIFY] should be opened in a browser before pushing.
-# They are correct to the best of current knowledge but smaller outlets
-# occasionally change feed paths without redirecting.
+# Last verified: 2026-05-27
 
 # ── AU news ─────────────────────────────────────────────────────────────────
 
@@ -16,8 +14,10 @@ abc_politics:
   label: ABC Politics
 
 abc_qld:
-  url: https://www.abc.net.au/news/feed/51120/rss.xml    # [VERIFY] ABC Queensland state feed
+  url: https://www.abc.net.au/news/feed/51120/rss.xml
   label: ABC Queensland
+
+# ── AU finance / macro ───────────────────────────────────────────────────────
 
 rba_media:
   url: https://www.rba.gov.au/rss/rss-cb-media-releases.xml
@@ -27,20 +27,13 @@ rba_speeches:
   url: https://www.rba.gov.au/rss/rss-cb-speeches.xml
   label: RBA Speeches
 
-# ── AU finance / macro ───────────────────────────────────────────────────────
-
-abs_economy:
-  url: https://www.abs.gov.au/rss.xml                    # [VERIFY] ABS statistical releases
-  label: ABS Economy
-
-ato_newsroom:
-  url: https://www.ato.gov.au/newsroom/rss               # [VERIFY] ATO media releases
-  label: ATO Newsroom
-
 macrobusiness:
   url: https://www.macrobusiness.com.au/feed/
   label: MacroBusiness
   # Note: opinion-heavy macro commentary — lower priority, use with care
+
+# DEAD — abs_economy (https://www.abs.gov.au/rss.xml) returns 404
+# DEAD — ato_newsroom (https://www.ato.gov.au/newsroom/rss) returns 404
 
 # ── AU property ──────────────────────────────────────────────────────────────
 
@@ -49,12 +42,8 @@ domain_news:
   label: Domain
 
 rea_property_news:
-  url: https://www.realestate.com.au/news/feed/          # [VERIFY] trailing slash required
+  url: https://www.realestate.com.au/news/feed/
   label: REA Group News
-
-reiq_news:
-  url: https://www.reiq.com/resources/feed               # [VERIFY] REIQ Queensland news
-  label: REIQ
 
 smart_property_investment:
   url: https://www.smartpropertyinvestment.com.au/feed
@@ -64,21 +53,11 @@ urban_developer:
   url: https://www.theurbandeveloper.com/articles/rss
   label: The Urban Developer
 
-property_council:
-  url: https://www.propertycouncil.com.au/rss            # [VERIFY]
-  label: Property Council AU
-
-hia_news:
-  url: https://hia.com.au/rss                            # [VERIFY]
-  label: HIA
-
-planning_qld:
-  url: https://www.planning.qld.gov.au/rss               # [VERIFY]
-  label: QLD Planning
-
-bcc_news:
-  url: https://www.brisbane.qld.gov.au/news/rss.xml      # [VERIFY]
-  label: Brisbane City Council
+# DEAD — reiq_news returns HTML not RSS
+# DEAD — property_council (403 blocked)
+# DEAD — hia_news (404)
+# DEAD — planning_qld (404)
+# DEAD — bcc_news (404)
 
 # ── AU politics / commentary ─────────────────────────────────────────────────
 
@@ -90,7 +69,6 @@ qld_gov_news:
   url: https://www.qld.gov.au/news/rss.xml
   label: QLD Government
 
-# Kept in catalog but not wired to any topic
 guardian_au:
   url: https://www.theguardian.com/australia-news/rss
   label: Guardian AU
@@ -101,9 +79,7 @@ reuters_business:
   url: https://feeds.reuters.com/reuters/businessNews
   label: Reuters
 
-ap_business:
-  url: https://feeds.apnews.com/apf-business             # [VERIFY] AP sometimes rotates feed paths
-  label: AP Business
+# DEAD — ap_business (https://feeds.apnews.com/apf-business) no connection
 
 # ── AI / tech ────────────────────────────────────────────────────────────────
 
@@ -138,6 +114,4 @@ mmajunkie:
   url: https://mmajunkie.usatoday.com/feed
   label: MMA Junkie
 
-mma_fighting:
-  url: https://www.mmafighting.com/rss/current           # [VERIFY]
-  label: MMA Fighting
+# DEAD — mma_fighting (https://www.mmafighting.com/rss/current) returns 404

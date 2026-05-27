@@ -39,10 +39,8 @@ topics:
       - rba_media
       - rba_speeches
       - abc_business
-      - abs_economy
     global_feeds:
       - reuters_business
-      - ap_business
     au_queries:
       - "RBA cash rate decision Australia"
       - "CPI inflation ABS Australia"
@@ -66,7 +64,6 @@ topics:
     regions: [au]
     au_feeds:
       - abc_business
-      - ato_newsroom
     global_feeds: []
     au_queries:
       - "Australian mortgage rate change banks"
@@ -96,13 +93,8 @@ topics:
     au_feeds:
       - domain_news
       - rea_property_news
-      - reiq_news
       - smart_property_investment
       - urban_developer
-      - property_council
-      - hia_news
-      - planning_qld
-      - bcc_news
     global_feeds: []
     au_queries:
       - "Brisbane SEQ property market prices"
@@ -197,7 +189,6 @@ topics:
     feeds:
       - ufc_news
       - mmajunkie
-      - mma_fighting
     queries:
       - "UFC fight announced ranked fighter"
       - "UFC main event card confirmed"
