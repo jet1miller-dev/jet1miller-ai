@@ -3,8 +3,8 @@ name: Morning digest
 on:
   schedule:
     # Target 07:00 Australia/Brisbane (GitHub may still trigger late/early on private repos)
-    - cron: "0 7 * * *"
-      timezone: Australia/Brisbane
+      # AEST = UTC+10 (no DST). 21:00 UTC = 07:00 Brisbane (next day).
+      cron: "0 21 * * *"
   workflow_dispatch:
 
 permissions:
