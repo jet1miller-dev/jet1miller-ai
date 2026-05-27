@@ -96,6 +96,7 @@ topics:
   - id: property
     name: "Property & Development"
     regions: [au]
+    au_max: 5
     au_feeds:
       - rea_property_news
       - smart_property_investment
@@ -131,7 +132,7 @@ topics:
 
   - id: ai
     name: AI
-    max_items: 3
+    max_items: 2
     feeds:
       - the_decoder
       - verge_ai
@@ -162,7 +163,7 @@ topics:
     subsections:
       au_national:
         label: National
-        max: 3
+        max: 1
         feeds:
           - abc_politics
           - abc_business
@@ -175,7 +176,7 @@ topics:
           - "Australian government policy legislation"
       au_qld:
         label: Queensland
-        max: 3
+        max: 1
         feeds:
           - qld_gov_news
           - abc_qld
@@ -188,6 +189,7 @@ topics:
       global_major:
         label: "Global (major only)"
         max: 2
+
         locale: global
         feeds: []
         queries:
@@ -215,7 +217,7 @@ topics:
 
   - id: ufc
     name: UFC / MMA
-    max_items: 4
+    max_items: 3
     feeds:
       - ufc_news
       - mmajunkie
