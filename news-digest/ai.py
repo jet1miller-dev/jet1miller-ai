@@ -9,7 +9,7 @@ from typing import Any
 
 from openai import OpenAI
 
-_MODEL = "anthropic/claude-haiku-latest"
+_MODEL = "google/gemini-2.5-flash-lite"
 _BASE_URL = "https://openrouter.ai/api/v1"
 
 _SYSTEM = """\
@@ -117,6 +117,8 @@ def friendly_error(exc: BaseException) -> str:
         return "Invalid OpenRouter API key — check OPENROUTER_API_KEY in GitHub Secrets"
     if "rate_limit" in lower or "429" in raw:
         return "OpenRouter rate limit — digest sent without AI blurbs"
+    if "not a valid model" in lower or "unknown model" in lower:
+        return f"OpenRouter model ID invalid ({_MODEL}) — check openrouter.ai/models (digest sent without AI blurbs)"
     if len(raw) > 120:
         return raw[:117] + "…"
     return raw or "unknown error"
