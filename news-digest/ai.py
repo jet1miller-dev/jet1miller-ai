@@ -9,7 +9,7 @@ from typing import Any
 
 from openai import OpenAI
 
-_MODEL = "anthropic/claude-3-5-haiku"
+_MODEL = "anthropic/claude-haiku-latest"
 _BASE_URL = "https://openrouter.ai/api/v1"
 
 _SYSTEM = """\
