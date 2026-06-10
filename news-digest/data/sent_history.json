@@ -1,264 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.abc.net.au/news/2026-05-27/tas-liberty-bell-bay-sale-update/106726106",
-      "title": "Breaking: Preferred bidder announced for troubled Liberty Bell Bay smelter",
-      "title_fp": "breakingpreferredbidderannouncedfortroubledlibertybellbaysmelter",
-      "sent_at": "2026-05-27T02:43:14.410195+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-05-27/headline-inflation-at-4-2-per-cent-in-april-2026/106726182",
-      "title": "Breaking: Headline inflation eases to 4.2 per cent in April as fuel prices fall",
-      "title_fp": "breakingheadlineinflationeasesto42percentinaprilasfuelpricesfall",
-      "sent_at": "2026-05-27T02:43:14.410195+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-05-27/bp-drops-chair-albert-manifold-over-serious-concerns/106725588",
-      "title": "BP removes chair over 'serious concerns' about conduct",
-      "title_fp": "bpremoveschairoverseriousconcernsaboutconduct",
-      "sent_at": "2026-05-27T02:43:14.410195+00:00"
-    },
-    {
-      "url": "https://www.realestate.com.au/news/rate-relief-for-homeowners-out-today/",
-      "title": "Rate relief for homeowners out today",
-      "title_fp": "ratereliefforhomeownersouttoday",
-      "sent_at": "2026-05-27T02:43:14.410195+00:00"
-    },
-    {
-      "url": "https://www.realestate.com.au/news/melbourne-investors-rethink-plans-after-negative-gearing-changes/",
-      "title": "Melbourne investors rethink plans after negative gearing changes",
-      "title_fp": "melbourneinvestorsrethinkplansafternegativegearingchanges",
-      "sent_at": "2026-05-27T02:43:14.410195+00:00"
-    },
-    {
-      "url": "https://www.realestate.com.au/news/inside-jennifer-lopez-25-million-hidden-hills-mansion/",
-      "title": "Inside Jennifer Lopez\u2019 $25 million Hidden Hills mansion",
-      "title_fp": "insidejenniferlopez25millionhiddenhillsmansion",
-      "sent_at": "2026-05-27T02:43:14.410195+00:00"
-    },
-    {
-      "url": "https://www.theverge.com/ai-artificial-intelligence/937801/pope-leo-xiv-magnifica-humanitas-ai-pangram",
-      "title": "Did the Pope use AI to write about the dangers of AI?",
-      "title_fp": "didthepopeuseaitowriteaboutthedangersofai",
-      "sent_at": "2026-05-27T02:43:14.410195+00:00"
-    },
-    {
-      "url": "https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/",
-      "title": "DuckDuckGo installs are up 30% as users reject being \u2018force-fed\u2019 Google\u2019s AI Search",
-      "title_fp": "duckduckgoinstallsareup30asusersrejectbeingforcefedgooglesaisearch",
-      "sent_at": "2026-05-27T02:43:14.410195+00:00"
-    },
-    {
-      "url": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/",
-      "title": "OpenRouter more than doubles valuation to $1.3B in a year",
-      "title_fp": "openroutermorethandoublesvaluationto13binayear",
-      "sent_at": "2026-05-27T02:43:14.410195+00:00"
-    },
-    {
-      "url": "https://theconversation.com/why-do-i-wake-up-so-tired-after-vivid-dreams-278885",
-      "title": "Why do I wake up so tired after vivid dreams?",
-      "title_fp": "whydoiwakeupsotiredaftervividdreams",
-      "sent_at": "2026-05-27T02:43:14.410195+00:00"
-    },
-    {
-      "url": "https://theconversation.com/politics-with-michelle-grattan-keith-wolahan-on-when-liberals-should-preference-one-nation-283771",
-      "title": "Politics with Michelle Grattan: Keith Wolahan on when Liberals should preference One Nation",
-      "title_fp": "politicswithmichellegrattankeithwolahanonwhenliberalsshouldpreferenceonenation",
-      "sent_at": "2026-05-27T02:43:14.410195+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-05-27/lord-howe-island-insect-boom-after-rodent-eradication/106723718",
-      "title": "Booming cockroach numbers welcome news on this 'paradise of creatures'",
-      "title_fp": "boomingcockroachnumberswelcomenewsonthisparadiseofcreatures",
-      "sent_at": "2026-05-27T02:43:14.410195+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-05-27/nasa-unveils-next-steps-to-build-permanent-moon-base/106725540",
-      "title": "NASA has revealed its plans for a permanent Moon base. Here's how it would work",
-      "title_fp": "nasahasrevealeditsplansforapermanentmoonbasehereshowitwouldwork",
-      "sent_at": "2026-05-27T02:43:14.410195+00:00"
-    },
-    {
-      "url": "https://www.ufc.com/news/conor-mcgregor-rematches-max-holloway-welterweight-main-event-ufc-329-live-paramount",
-      "title": "CONOR MCGREGOR REMATCHES MAX HOLLOWAY IN WELTERWEIGHT MAIN EVENT AT UFC 329 LIVE ON PARAMOUNT+",
-      "title_fp": "conormcgregorrematchesmaxhollowayinwelterweightmaineventatufc329liveonparamount",
-      "sent_at": "2026-05-27T02:43:14.410195+00:00"
-    },
-    {
-      "url": "https://www.ufc.com/news/road-to-ufc-season-5-results-scorecards-opening-rounds-day-2",
-      "title": "Road To UFC Results | Season 5 Opening Rounds: Day 2",
-      "title_fp": "roadtoufcresultsseason5openingroundsday2",
-      "sent_at": "2026-05-27T02:43:14.410195+00:00"
-    },
-    {
-      "url": "https://www.ufc.com/news/road-to-ufc-season-5-results-scorecards-opening-rounds-day-1",
-      "title": "Road To UFC Results | Season 5 Opening Rounds: Day 1",
-      "title_fp": "roadtoufcresultsseason5openingroundsday1",
-      "sent_at": "2026-05-27T02:43:14.410195+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-05-27/two-bidders-remain-for-whyalla-steelworks/106724890",
-      "title": "Two remaining Whyalla steelworks bidders announced, BlueScope retains last offer right",
-      "title_fp": "tworemainingwhyallasteelworksbiddersannouncedbluescoperetainslastofferright",
-      "sent_at": "2026-05-27T04:15:19.491903+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-05-27/wiradjuri-community-say-acerez-shelter-destruction-inexcusable/106722794",
-      "title": "'No excuse' for renewable company destroying Wiradjuri rock shelter",
-      "title_fp": "noexcuseforrenewablecompanydestroyingwiradjurirockshelter",
-      "sent_at": "2026-05-27T04:15:19.491903+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-05-27/tasmanian-scallop-season-affected-by-eleven-armed-seastar/106723166",
-      "title": "Hungry eleven-armed seastars making a meal of Tasmanian scallops",
-      "title_fp": "hungryelevenarmedseastarsmakingamealoftasmanianscallops",
-      "sent_at": "2026-05-27T04:15:19.491903+00:00"
-    },
-    {
-      "url": "https://www.realestate.com.au/news/sydney-postcard-belgravia-in-potts-point-set-for-launch/",
-      "title": "Sydney postcard: Belgravia in Potts Point set for launch",
-      "title_fp": "sydneypostcardbelgraviainpottspointsetforlaunch",
-      "sent_at": "2026-05-27T04:15:19.491903+00:00"
-    },
-    {
-      "url": "https://www.realestate.com.au/news/inflation-slows-from-three-year-high-as-government-cushions-households-from-fuel-costs/",
-      "title": "Inflation slows from three-year high as government cushions households from fuel costs",
-      "title_fp": "inflationslowsfromthreeyearhighasgovernmentcushionshouseholdsfromfuelcosts",
-      "sent_at": "2026-05-27T04:15:19.491903+00:00"
-    },
-    {
-      "url": "https://www.realestate.com.au/news/key-data-offers-relief-for-borrowers-as-reserve-bank-gets-reason-to-hold-rates/",
-      "title": "Key data offers relief for borrowers as Reserve Bank gets reason to hold rates",
-      "title_fp": "keydataoffersreliefforborrowersasreservebankgetsreasontoholdrates",
-      "sent_at": "2026-05-27T04:15:19.491903+00:00"
-    },
-    {
-      "url": "https://the-decoder.com/claude-mythos-reportedly-solves-openais-landmark-erdos-problem-with-a-cute-simple-proof/",
-      "title": "Claude Mythos reportedly solves OpenAI's landmark Erd\u0151s problem with a \"cute, simple proof\"",
-      "title_fp": "claudemythosreportedlysolvesopenaislandmarkerdsproblemwithacutesimpleproof",
-      "sent_at": "2026-05-27T04:15:19.491903+00:00"
-    },
-    {
-      "url": "https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/",
-      "title": "This startup is betting India\u2019s gig economy can train the world\u2019s robots",
-      "title_fp": "thisstartupisbettingindiasgigeconomycantraintheworldsrobots",
-      "sent_at": "2026-05-27T04:15:19.491903+00:00"
-    },
-    {
-      "url": "https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music/",
-      "title": "Universal Music Group and TikTok renew agreement to combat unauthorized AI music",
-      "title_fp": "universalmusicgroupandtiktokrenewagreementtocombatunauthorizedaimusic",
-      "sent_at": "2026-05-27T04:15:19.491903+00:00"
-    },
-    {
-      "url": "https://theconversation.com/metal-fans-love-rebels-until-theyre-queer-caleb-shomos-coming-out-exposes-a-deep-hypocrisy-283774",
-      "title": "Metal fans love rebels \u2013 until they\u2019re queer. Caleb Shomo\u2019s coming out exposes a deep hypocrisy",
-      "title_fp": "metalfansloverebelsuntiltheyrequeercalebshomoscomingoutexposesadeephypocrisy",
-      "sent_at": "2026-05-27T04:15:19.491903+00:00"
-    },
-    {
-      "url": "https://theconversation.com/special-poll-has-labor-barely-winning-majority-as-one-nation-continues-to-gain-283584",
-      "title": "Special poll has Labor barely winning majority as One Nation continues to gain",
-      "title_fp": "specialpollhaslaborbarelywinningmajorityasonenationcontinuestogain",
-      "sent_at": "2026-05-27T04:15:19.491903+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-05-27/abc-justin-stevens-resigns-as-director-of-news/106728188",
-      "title": "Breaking: ABC's Justin Stevens resigns as director of news",
-      "title_fp": "breakingabcsjustinstevensresignsasdirectorofnews",
-      "sent_at": "2026-05-27T04:15:19.491903+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-05-27/bom-radar-tennant-creek-nt/106726176",
-      "title": "'About bloody time': BOM selects new NT radar site 11 years after closure",
-      "title_fp": "aboutbloodytimebomselectsnewntradarsite11yearsafterclosure",
-      "sent_at": "2026-05-27T04:15:19.491903+00:00"
-    },
-    {
-      "url": "https://www.ufc.com/news/examining-lightweight-landscape-ahead-ufc-freedom-250",
-      "title": "Examining the Lightweight Landscape Ahead of UFC Freedom 250",
-      "title_fp": "examiningthelightweightlandscapeaheadofufcfreedom250",
-      "sent_at": "2026-05-27T04:15:19.491903+00:00"
-    },
-    {
-      "url": "https://www.ufc.com/news/lance-gibson-jr-destiny-fulfilled",
-      "title": "Lance Gibson Jr. | Destiny Fulfilled",
-      "title_fp": "lancegibsonjrdestinyfulfilled",
-      "sent_at": "2026-05-27T04:15:19.491903+00:00"
-    },
-    {
-      "url": "https://www.ufc.com/news/fighters-rise-ufc-macau-asakura-haddon-tsuruya",
-      "title": "Fighters on the Rise | UFC Macau",
-      "title_fp": "fightersontheriseufcmacau",
-      "sent_at": "2026-05-27T04:15:19.491903+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/rural/2026-05-27/grants-allocated-for-soybean-and-rice-trials-in-mossman/106723396",
-      "title": "With their sugar industry reaching a bitter end, these farmers are now banking on beans",
-      "title_fp": "withtheirsugarindustryreachingabitterendthesefarmersarenowbankingonbeans",
-      "sent_at": "2026-05-27T04:25:52.288440+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-05-27/bonorong-documentary-the-animal-sanctuary-tasmania/106719186",
-      "title": "Tasmania's Bonorong Wildlife Sanctuary to star in docuseries",
-      "title_fp": "tasmaniasbonorongwildlifesanctuarytostarindocuseries",
-      "sent_at": "2026-05-27T04:25:52.288440+00:00"
-    },
-    {
-      "url": "https://www.realestate.com.au/news/property-renovators-squeezed-by-soaring-onsite-crime-and-new-tax-changes/",
-      "title": "Property renovators squeezed by soaring on-site crime and new tax changes",
-      "title_fp": "propertyrenovatorssqueezedbysoaringonsitecrimeandnewtaxchanges",
-      "sent_at": "2026-05-27T04:25:52.288440+00:00"
-    },
-    {
-      "url": "https://www.realestate.com.au/news/one-in-three-to-cut-staff-cost-crunch-threatens-tradies-housing-targets/",
-      "title": "\u2018One in three\u2019 to cut staff: cost crunch threatens tradies, housing targets",
-      "title_fp": "oneinthreetocutstaffcostcrunchthreatenstradieshousingtargets",
-      "sent_at": "2026-05-27T04:25:52.288440+00:00"
-    },
-    {
-      "url": "https://www.realestate.com.au/news/10-unsung-hotspots-where-small-land-estates-offer-a-rare-chance-to-build/",
-      "title": "10 unsung hotspots where small land estates offer a rare chance to build",
-      "title_fp": "10unsunghotspotswheresmalllandestatesofferararechancetobuild",
-      "sent_at": "2026-05-27T04:25:52.288440+00:00"
-    },
-    {
-      "url": "https://the-decoder.com/china-reportedly-now-requires-top-ai-researchers-to-get-permission-before-leaving-the-country/",
-      "title": "China reportedly now requires top AI researchers to get permission before leaving the country",
-      "title_fp": "chinareportedlynowrequirestopairesearcherstogetpermissionbeforeleavingthecountry",
-      "sent_at": "2026-05-27T04:25:52.288440+00:00"
-    },
-    {
-      "url": "https://www.ufc.com/news/joseph-larcinese-expect-someone-hunting-finish-road-to-ufc",
-      "title": "Joseph Larcinese: \u2018Expect Someone Hunting for a Finish\u2019",
-      "title_fp": "josephlarcineseexpectsomeonehuntingforafinish",
-      "sent_at": "2026-05-27T04:25:52.288440+00:00"
-    },
-    {
-      "url": "https://www.ufc.com/news/fight-by-fight-preview-ufc-song-figueiredo-macau",
-      "title": "Fight By Fight Preview | UFC Macau",
-      "title_fp": "fightbyfightpreviewufcmacau",
-      "sent_at": "2026-05-27T04:25:52.288440+00:00"
-    },
-    {
-      "url": "https://www.macrobusiness.com.au/2026/05/why-the-rba-will-remain-on-hold-in-june/",
-      "title": "Why the RBA will remain on hold in June",
-      "title_fp": "whytherbawillremainonholdinjune",
-      "sent_at": "2026-05-27T05:08:08.792404+00:00"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/2026/may/27/labor-budget-australia-economy-cgt-capital-gains-tax-changes-paul-keating-reponse",
-      "title": "Paul Keating urges Labor to stick with capital gains tax overhaul and avoid exemptions that would hurt economy",
-      "title_fp": "paulkeatingurgeslabortostickwithcapitalgainstaxoverhaulandavoidexemptionsthatwouldhurteconomy",
-      "sent_at": "2026-05-27T05:08:08.792404+00:00"
-    },
-    {
-      "url": "https://combatpress.com/2026/05/conor-mcgregor-vs-max-holloway-2-to-headline-ufc-329-on-jul-11/",
-      "title": "Conor McGregor vs. Max Holloway 2 to Headline UFC 329 on Jul. 11",
-      "title_fp": "conormcgregorvsmaxholloway2toheadlineufc329onjul11",
-      "sent_at": "2026-05-27T05:08:08.792404+00:00"
-    },
-    {
       "url": "https://www.abc.net.au/news/2026-05-28/qld-ageing-pipes-worsening-lgaq-report/106723324",
       "title": "A pipe bursts every 73 minutes in Qld, report warns situation set to worsen",
       "title_fp": "apipeburstsevery73minutesinqldreportwarnssituationsettoworsen",
@@ -1049,6 +791,42 @@
       "title": "How one suburb\u2019s explosive growth is solving Australia\u2019s housing crisis",
       "title_fp": "howonesuburbsexplosivegrowthissolvingaustraliashousingcrisis",
       "sent_at": "2026-06-09T21:01:17.034144+00:00"
+    },
+    {
+      "url": "https://www.macrobusiness.com.au/2026/06/will-the-budgets-tax-changes-help-or-hinder-housing-supply/",
+      "title": "Will the budget\u2019s tax changes help or hinder housing supply?",
+      "title_fp": "willthebudgetstaxchangeshelporhinderhousingsupply",
+      "sent_at": "2026-06-10T21:01:23.847729+00:00"
+    },
+    {
+      "url": "https://the-decoder.com/googles-new-open-model-diffusiongemma-generates-text-from-noise-instead-of-word-by-word/",
+      "title": "Google's new open model DiffusionGemma generates text from noise instead of word by word",
+      "title_fp": "googlesnewopenmodeldiffusiongemmageneratestextfromnoiseinsteadofwordbyword",
+      "sent_at": "2026-06-10T21:01:23.847729+00:00"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/10/fresh-off-bond-sale-amazon-borrows-17-5-billion-from-banks-as-ai-spending-continues/",
+      "title": "Fresh off bond sale, Amazon borrows $17.5B from banks as AI spending continues",
+      "title_fp": "freshoffbondsaleamazonborrows175bfrombanksasaispendingcontinues",
+      "sent_at": "2026-06-10T21:01:23.847729+00:00"
+    },
+    {
+      "url": "https://www.ufc.com/news/main-event-spotlight-topuria-gaethje-freedom-250",
+      "title": "Main Event Spotlight | Ilia Topuria vs Justin Gaethje | UFC Freedom 250",
+      "title_fp": "maineventspotlightiliatopuriavsjustingaethjeufcfreedom250",
+      "sent_at": "2026-06-10T21:01:23.847729+00:00"
+    },
+    {
+      "url": "https://www.sherdog.com/news/news/Islam-Makhachev-shares-his-prediction-for-UFC-White-House-main-event-201474",
+      "title": "Islam Makhachev shares his prediction for UFC White House main event",
+      "title_fp": "islammakhachevshareshispredictionforufcwhitehousemainevent",
+      "sent_at": "2026-06-10T21:01:23.847729+00:00"
+    },
+    {
+      "url": "https://www.sherdog.com/news/news/Diego-Lopes-details-why-he-is-backing-Justin-Gaethje-to-beat-Ilia-Topuria-201480",
+      "title": "Diego Lopes details why he is backing Justin Gaethje to beat Ilia Topuria",
+      "title_fp": "diegolopesdetailswhyheisbackingjustingaethjetobeatiliatopuria",
+      "sent_at": "2026-06-10T21:01:23.847729+00:00"
     }
   ]
 }
