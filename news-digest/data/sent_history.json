@@ -1,84 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.abc.net.au/news/2026-05-28/qld-ageing-pipes-worsening-lgaq-report/106723324",
-      "title": "A pipe bursts every 73 minutes in Qld, report warns situation set to worsen",
-      "title_fp": "apipeburstsevery73minutesinqldreportwarnssituationsettoworsen",
-      "sent_at": "2026-05-27T21:01:47.786363+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-05-28/labor-cgt-challenge-deepens-as-biotech-sector-raises-alarm/106729796",
-      "title": "Labor's CGT challenge deepens as biotech sector raises alarm",
-      "title_fp": "laborscgtchallengedeepensasbiotechsectorraisesalarm",
-      "sent_at": "2026-05-27T21:01:47.786363+00:00"
-    },
-    {
-      "url": "https://techcrunch.com/2026/05/27/in-more-good-news-for-amazon-snowflake-signs-6b-deal-with-aws-for-ai-cpu-chips/",
-      "title": "In more good news for Amazon, Snowflake signs $6B deal with AWS for AI CPU chips",
-      "title_fp": "inmoregoodnewsforamazonsnowflakesigns6bdealwithawsforaicpuchips",
-      "sent_at": "2026-05-27T21:01:47.786363+00:00"
-    },
-    {
-      "url": "https://www.cnbc.com/2026/05/28/dell-q1-earnings-report-2027.html",
-      "title": "Dell shares jump 22% after server maker reports fastest sales growth since return to public market in 2018",
-      "title_fp": "dellsharesjump22afterservermakerreportsfastestsalesgrowthsincereturntopublicmarketin2018",
-      "sent_at": "2026-05-28T21:01:28.476981+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-05-29/lismore-ecovillage-affordable-housing-development-stalls/106665756",
-      "title": "Man devastated to lose home deposit in 'eco village' development",
-      "title_fp": "mandevastatedtolosehomedepositinecovillagedevelopment",
-      "sent_at": "2026-05-28T21:01:28.476981+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-05-29/wine-retailer-endeavour-group-puts-key-vineyards-up-for-sale/106733528",
-      "title": "Major wine retailer puts vineyards up for sale amid industry-wide squeeze",
-      "title_fp": "majorwineretailerputsvineyardsupforsaleamidindustrywidesqueeze",
-      "sent_at": "2026-05-28T21:01:28.476981+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-05-29/nsw-officeworks-to-offshore-hundreds-of-jobs/106733660",
-      "title": "Talent \u2018vacuum\u2019 warning as Officeworks moves jobs overseas",
-      "title_fp": "talentvacuumwarningasofficeworksmovesjobsoverseas",
-      "sent_at": "2026-05-28T21:01:28.476981+00:00"
-    },
-    {
-      "url": "https://www.cnbc.com/2026/05/28/okta-okta-earnings-q1-2027.html",
-      "title": "Okta tops first-quarter results on agentic AI demand",
-      "title_fp": "oktatopsfirstquarterresultsonagenticaidemand",
-      "sent_at": "2026-05-28T21:01:28.476981+00:00"
-    },
-    {
-      "url": "https://www.theverge.com/tech/939273/microsoft-365-copilot-redesign",
-      "title": "Microsoft 365 Copilot gets a speed boost and cleaner design",
-      "title_fp": "microsoft365copilotgetsaspeedboostandcleanerdesign",
-      "sent_at": "2026-05-28T21:01:28.476981+00:00"
-    },
-    {
-      "url": "https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/",
-      "title": "Asana acquires no-code agent-builder Stack AI",
-      "title_fp": "asanaacquiresnocodeagentbuilderstackai",
-      "sent_at": "2026-05-28T21:01:28.476981+00:00"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/live/2026/may/29/australia-news-live-senate-estimates-capital-gains-tax-anthony-albanese-angus-taylor-housing-weather-floods-ntwnfb",
-      "title": "Australia news live: Asio warns politicians that internet-connected cars could be bugged; flood warnings after wild weather",
-      "title_fp": "australianewsliveasiowarnspoliticiansthatinternetconnectedcarscouldbebuggedfloodwarningsafterwildwea",
-      "sent_at": "2026-05-28T21:01:28.476981+00:00"
-    },
-    {
-      "url": "https://www.ufc.com/news/ufc-fight-night-song-vs-figueiredo-results-highlights-main-card-winners-interviews-macau",
-      "title": "Main Card Results | UFC Macau",
-      "title_fp": "maincardresultsufcmacau",
-      "sent_at": "2026-05-28T21:01:28.476981+00:00"
-    },
-    {
-      "url": "https://combatpress.com/2026/05/ufc-debuts-in-belgrade-on-aug-1-with-uros-medic-facing-daniel-rodriguez/",
-      "title": "UFC Debuts in Belgrade on Aug. 1 With Uros Medic Facing Daniel Rodriguez",
-      "title_fp": "ufcdebutsinbelgradeonaug1withurosmedicfacingdanielrodriguez",
-      "sent_at": "2026-05-28T21:01:28.476981+00:00"
-    },
-    {
       "url": "https://www.abc.net.au/news/2026-05-29/taylors-wines-threatens-to-move-overseas-tax-changes-sa/106736510",
       "title": "Major winemaker considers moving business overseas if tax changes go through",
       "title_fp": "majorwinemakerconsidersmovingbusinessoverseasiftaxchangesgothrough",
@@ -827,6 +749,12 @@
       "title": "Diego Lopes details why he is backing Justin Gaethje to beat Ilia Topuria",
       "title_fp": "diegolopesdetailswhyheisbackingjustingaethjetobeatiliatopuria",
       "sent_at": "2026-06-10T21:01:23.847729+00:00"
+    },
+    {
+      "url": "https://www.investing.com/news/stock-market-news/sp-global-ratings-upgrades-nvidia-to-aa-on-explosive-artificial-intelligence-dema-4738414",
+      "title": "S&P Global Ratings upgrades Nvidia to AA on explosive AI demand",
+      "title_fp": "spglobalratingsupgradesnvidiatoaaonexplosiveaidemand",
+      "sent_at": "2026-06-11T21:01:35.752967+00:00"
     }
   ]
 }
