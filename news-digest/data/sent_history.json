@@ -1,60 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.cnbc.com/2026/06/02/jensen-huang-nvidia-marvell-technology-trillion-dollar-ai.html",
-      "title": "Marvell stock soars 32% as Nvidia's Huang says it could be the next trillion-dollar company",
-      "title_fp": "marvellstocksoars32asnvidiashuangsaysitcouldbethenexttrilliondollarcompany",
-      "sent_at": "2026-06-02T21:01:26.331330+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-06-03/flat-pack-homes-hoped-to-help-quilpie-housing-shortage/106723268",
-      "title": "'Flat-pack' homes hoped to save country towns from 'domino effect'",
-      "title_fp": "flatpackhomeshopedtosavecountrytownsfromdominoeffect",
-      "sent_at": "2026-06-02T21:01:26.331330+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/06/03/2-asx-shares-with-dividend-yields-above-8-8/",
-      "title": "2 ASX shares with dividend yields above 8%",
-      "title_fp": "2asxshareswithdividendyieldsabove8",
-      "sent_at": "2026-06-02T21:01:26.331330+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/06/03/5-things-to-watch-on-the-asx-200-on-wednesday-03-june-2026/",
-      "title": "5 things to watch on the ASX 200 on Wednesday",
-      "title_fp": "5thingstowatchontheasx200onwednesday",
-      "sent_at": "2026-06-02T21:01:26.331330+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/06/03/these-asx-stocks-have-hit-the-ground-running-in-june-can-they-keep-rising/",
-      "title": "These ASX stocks have hit the ground running in June \u2013 can they keep rising?",
-      "title_fp": "theseasxstockshavehitthegroundrunninginjunecantheykeeprising",
-      "sent_at": "2026-06-02T21:01:26.331330+00:00"
-    },
-    {
-      "url": "https://www.brisbanetimes.com.au/national/australia-news-live-ai-data-centre-boom-could-drive-up-electricity-prices-climate-advocates-warn-unions-government-back-minimum-wage-increase-as-business-groups-warn-of-high-costs-20260603-p603ck.html?ref=rss",
-      "title": "Australia news LIVE: AI data centre boom could drive up electricity prices, climate advocates warn; Unions, government back minimum wage increase as business groups warn of high costs",
-      "title_fp": "australianewsliveaidatacentreboomcoulddriveupelectricitypricesclimateadvocateswarnunionsgovernmentba",
-      "sent_at": "2026-06-02T21:01:26.331330+00:00"
-    },
-    {
-      "url": "https://www.brisbanetimes.com.au/business/markets/asx-set-to-rise-wall-street-gets-ai-boost-20260603-p603c1.html?ref=rss",
-      "title": "ASX set to rise, Wall Street gets AI boost",
-      "title_fp": "asxsettorisewallstreetgetsaiboost",
-      "sent_at": "2026-06-02T21:01:26.331330+00:00"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/live/2026/jun/03/politics-live-australia-aukus-submarines-pauline-hanson-anthony-albanese-angus-taylor-question-time-senate-estimates-labor-one-nation-coaliton-ntwnfb",
-      "title": "Politics live: Australia always preferred secondhand Aukus submarines, defence secretary says",
-      "title_fp": "politicsliveaustraliaalwayspreferredsecondhandaukussubmarinesdefencesecretarysays",
-      "sent_at": "2026-06-02T21:01:26.331330+00:00"
-    },
-    {
-      "url": "https://www.lowkickmma.com/champion-alex-pereira-lands-role-in-onslaught/",
-      "title": "Alex Pereira Set for Hollywood Debut as UFC Champion Lands Role in \u2018Onslaught\u2019",
-      "title_fp": "alexpereirasetforhollywooddebutasufcchampionlandsroleinonslaught",
-      "sent_at": "2026-06-02T21:01:26.331330+00:00"
-    },
-    {
       "url": "https://www.abc.net.au/news/2026-06-04/australia-s-economic-slowdown-is-just-beginning-economists-warn/106756668",
       "title": "Australia's economic slowdown is just beginning, experts warn",
       "title_fp": "australiaseconomicslowdownisjustbeginningexpertswarn",
@@ -665,6 +611,24 @@
       "title": "Justin Gaethje Ends Ilia Topuria\u2019s Reign at UFC Freedom 250: Arman Tsarukyan, Conor McGregor, Islam Makhachev, Jake Paul, and Others React",
       "title_fp": "justingaethjeendsiliatopuriasreignatufcfreedom250armantsarukyanconormcgregorislammakhachevjakepaulan",
       "sent_at": "2026-06-15T21:03:50.641646+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-06-17/queensland-sets-recycling-target-of-65pc-by-2035/106805094",
+      "title": "Queensland sets 65 pc recycling target as waste outstrips growth",
+      "title_fp": "queenslandsets65pcrecyclingtargetaswasteoutstripsgrowth",
+      "sent_at": "2026-06-16T21:01:31.788854+00:00"
+    },
+    {
+      "url": "https://the-decoder.com/microsofts-copilot-cowork-moves-to-usage-based-billing-and-may-tap-deepseek/",
+      "title": "Microsoft's Copilot Cowork moves to usage-based billing and may tap DeepSeek",
+      "title_fp": "microsoftscopilotcoworkmovestousagebasedbillingandmaytapdeepseek",
+      "sent_at": "2026-06-16T21:01:31.788854+00:00"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/live/2026/jun/17/australia-news-live-victoria-marines-weapons-pauline-hanson-one-nation-national-press-club-labor-childcare-medicare-anthony-albanese-ntwnfb",
+      "title": "Australia news live: US marines plan permanent weapons stockpile in Victoria; Pauline Hanson to address National Press Club",
+      "title_fp": "australianewsliveusmarinesplanpermanentweaponsstockpileinvictoriapaulinehansontoaddressnationalpress",
+      "sent_at": "2026-06-16T21:01:31.788854+00:00"
     }
   ]
 }
