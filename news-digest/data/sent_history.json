@@ -1,144 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.abc.net.au/news/2026-06-04/australia-s-economic-slowdown-is-just-beginning-economists-warn/106756668",
-      "title": "Australia's economic slowdown is just beginning, experts warn",
-      "title_fp": "australiaseconomicslowdownisjustbeginningexpertswarn",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-06-04/sportsbet-owner-flutter-expands-from-gambling-to-rewards-club/106752820",
-      "title": "Sportsbet owner expands from gambling into less-regulated 'rewards club'",
-      "title_fp": "sportsbetownerexpandsfromgamblingintolessregulatedrewardsclub",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-06-04/negative-equity-5-per-cent-deposit-scheme-house-prices-drop/106753812",
-      "title": "Why some home owners are at risk of slipping into negative equity",
-      "title_fp": "whysomehomeownersareatriskofslippingintonegativeequity",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-06-04/deloitte-report-ai-jobs-employment-hiring/106751154",
-      "title": "Economic report says 82 occupations have been 'AI-disrupted'",
-      "title_fp": "economicreportsays82occupationshavebeenaidisrupted",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html",
-      "title": "SpaceX targets $135 IPO price at valuation of $1.77 trillion",
-      "title_fp": "spacextargets135ipopriceatvaluationof177trillion",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://www.marketwatch.com/story/stocks-take-a-breather-on-wednesday-as-torrid-rally-cools-putting-potentially-historic-s-p-500-winning-streak-in-jeopardy-d0779c2e?mod=mw_rss_topstories",
-      "title": "Stocks take a breather on Wednesday as torrid rally cools \u2014 putting potentially historic S&P 500 winning streak in jeopardy",
-      "title_fp": "stockstakeabreatheronwednesdayastorridrallycoolsputtingpotentiallyhistoricsp500winningstreakinjeopar",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://www.marketwatch.com/story/the-6-solution-is-gone-how-overcrowded-ai-powered-trading-has-erased-investors-advantage-635882bd?mod=mw_rss_topstories",
-      "title": "The 6% solution is gone: How overcrowded AI-powered trading has erased investors\u2019 advantage",
-      "title_fp": "the6solutionisgonehowovercrowdedaipoweredtradinghaserasedinvestorsadvantage",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/06/04/which-defensive-shares-are-outperforming-the-asx-200/",
-      "title": "Which defensive shares are outperforming the ASX 200",
-      "title_fp": "whichdefensivesharesareoutperformingtheasx200",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/06/04/5-things-to-watch-on-the-asx-200-on-thursday-4-june-2026/",
-      "title": "5 things to watch on the ASX 200 on Thursday",
-      "title_fp": "5thingstowatchontheasx200onthursday",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/06/04/tpg-telecom-just-raised-its-dividend-heres-what-that-means-for-income-investors/",
-      "title": "TPG Telecom just raised its dividend. Here's what that means for income investors",
-      "title_fp": "tpgtelecomjustraiseditsdividendhereswhatthatmeansforincomeinvestors",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/06/04/droneshield-shares-slump-18-in-a-month-has-the-asx-defence-stock-finally-lost-steam/",
-      "title": "DroneShield shares slump 18% in a month: Has the ASX defence stock finally lost steam?",
-      "title_fp": "droneshieldsharesslump18inamonthhastheasxdefencestockfinallyloststeam",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://www.brisbanetimes.com.au/sport/tennis/sabalenka-stunned-at-french-open-20260604-p603qz.html?ref=rss",
-      "title": "Sabalenka stunned at French Open",
-      "title_fp": "sabalenkastunnedatfrenchopen",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://www.brisbanetimes.com.au/national/victoria/the-christmas-day-text-that-got-former-cfmeu-boss-john-setka-charged-20260603-p603p9.html?ref=rss",
-      "title": "The Christmas Day text that got former CFMEU boss John Setka charged",
-      "title_fp": "thechristmasdaytextthatgotformercfmeubossjohnsetkacharged",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://www.brisbanetimes.com.au/national/australia-news-live-one-nation-support-grows-among-women-according-to-polls-trump-confirms-fiery-expletive-laden-call-with-netanyahu-20260604-p603qv.html?ref=rss",
-      "title": "Australia news LIVE: One Nation support grows among women, according to polls; Trump confirms fiery, expletive-laden call with Netanyahu",
-      "title_fp": "australianewsliveonenationsupportgrowsamongwomenaccordingtopollstrumpconfirmsfieryexpletiveladencall",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://www.brisbanetimes.com.au/environment/weather/national-weather-forecast-for-thursday-june-4-20260604-p603r5.html?ref=rss",
-      "title": "National weather forecast for Thursday June 4",
-      "title_fp": "nationalweatherforecastforthursdayjune4",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://the-decoder.com/google-deepminds-gemma-4-12b-squeezes-multimodal-ai-onto-a-laptop-with-just-16-gb-of-ram/",
-      "title": "Google Deepmind's Gemma 4 12B squeezes multimodal AI onto a laptop with just 16 GB of RAM",
-      "title_fp": "googledeepmindsgemma412bsqueezesmultimodalaiontoalaptopwithjust16gbofram",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal/",
-      "title": "Alphabet\u2019s record-breaking $85B raise for Google\u2019s AI business is a helluva good signal",
-      "title_fp": "alphabetsrecordbreaking85braiseforgooglesaibusinessisahelluvagoodsignal",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/live/2026/jun/04/australia-politics-live-capital-gains-tax-property-prices-economy-budget-jim-chalmers-anthony-albanese-angus-taylor-pauline-hanson-senate-estimates-question-time-ntwnfb",
-      "title": "Australia politics live: bank expects home price reduction from budget to be more than twice government forecast",
-      "title_fp": "australiapoliticslivebankexpectshomepricereductionfrombudgettobemorethantwicegovernmentforecast",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-06-04/ukrainian-mental-health-specialists-turn-to-regional-town/106736684",
-      "title": "Ukrainian psychiatrists travel to NSW refugee hotspot for trauma training",
-      "title_fp": "ukrainianpsychiatriststraveltonswrefugeehotspotfortraumatraining",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE43dVphZUVEZy1rQ0VnS0g1OEpsbjEzb1lrOEczTzR1eS1oY24tNHZmN3FRZFVVa2lIZnBMTl9lYjRsQWpfXzRUb0NrLWxaREZBVldfM0Naa1dvUWI3d2lRSUxzbHdFdUR5TG1JenQ4VDh5R3JkQVZJbw",
-      "title": "Ford government embarks on extended 21-week break, won\u2019t return until late October - Global News",
-      "title_fp": "fordgovernmentembarksonextended21weekbreakwontreturnuntillateoctoberglobalnews",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://www.lowkickmma.com/ufc-champ-explains-why-the-ufc-will-no-longer-sign-fighters-from-dagestan/",
-      "title": "UFC Champ Explains Why The UFC Will No Longer Sign Fighters From Dagestan",
-      "title_fp": "ufcchampexplainswhytheufcwillnolongersignfightersfromdagestan",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://www.sherdog.com/news/news/Former-UFC-champs-to-clash-in-RAFs-international-debut-201426",
-      "title": "Former UFC champs to clash in RAF\u2019s international debut",
-      "title_fp": "formerufcchampstoclashinrafsinternationaldebut",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
-      "url": "https://www.lowkickmma.com/muhammad-mokaev-i-beat-joshua-van-10-10-times/",
-      "title": "Muhammad Mokaev Makes Bold Claim: \u2018I Beat Joshua Van 10/10 Times\u2019",
-      "title_fp": "muhammadmokaevmakesboldclaimibeatjoshuavan1010times",
-      "sent_at": "2026-06-03T21:01:24.607186+00:00"
-    },
-    {
       "url": "https://www.fool.com.au/2026/06/05/why-telstra-and-these-defensive-asx-dividend-shares-could-be-top-buys/",
       "title": "Why Telstra and these defensive ASX dividend shares could be top buys",
       "title_fp": "whytelstraandthesedefensiveasxdividendsharescouldbetopbuys",
@@ -629,6 +491,24 @@
       "title": "Australia news live: US marines plan permanent weapons stockpile in Victoria; Pauline Hanson to address National Press Club",
       "title_fp": "australianewsliveusmarinesplanpermanentweaponsstockpileinvictoriapaulinehansontoaddressnationalpress",
       "sent_at": "2026-06-16T21:01:31.788854+00:00"
+    },
+    {
+      "url": "https://www.lowkickmma.com/breaking-islam-makhachevs-ufc-330-fight-announced/",
+      "title": "BREAKING: Islam Makhachev\u2019s UFC 330 Fight Announced",
+      "title_fp": "breakingislammakhachevsufc330fightannounced",
+      "sent_at": "2026-06-17T21:01:34.030504+00:00"
+    },
+    {
+      "url": "https://www.sherdog.com/news/news/Two-title-fights-official-for-UFC-330-in-Philadelphia-201562",
+      "title": "Two title fights official for UFC 330 in Philadelphia",
+      "title_fp": "twotitlefightsofficialforufc330inphiladelphia",
+      "sent_at": "2026-06-17T21:01:34.030504+00:00"
+    },
+    {
+      "url": "https://www.ufc.com/news/dana-white-announces-two-title-fights-ufcs-return-philadelphia",
+      "title": "Dana White Announces Two Title Fights For UFC's Return To Philadelphia",
+      "title_fp": "danawhiteannouncestwotitlefightsforufcsreturntophiladelphia",
+      "sent_at": "2026-06-17T21:01:34.030504+00:00"
     }
   ]
 }
