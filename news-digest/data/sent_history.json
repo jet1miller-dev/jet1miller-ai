@@ -1,54 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.fool.com.au/2026/06/05/why-telstra-and-these-defensive-asx-dividend-shares-could-be-top-buys/",
-      "title": "Why Telstra and these defensive ASX dividend shares could be top buys",
-      "title_fp": "whytelstraandthesedefensiveasxdividendsharescouldbetopbuys",
-      "sent_at": "2026-06-04T21:01:17.963190+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/06/05/how-much-could-investors-profit-off-these-undervalued-asx-200-shares-with-a-10000-investment/",
-      "title": "How much could investors profit off these undervalued ASX 200 shares with a $10,000 investment?",
-      "title_fp": "howmuchcouldinvestorsprofitofftheseundervaluedasx200shareswitha10000investment",
-      "sent_at": "2026-06-04T21:01:17.963190+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/06/05/can-these-asx-shares-hitting-52-week-highs-keep-rising/",
-      "title": "Can these ASX shares hitting 52-week highs keep rising?",
-      "title_fp": "cantheseasxshareshitting52weekhighskeeprising",
-      "sent_at": "2026-06-04T21:01:17.963190+00:00"
-    },
-    {
-      "url": "https://www.brisbanetimes.com.au/business/markets/asx-set-to-rise-as-oil-prices-slide-ai-stocks-slump-20260605-p60457.html?ref=rss",
-      "title": "ASX set to rise as Wall Street rebounds on sliding oil prices",
-      "title_fp": "asxsettoriseaswallstreetreboundsonslidingoilprices",
-      "sent_at": "2026-06-04T21:01:17.963190+00:00"
-    },
-    {
-      "url": "https://www.brisbanetimes.com.au/business/the-economy/businesses-say-higher-wages-will-lead-to-higher-prices-be-suspicious-20260602-p6039r.html?ref=rss",
-      "title": "Businesses say higher wages will lead to higher prices. Be suspicious",
-      "title_fp": "businessessayhigherwageswillleadtohigherpricesbesuspicious",
-      "sent_at": "2026-06-04T21:01:17.963190+00:00"
-    },
-    {
-      "url": "https://techcrunch.com/2026/06/04/apple-approves-poke-as-the-first-ai-agent-on-its-messages-for-business-platform/",
-      "title": "Apple approves Poke as the first AI agent on its Messages for Business platform",
-      "title_fp": "appleapprovespokeasthefirstaiagentonitsmessagesforbusinessplatform",
-      "sent_at": "2026-06-04T21:01:17.963190+00:00"
-    },
-    {
-      "url": "https://techcrunch.com/2026/06/04/meta-steals-a-tactic-from-tesla-and-builds-data-centers-in-tents/",
-      "title": "Meta steals a tactic from Tesla and builds data centers in tents",
-      "title_fp": "metastealsatacticfromteslaandbuildsdatacentersintents",
-      "sent_at": "2026-06-04T21:01:17.963190+00:00"
-    },
-    {
-      "url": "https://www.themandarin.com.au/314250-south-australia-cuts-1000-public-service-positions/",
-      "title": "South Australia cuts 1,000 public service positions",
-      "title_fp": "southaustraliacuts1000publicservicepositions",
-      "sent_at": "2026-06-04T21:01:17.963190+00:00"
-    },
-    {
       "url": "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
       "title": "Google to pay SpaceX $920 million a month for compute capacity at xAI data centers",
       "title_fp": "googletopayspacex920millionamonthforcomputecapacityatxaidatacenters",
@@ -509,6 +461,18 @@
       "title": "Dana White Announces Two Title Fights For UFC's Return To Philadelphia",
       "title_fp": "danawhiteannouncestwotitlefightsforufcsreturntophiladelphia",
       "sent_at": "2026-06-17T21:01:34.030504+00:00"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/18/next-weeks-inflation-data-is-vitally-important-whats-ahead-for-the-market.html",
+      "title": "Next week's inflation data just got even more important. Here's what's ahead for the market",
+      "title_fp": "nextweeksinflationdatajustgotevenmoreimportanthereswhatsaheadforthemarket",
+      "sent_at": "2026-06-18T21:01:22.963741+00:00"
+    },
+    {
+      "url": "https://www.sherdog.com/news/news/UFC-330-gets-matchup-of-ranked-flyweights-201565",
+      "title": "UFC 330 gets matchup of ranked flyweights",
+      "title_fp": "ufc330getsmatchupofrankedflyweights",
+      "sent_at": "2026-06-18T21:01:22.963741+00:00"
     }
   ]
 }
