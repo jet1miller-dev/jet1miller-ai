@@ -1,48 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
-      "title": "Google to pay SpaceX $920 million a month for compute capacity at xAI data centers",
-      "title_fp": "googletopayspacex920millionamonthforcomputecapacityatxaidatacenters",
-      "sent_at": "2026-06-05T21:01:21.460368+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-06-06/dashdot-property-buyers-business-collapse-clients-out-of-pocket/106759522",
-      "title": "Buyer's agency Dashdot collapse leaves hundreds of clients out of pocket",
-      "title_fp": "buyersagencydashdotcollapseleaveshundredsofclientsoutofpocket",
-      "sent_at": "2026-06-05T21:01:21.460368+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-06-05/gst-push-to-follow-sa-budget-treasurer-says/106759392",
-      "title": "GST push to follow SA budget, treasurer says",
-      "title_fp": "gstpushtofollowsabudgettreasurersays",
-      "sent_at": "2026-06-05T21:01:21.460368+00:00"
-    },
-    {
-      "url": "https://www.marketwatch.com/story/the-hiring-recession-is-over-but-landing-a-new-role-is-much-harder-than-it-looks-8f7d9608?mod=mw_rss_topstories",
-      "title": "The hiring recession is over \u2014 but landing a new role is much harder than it looks",
-      "title_fp": "thehiringrecessionisoverbutlandinganewroleismuchharderthanitlooks",
-      "sent_at": "2026-06-05T21:01:21.460368+00:00"
-    },
-    {
-      "url": "https://www.realestate.com.au/news/47ha-plot-for-sale-in-highdemand-tassie-town/",
-      "title": "47ha plot for sale in high-demand Tassie town",
-      "title_fp": "47haplotforsaleinhighdemandtassietown",
-      "sent_at": "2026-06-05T21:01:21.460368+00:00"
-    },
-    {
-      "url": "https://www.sherdog.com/news/news/UFC-329-Update-King-Green-to-face-finishfriendly-foe-201432",
-      "title": "UFC 329 Update: King Green to face finish-friendly foe",
-      "title_fp": "ufc329updatekinggreentofacefinishfriendlyfoe",
-      "sent_at": "2026-06-05T21:01:21.460368+00:00"
-    },
-    {
-      "url": "https://www.sherdog.com/news/news/Gilbert-Burns-returns-in-style-at-UFC-BJJ-9-calls-out-long-list-of-names-201438",
-      "title": "Gilbert Burns returns in style at UFC BJJ 9, calls out long list of names",
-      "title_fp": "gilbertburnsreturnsinstyleatufcbjj9callsoutlonglistofnames",
-      "sent_at": "2026-06-05T21:01:21.460368+00:00"
-    },
-    {
       "url": "https://www.fool.com.au/2026/06/07/top-brokers-name-3-asx-shares-to-buy-next-week-7-jun-2026/",
       "title": "Top brokers name 3 ASX shares to buy next week",
       "title_fp": "topbrokersname3asxsharestobuynextweek",
@@ -473,6 +431,42 @@
       "title": "UFC 330 gets matchup of ranked flyweights",
       "title_fp": "ufc330getsmatchupofrankedflyweights",
       "sent_at": "2026-06-18T21:01:22.963741+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-06-19/ravenswood-gold-secures-refinancing-deal/106819762",
+      "title": "Caution urged after Qld's largest gold mine's lifesaving $1.4bn deal",
+      "title_fp": "cautionurgedafterqldslargestgoldmineslifesaving14bndeal",
+      "sent_at": "2026-06-19T21:01:24.820113+00:00"
+    },
+    {
+      "url": "https://www.brisbanetimes.com.au/politics/queensland/voters-back-lnp-s-2032-games-preparations-but-there-s-a-catch-20260616-p60765.html?ref=rss",
+      "title": "Voters back LNP\u2019s 2032 Games preparations \u2013 but there\u2019s a catch",
+      "title_fp": "votersbacklnps2032gamespreparationsbuttheresacatch",
+      "sent_at": "2026-06-19T21:01:24.820113+00:00"
+    },
+    {
+      "url": "https://the-decoder.com/google-deepmind-loses-another-top-ai-researcher-as-nobel-laureate-john-jumper-leaves-for-anthropic/",
+      "title": "Google Deepmind loses another top AI researcher as Nobel laureate John Jumper leaves for Anthropic",
+      "title_fp": "googledeepmindlosesanothertopairesearcherasnobellaureatejohnjumperleavesforanthropic",
+      "sent_at": "2026-06-19T21:01:24.820113+00:00"
+    },
+    {
+      "url": "https://www.ufc.com/news/ufc-fight-night-kape-vs-horiguchi-main-card-results-highlights-interviews",
+      "title": "Main Card Results | UFC Fight Night: Kape vs Horiguchi",
+      "title_fp": "maincardresultsufcfightnightkapevshoriguchi",
+      "sent_at": "2026-06-19T21:01:24.820113+00:00"
+    },
+    {
+      "url": "https://www.sherdog.com/news/news/UFC-Vegas-119-Kape-vs-Horiguchi-2-playbyplay-results-round-scoring-201574",
+      "title": "UFC Vegas 119 \u2018Kape vs. Horiguchi 2\u2019 play-by-play, results & round scoring",
+      "title_fp": "ufcvegas119kapevshoriguchi2playbyplayresultsroundscoring",
+      "sent_at": "2026-06-19T21:01:24.820113+00:00"
+    },
+    {
+      "url": "https://www.ufc.com/news/ufc-fight-night-kape-vs-horiguchi-official-judges-scorecards",
+      "title": "Official Scorecards | UFC Fight Night: Kape vs Horiguchi",
+      "title_fp": "officialscorecardsufcfightnightkapevshoriguchi",
+      "sent_at": "2026-06-19T21:01:24.820113+00:00"
     }
   ]
 }
