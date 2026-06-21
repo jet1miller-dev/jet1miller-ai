@@ -1,60 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.fool.com.au/2026/06/07/top-brokers-name-3-asx-shares-to-buy-next-week-7-jun-2026/",
-      "title": "Top brokers name 3 ASX shares to buy next week",
-      "title_fp": "topbrokersname3asxsharestobuynextweek",
-      "sent_at": "2026-06-06T21:02:28.259706+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/06/07/if-i-invest-8000-in-macquarie-shares-how-much-passive-income-will-i-receive-in-2027/",
-      "title": "If I invest $8,000 in Macquarie shares, how much passive income will I receive in 2027?",
-      "title_fp": "ifiinvest8000inmacquarieshareshowmuchpassiveincomewillireceivein2027",
-      "sent_at": "2026-06-06T21:02:28.259706+00:00"
-    },
-    {
-      "url": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/",
-      "title": "OpenAI unveils Lockdown Mode to protect sensitive data from prompt injection attacks",
-      "title_fp": "openaiunveilslockdownmodetoprotectsensitivedatafrompromptinjectionattacks",
-      "sent_at": "2026-06-06T21:02:28.259706+00:00"
-    },
-    {
-      "url": "https://techcrunch.com/2026/06/06/what-to-expect-from-wwdc-2026-siris-highly-anticipated-revamp-and-apple-intelligence-updates/",
-      "title": "What to expect from WWDC 2026: Siri\u2019s highly anticipated revamp and Apple Intelligence updates",
-      "title_fp": "whattoexpectfromwwdc2026sirishighlyanticipatedrevampandappleintelligenceupdates",
-      "sent_at": "2026-06-06T21:02:28.259706+00:00"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/2026/jun/07/ed-husic-rebel-status-former-labor-minister-aukus-views",
-      "title": "Ed Husic revels in his rebel status \u2013 but is the former Labor minister bitter or brave?",
-      "title_fp": "edhusicrevelsinhisrebelstatusbutistheformerlaborministerbitterorbrave",
-      "sent_at": "2026-06-06T21:02:28.259706+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-06-07/small-town-parish-delegation-meet-pope-leo/106737842",
-      "title": "Private audience with pope given to small-town parish delegates",
-      "title_fp": "privateaudiencewithpopegiventosmalltownparishdelegates",
-      "sent_at": "2026-06-06T21:02:28.259706+00:00"
-    },
-    {
-      "url": "https://combatpress.com/2026/06/ufc-muhammad-vs-bonfim-preview-and-predictions/",
-      "title": "UFC Muhammad vs. Bonfim Preview and Predictions",
-      "title_fp": "ufcmuhammadvsbonfimpreviewandpredictions",
-      "sent_at": "2026-06-06T21:02:28.259706+00:00"
-    },
-    {
-      "url": "https://www.sherdog.com/news/news/Current-UFC-champion-goes-off-on-predatory-UFC-fighter-pay-201455",
-      "title": "Current UFC champion goes off on \u2018predatory\u2019 UFC fighter pay",
-      "title_fp": "currentufcchampiongoesoffonpredatoryufcfighterpay",
-      "sent_at": "2026-06-06T21:02:28.259706+00:00"
-    },
-    {
-      "url": "https://www.sherdog.com/news/news/UFC-head-claims-Alex-Pereira-passes-Jon-Jones-as-GOAT-with-White-House-win-201440",
-      "title": "UFC head claims Alex Pereira passes Jon Jones as GOAT with White House win",
-      "title_fp": "ufcheadclaimsalexpereirapassesjonjonesasgoatwithwhitehousewin",
-      "sent_at": "2026-06-06T21:02:28.259706+00:00"
-    },
-    {
       "url": "https://www.cnbc.com/2026/06/07/iran-fires-missiles-israel-ceasefire-strains.html",
       "title": "Fragile ceasefire in jeopardy as Iran reportedly fires missiles at Israel",
       "title_fp": "fragileceasefireinjeopardyasiranreportedlyfiresmissilesatisrael",
@@ -479,6 +425,12 @@
       "title": "\u2018Time for new thinking\u2019: Government goes big on pre-made homes to solve housing crisis",
       "title_fp": "timefornewthinkinggovernmentgoesbigonpremadehomestosolvehousingcrisis",
       "sent_at": "2026-06-20T21:01:21.588814+00:00"
+    },
+    {
+      "url": "https://www.sherdog.com/news/news/Manel-Kape-avenges-2017-loss-blasts-Kyoji-Horiguchi-in-UFC-Vegas-119-rematch-201576",
+      "title": "Manel Kape avenges 2017 loss, blasts Kyoji Horiguchi in UFC Vegas 119 rematch",
+      "title_fp": "manelkapeavenges2017lossblastskyojihoriguchiinufcvegas119rematch",
+      "sent_at": "2026-06-21T21:01:20.721267+00:00"
     }
   ]
 }
