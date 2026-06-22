@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feasibility Analyser — Property Development Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #1a56db;
+      --blue-light: #dbeafe;
+      --blue-dark: #1e3a8a;
+      --green: #0e9f6e;
+      --green-light: #dcfce7;
+      --red: #dc2626;
+      --red-light: #fef2f2;
+      --amber: #d97706;
+      --amber-light: #fffbeb;
+      --gray-50: #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-400: #9ca3af;
+      --gray-500: #6b7280;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --gray-900: #111827;
+      --r: 8px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--gray-50);
+      color: var(--gray-900);
+      line-height: 1.5;
+      font-size: 15px;
+    }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 24px 16px 64px; }
+
+    .header { margin-bottom: 8px; }
+    .header h1 { font-size: 1.5rem; font-weight: 700; }
+    .header p { color: var(--gray-500); font-size: 0.875rem; margin-top: 2px; }
+
+    .disclaimer {
+      background: var(--amber-light);
+      border: 1px solid #fcd34d;
+      border-radius: var(--r);
+      padding: 12px 16px;
+      font-size: 0.8125rem;
+      color: #78350f;
+      margin: 16px 0 20px;
+      line-height: 1.6;
+    }
+
+    /* ── Dashboard layout ── */
+    .dashboard {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 20px;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .dashboard { grid-template-columns: 1fr; }
+      .sidebar { order: -1; }
+    }
+    .sidebar { position: sticky; top: 16px; }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--r);
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    .card h2 {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--gray-500);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 20px;
+    }
+
+    .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+    @media (max-width: 620px) { .g2, .g3 { grid-template-columns: 1fr; } }
+
+    .field { display: flex; flex-direction: column; gap: 5px; }
+    .field label { font-size: 0.8125rem; font-weight: 500; color: var(--gray-700); }
+    .field input, .field select {
+      padding: 9px 12px;
+      border: 1px solid var(--gray-200);
+      border-radius: 6px;
+      font-size: 0.9375rem;
+      font-family: inherit;
+      color: var(--gray-900);
+      background: #fff;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      width: 100%;
+    }
+    .field input:focus, .field select:focus {
+      outline: none;
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.12);
+    }
+    .field input.fmt-money {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+    .field input.auto-calc {
+      background: var(--gray-50);
+      color: var(--gray-600);
+    }
+    .field .hint { font-size: 0.75rem; color: var(--gray-400); line-height: 1.4; }
+    .field-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8px;
+      align-items: stretch;
+    }
+    .field-row .value-wrap { flex: 1; }
+
+    /* ── Mode toggle (% / $) ── */
+    .mode-toggle {
+      display: flex;
+      border: 1px solid var(--gray-200);
+      border-radius: 6px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .mode-toggle button {
+      padding: 9px 12px;
+      min-height: 40px;
+      border: none;
+      background: #fff;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      font-family: inherit;
+      color: var(--gray-500);
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+    .mode-toggle button.active {
+      background: var(--blue);
+      color: #fff;
+    }
+    .mode-toggle button:hover:not(.active) { background: var(--gray-50); }
+
+    .cost-line {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .cost-line:last-child { border-bottom: none; padding-bottom: 0; }
+    .cost-line:first-child { padding-top: 0; }
+
+    .cost-line-grid {
+      display: grid;
+      grid-template-columns: 1fr 108px;
+      gap: 12px;
+      align-items: start;
+    }
+    @media (max-width: 620px) {
+      .cost-line-grid { grid-template-columns: 1fr; }
+      .cost-line-result { padding-top: 0 !important; text-align: left !important; }
+    }
+    .cost-line-result {
+      text-align: right;
+      padding-top: 24px;
+    }
+    .cost-line-result .amt-label {
+      display: block;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--gray-400);
+      margin-bottom: 4px;
+    }
+    .cost-line-result .amt-value {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--gray-800, var(--gray-700));
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* ── Sale banner (summary) ── */
+    .sale-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, var(--blue-light) 0%, #eff6ff 100%);
+      border: 1px solid #93c5fd;
+      border-radius: var(--r);
+      padding: 14px 16px;
+      margin-bottom: 16px;
+    }
+    .sale-banner .sb-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--blue-dark);
+    }
+    .sale-banner .sb-value {
+      font-size: 1.375rem;
+      font-weight: 700;
+      color: var(--blue-dark);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .link-btn {
+      background: none;
+      border: none;
+      color: var(--blue);
+      font-size: 0.75rem;
+      font-family: inherit;
+      cursor: pointer;
+      padding: 0;
+      text-decoration: underline;
+    }
+    .link-btn:hover { color: var(--blue-dark); }
+
+    /* ── Summary metrics ── */
+    .metric-hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .metric-box {
+      background: var(--gray-50);
+      border-radius: var(--r);
+      padding: 14px;
+      border: 1px solid var(--gray-100);
+    }
+    .metric-box.highlight {
+      background: var(--blue-light);
+      border-color: #93c5fd;
+    }
+    .metric-box .ml { font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--gray-500); }
+    .metric-box .mv { font-size: 1.25rem; font-weight: 700; margin-top: 4px; font-variant-numeric: tabular-nums; }
+    .metric-box.positive .mv { color: var(--green); }
+    .metric-box.negative .mv { color: var(--red); }
+
+    .rr {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--gray-100);
+      gap: 12px;
+      font-size: 0.875rem;
+    }
+    .rr:last-child { border-bottom: none; }
+    .rr .rl { color: var(--gray-600); flex: 1; min-width: 0; }
+    .rr .rv {
+      font-weight: 600;
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .rr .rv.positive { color: var(--green); }
+    .rr .rv.negative { color: var(--red); }
+    .rr.bold { border-top: 2px solid var(--gray-200); padding-top: 10px; margin-top: 4px; }
+    .rr.bold .rl { font-weight: 600; color: var(--gray-900); }
+    .rr.bold .rv { font-weight: 700; color: var(--blue); }
+
+    .slabel {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--gray-400);
+      margin: 16px 0 6px;
+    }
+    .slabel:first-child { margin-top: 0; }
+
+    /* ── Warnings ── */
+    .alert {
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-size: 0.8125rem;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+    .alert:last-child { margin-bottom: 0; }
+    .alert.error { background: var(--red-light); border: 1px solid #fecaca; color: #991b1b; }
+    .alert.warn { background: var(--amber-light); border: 1px solid #fcd34d; color: #78350f; }
+    .alert.ok { background: var(--green-light); border: 1px solid #86efac; color: #166534; }
+
+    /* ── Breakdown table ── */
+    .bd-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+    .bd-table th {
+      text-align: left;
+      padding: 10px 12px;
+      background: var(--gray-50);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--gray-500);
+      border-bottom: 2px solid var(--gray-200);
+    }
+    .bd-table th:last-child { text-align: right; }
+    .bd-table td {
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .bd-table td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+    .bd-table tr.cat-header td {
+      font-weight: 600;
+      color: var(--gray-700);
+      background: var(--gray-50);
+      border-bottom: 1px solid var(--gray-200);
+    }
+    .bd-table tr.subtotal td {
+      font-weight: 600;
+      color: var(--gray-600);
+      font-size: 0.8125rem;
+    }
+    .bd-table tr.grand td {
+      font-weight: 700;
+      font-size: 0.9375rem;
+      border-top: 2px solid var(--gray-200);
+      background: var(--blue-light);
+    }
+
+    .bd-table tr.revenue td {
+      background: var(--green-light);
+      font-weight: 600;
+    }
+    .bd-table tr.profit-row td {
+      font-weight: 700;
+      font-size: 0.9375rem;
+      border-top: 2px solid var(--gray-200);
+    }
+    .bd-table tr.profit-row.positive td { background: var(--green-light); color: #166534; }
+    .bd-table tr.profit-row.negative td { background: var(--red-light); color: #991b1b; }
+
+    /* ── Custom costs ── */
+    .custom-costs-header {
+      display: grid;
+      grid-template-columns: 1fr 130px 150px 40px;
+      gap: 10px;
+      padding: 0 14px 8px;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--gray-400);
+    }
+    @media (max-width: 700px) {
+      .custom-costs-header { display: none; }
+    }
+    .custom-row-card {
+      border: 1px solid var(--gray-200);
+      border-radius: var(--r);
+      padding: 12px 14px;
+      margin-bottom: 10px;
+      background: var(--gray-50);
+    }
+    .custom-row-inner {
+      display: grid;
+      grid-template-columns: 1fr 130px 150px 40px;
+      gap: 10px;
+      align-items: end;
+    }
+    @media (max-width: 700px) {
+      .custom-row-inner {
+        grid-template-columns: 1fr 1fr;
+      }
+      .custom-row-inner .field-desc { grid-column: 1 / -1; }
+      .custom-row-inner .field-remove { grid-column: 1 / -1; justify-self: end; }
+    }
+    .custom-row-inner .field label {
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--gray-400);
+    }
+    @media (min-width: 701px) {
+      .custom-row-inner .field label { display: none; }
+    }
+    .custom-row-inner .btn-remove {
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--gray-200);
+      border-radius: 6px;
+      background: #fff;
+      color: var(--gray-500);
+      cursor: pointer;
+      font-size: 1.25rem;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .custom-row-inner .btn-remove:hover { background: var(--red-light); color: var(--red); border-color: #fecaca; }
+    .custom-empty {
+      text-align: center;
+      padding: 20px;
+      color: var(--gray-400);
+      font-size: 0.875rem;
+      border: 1px dashed var(--gray-200);
+      border-radius: var(--r);
+      margin-bottom: 12px;
+    }
+
+    .btn-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+    .btn {
+      padding: 10px 18px;
+      border-radius: var(--r);
+      font-size: 0.875rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      border: 1px solid var(--gray-200);
+      background: #fff;
+      color: var(--gray-700);
+      transition: background 0.15s;
+    }
+    .btn:hover { background: var(--gray-50); }
+    .btn-primary {
+      background: var(--blue);
+      color: #fff;
+      border-color: var(--blue);
+    }
+    .btn-primary:hover { background: #1640b0; }
+    .btn-danger { color: var(--red); border-color: #fecaca; }
+    .btn-danger:hover { background: var(--red-light); }
+
+    .base-select { margin-top: 4px; }
+    .base-select select { font-size: 0.75rem; padding: 4px 8px; }
+
+    .quick-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--gray-100);
+      font-size: 0.8125rem;
+      color: var(--gray-600);
+    }
+    .quick-stats span strong {
+      color: var(--gray-900);
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <h1>Feasibility Analyser</h1>
+      <p>Property &amp; development feasibility calculator — all costs visible, live-updating</p>
+    </div>
+
+    <div class="disclaimer">
+      <strong>Disclaimer:</strong> Illustrative feasibility analysis only. Not financial, legal, or tax advice.
+      Verify all assumptions with your solicitor, accountant, and lender before committing.
+    </div>
+
+    <div class="dashboard">
+      <!-- ── Sidebar: summary + warnings ── -->
+      <aside class="sidebar">
+        <div class="card">
+          <h2>Summary</h2>
+
+          <div class="sale-banner">
+            <div>
+              <div class="sb-label">Expected sale price</div>
+            </div>
+            <div class="sb-value" id="outSale">—</div>
+          </div>
+
+          <div class="metric-hero">
+            <div class="metric-box highlight" id="boxMargin">
+              <div class="ml">Profit margin</div>
+              <div class="mv" id="outMargin">—</div>
+            </div>
+            <div class="metric-box highlight" id="boxRoi">
+              <div class="ml">ROI</div>
+              <div class="mv" id="outRoi">—</div>
+            </div>
+            <div class="metric-box">
+              <div class="ml">Equity required</div>
+              <div class="mv" id="outEquity">—</div>
+            </div>
+            <div class="metric-box" id="boxSurplus">
+              <div class="ml">Surplus / deficit</div>
+              <div class="mv" id="outSurplus">—</div>
+            </div>
+          </div>
+
+          <div class="slabel">Profit &amp; loss</div>
+          <div class="rr"><span class="rl">Total project cost</span><span class="rv" id="outTotalCost">—</span></div>
+          <div class="rr"><span class="rl">Break-even sale price</span><span class="rv" id="outBreakEven">—</span></div>
+          <div class="rr"><span class="rl">Gross profit</span><span class="rv" id="outGross">—</span></div>
+          <div class="rr"><span class="rl">Net profit</span><span class="rv" id="outNet">—</span></div>
+          <div class="rr bold"><span class="rl">Total cash required</span><span class="rv" id="outCash">—</span></div>
+
+          <div class="slabel">Cost buckets</div>
+          <div class="rr"><span class="rl">Acquisition</span><span class="rv" id="outAcquisition">—</span></div>
+          <div class="rr"><span class="rl">Build / delivery</span><span class="rv" id="outBuildCat">—</span></div>
+          <div class="rr"><span class="rl">Finance</span><span class="rv" id="outFinance">—</span></div>
+          <div class="rr"><span class="rl">Holding</span><span class="rv" id="outHolding">—</span></div>
+          <div class="rr"><span class="rl">Selling</span><span class="rv" id="outSelling">—</span></div>
+          <div class="rr"><span class="rl">Monthly holding</span><span class="rv" id="outMonthlyHolding">—</span></div>
+          <div class="rr bold"><span class="rl">Loan amount</span><span class="rv" id="outLoan">—</span></div>
+        </div>
+
+        <div class="card">
+          <h2>Insights</h2>
+          <div id="warningsPanel"></div>
+        </div>
+      </aside>
+
+      <!-- ── Main: inputs + breakdown ── -->
+      <main class="main">
+        <div class="card">
+          <h2>Project basics</h2>
+          <div class="g2">
+            <div class="field">
+              <label for="landCost">Land cost</label>
+              <input type="text" id="landCost" class="fmt-money" inputmode="numeric" title="Purchase price of the land parcel" autocomplete="off">
+              <span class="hint">Land acquisition price (ex GST where applicable)</span>
+            </div>
+            <div class="field">
+              <label for="buildCost">Build / construction cost</label>
+              <input type="text" id="buildCost" class="fmt-money" inputmode="numeric" title="Total construction contract value" autocomplete="off">
+              <span class="hint">Total build contract — excludes land</span>
+            </div>
+            <div class="field">
+              <label for="salePrice">Expected sale price</label>
+              <input type="text" id="salePrice" class="fmt-money" inputmode="numeric" title="Expected gross sale proceeds" autocomplete="off">
+              <span class="hint">Expected end value / sale price on completion</span>
+            </div>
+            <div class="field">
+              <label for="holdingMonths">Holding period (months)</label>
+              <input type="number" id="holdingMonths" min="1" step="1" title="Months from land settlement to sale">
+              <span class="hint">Settlement to sale — drives holding &amp; interest</span>
+            </div>
+          </div>
+          <div class="quick-stats" id="projectQuickStats"></div>
+        </div>
+
+        <div class="card">
+          <h2>Acquisition costs</h2>
+          <div id="acquisitionLines"></div>
+        </div>
+
+        <div class="card">
+          <h2>Build / delivery costs</h2>
+          <div id="buildLines"></div>
+        </div>
+
+        <div class="card">
+          <h2>Finance &amp; holding costs</h2>
+          <div class="g3" style="margin-bottom:16px">
+            <div class="field">
+              <label for="lvr">Loan-to-value ratio (LVR)</label>
+              <input type="number" id="lvr" min="0" max="100" step="1" title="Debt as % of land + build">
+              <span class="hint">% of (land + build) funded by debt. 0 = all cash.</span>
+            </div>
+            <div class="field">
+              <label for="loanRate">Loan interest rate (% p.a.)</label>
+              <input type="number" id="loanRate" min="0" step="0.1" title="Annual interest rate on development loan">
+              <span class="hint">Annual rate for interest calculation</span>
+            </div>
+            <div class="field">
+              <label for="avgDraw">Avg funds drawn during construction (%)</label>
+              <input type="number" id="avgDraw" min="0" max="100" step="1" title="Average construction draw as % of build loan">
+              <span class="hint">Build loan drawn progressively — default 55%</span>
+            </div>
+          </div>
+          <div id="financeLines"></div>
+          <div class="slabel" style="margin-top:20px">Holding costs</div>
+          <div id="holdingLines"></div>
+        </div>
+
+        <div class="card">
+          <h2>Selling costs</h2>
+          <div id="sellingLines"></div>
+        </div>
+
+        <div class="card">
+          <h2>Custom costs</h2>
+          <p class="hint" style="margin-bottom:14px">Add any project-specific costs not covered above.</p>
+          <div class="custom-costs-header">
+            <span>Description</span>
+            <span>Amount</span>
+            <span>Category</span>
+            <span></span>
+          </div>
+          <div id="customEmpty" class="custom-empty">No custom costs added yet.</div>
+          <div id="customCostsContainer"></div>
+          <div class="btn-row">
+            <button type="button" class="btn btn-primary" id="btnAddCustom">+ Add custom cost</button>
+          </div>
+        </div>
+
+        <div class="btn-row" style="margin-bottom:16px">
+          <button type="button" class="btn btn-danger" id="btnReset">Reset to defaults</button>
+        </div>
+
+        <div class="card">
+          <h2>Cost breakdown</h2>
+          <div style="overflow-x:auto">
+            <table class="bd-table" id="breakdownTable">
+              <thead>
+                <tr><th>Item</th><th>Amount</th></tr>
+              </thead>
+              <tbody id="breakdownBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+<script>
+(function () {
+  'use strict';
+
+  // ── Warning thresholds (editable constants) ──
+  const WARN_HOLDING_MONTHS = 18;           // flag extended hold
+  const WARN_FINANCE_PCT_OF_COST = 0.08;    // finance > 8% of total project cost
+  const WARN_LVR = 80;                        // high leverage
+  const WARN_MARGIN = 0.10;                   // thin margin < 10% of sale
+  const WARN_CONTINGENCY_PCT_OF_BUILD = 0.05; // low contingency vs build
+
+  const STORAGE_KEY = 'feasibility-analyser-v1';
+  const MAX_CUSTOM = 20;
+
+  const CATEGORIES = {
+    acquisition: 'Acquisition',
+    build: 'Build / delivery',
+    finance: 'Finance',
+    holding: 'Holding',
+    selling: 'Selling',
+    admin: 'Admin / other'
+  };
+
+  const BASE_LABELS = {
+    land: 'land cost',
+    build: 'build cost',
+    landBuild: 'land + build',
+    sale: 'sale price',
+    loan: 'loan amount',
+    monthly: 'per month',
+    landBuildAnnual: 'p.a. of land + build'
+  };
+
+  // ── Cost line registry ──
+  const COST_LINES = [
+    { id: 'stampDuty',   label: 'Stamp duty',              section: 'acquisition', category: 'acquisition', base: 'land',           defaultMode: 'percent', defaultPercent: 4.5 },
+    { id: 'legal',       label: 'Legal / conveyancing',    section: 'acquisition', category: 'acquisition', base: 'land',           defaultMode: 'percent', defaultPercent: 0.3 },
+    { id: 'planning',    label: 'Planning / approval fees', section: 'build',      category: 'build',       base: 'build',          defaultMode: 'fixed',   defaultFixed: 15000 },
+    { id: 'consultants', label: 'Consultant / architect',  section: 'build',       category: 'build',       base: 'build',          defaultMode: 'percent', defaultPercent: 4 },
+    { id: 'contingency', label: 'Contingency allowance',   section: 'build',       category: 'build',       base: 'build',          allowBaseSwitch: true, defaultMode: 'percent', defaultPercent: 10 },
+    { id: 'establishment', label: 'Finance establishment', section: 'finance',     category: 'finance',     base: 'loan',           defaultMode: 'percent', defaultPercent: 0.6 },
+    { id: 'lender',      label: 'Lender fees',             section: 'finance',     category: 'finance',     base: 'loan',           defaultMode: 'fixed',   defaultFixed: 1200 },
+    { id: 'broker',      label: 'Loan / broker fees',      section: 'finance',     category: 'finance',     base: 'loan',           defaultMode: 'fixed',   defaultFixed: 3500 },
+    { id: 'interest',    label: 'Interest (holding period)', section: 'finance',   category: 'finance',     base: 'computed',       isInterest: true },
+    { id: 'rates',       label: 'Rates / council charges', section: 'holding',     category: 'holding',     base: 'monthly',        defaultMode: 'fixed',   defaultFixed: 450, hint: '$ per month × holding period' },
+    { id: 'insurance',   label: 'Insurance',               section: 'holding',       category: 'holding',     base: 'landBuildAnnual', defaultMode: 'percent', defaultPercent: 0.4, hint: '% p.a. of land + build, pro-rated by holding months' },
+    { id: 'utilities',   label: 'Utilities / site holding', section: 'holding',    category: 'holding',     base: 'monthly',        defaultMode: 'fixed',   defaultFixed: 200, hint: '$ per month × holding period' },
+    { id: 'marketing',   label: 'Marketing costs',         section: 'selling',       category: 'selling',     base: 'sale',           defaultMode: 'percent', defaultPercent: 0.5 },
+    { id: 'agent',       label: 'Agent commission',        section: 'selling',       category: 'selling',     base: 'sale',           defaultMode: 'percent', defaultPercent: 2.2 },
+  ];
+
+  const DEFAULTS = {
+    landCost: 800000,
+    buildCost: 1200000,
+    salePrice: 2350000,
+    holdingMonths: 12,
+    lvr: 70,
+    loanRate: 7.5,
+    avgDraw: 55,
+    lines: {},
+    interestIsManual: false,
+    interestManualValue: null,
+    customCosts: []
+  };
+
+  // Populate default line values from registry
+  COST_LINES.forEach(function (line) {
+    if (line.isInterest) return;
+    DEFAULTS.lines[line.id] = {
+      mode: line.defaultMode,
+      value: line.defaultMode === 'percent' ? line.defaultPercent : line.defaultFixed,
+      base: line.base
+    };
+  });
+
+  // ── Formatters ──
+  const fmtCur = new Intl.NumberFormat('en-AU', { style: 'currency', currency: 'AUD', maximumFractionDigits: 0 });
+  const fmtWhole = new Intl.NumberFormat('en-AU', { maximumFractionDigits: 0 });
+  const fmtPct = function (v) { return (v * 100).toFixed(1) + '%'; };
+
+  // Parse display value (strips commas); format whole-dollar inputs with grouping
+  function parseRaw(val) {
+    if (val === '' || val == null) return 0;
+    var v = parseFloat(String(val).replace(/,/g, ''));
+    return isNaN(v) ? 0 : v;
+  }
+
+  function fmtMoneyInput(n) {
+    if (!isFinite(n) || n === 0) return n === 0 ? '0' : '';
+    return fmtWhole.format(Math.round(n));
+  }
+
+  function formatMoneyEl(input) {
+    if (!input || !input.classList.contains('fmt-money')) return;
+    var n = Math.max(0, parseRaw(input.value));
+    input.value = fmtMoneyInput(n);
+  }
+
+  function onMoneyInput(input) {
+    var digits = input.value.replace(/\D/g, '');
+    if (digits === '') {
+      input.value = '';
+      return;
+    }
+    input.value = fmtMoneyInput(parseInt(digits, 10));
+  }
+
+  // ── State ──
+  let state = JSON.parse(JSON.stringify(DEFAULTS));
+  let interestIsManual = false;
+  let interestManualValue = null;
+
+  // ── Resolve base value for percentage calculations ──
+  function getBaseValue(base, ctx) {
+    switch (base) {
+      case 'land': return ctx.landCost;
+      case 'build': return ctx.buildCost;
+      case 'landBuild': return ctx.landCost + ctx.buildCost;
+      case 'sale': return ctx.salePrice;
+      case 'loan': return ctx.totalLoan;
+      default: return 0;
+    }
+  }
+
+  // ── Resolve a single cost line amount ($) ──
+  function resolveLineAmount(lineDef, lineState, ctx) {
+    if (lineDef.isInterest) {
+      if (interestIsManual && interestManualValue !== null) return interestManualValue;
+      return ctx.computedInterest;
+    }
+
+    if (lineDef.base === 'monthly') {
+      // Fixed $ per month × holding period (mode always treated as monthly $)
+      return Math.max(0, lineState.value) * ctx.months;
+    }
+
+    if (lineState.mode === 'percent') {
+      var base = lineState.base || lineDef.base;
+      if (base === 'landBuildAnnual') {
+        // Insurance: % p.a. of land+build, pro-rated
+        return (ctx.landCost + ctx.buildCost) * (lineState.value / 100) * (ctx.months / 12);
+      }
+      return getBaseValue(base, ctx) * (lineState.value / 100);
+    }
+
+    return Math.max(0, lineState.value);
+  }
+
+  // ── Main calculation ──
+  function calculate() {
+    var landCost = Math.max(0, num('landCost'));
+    var buildCost = Math.max(0, num('buildCost'));
+    var salePrice = Math.max(0, num('salePrice'));
+    var months = Math.max(1, num('holdingMonths'));
+    var lvr = clamp(num('lvr'), 0, 100);
+    var loanRate = Math.max(0, num('loanRate'));
+    var avgDraw = clamp(num('avgDraw'), 0, 100);
+
+    // Loan principal: (land + build) × LVR — never total project cost (avoids circular dependency)
+    var landLoan = landCost * (lvr / 100);
+    var buildLoan = buildCost * (lvr / 100);
+    var totalLoan = landLoan + buildLoan;
+
+    var ctx = {
+      landCost: landCost,
+      buildCost: buildCost,
+      salePrice: salePrice,
+      months: months,
+      lvr: lvr,
+      loanRate: loanRate,
+      avgDraw: avgDraw,
+      totalLoan: totalLoan,
+      landLoan: landLoan,
+      buildLoan: buildLoan,
+      computedInterest: 0
+    };
+
+    // Interest (auto): land drawn full period + build drawn progressively
+    if (lvr > 0) {
+      ctx.computedInterest =
+        (landLoan * (loanRate / 100) * months / 12) +
+        (buildLoan * (loanRate / 100) * months / 12 * (avgDraw / 100));
+    }
+
+    // Resolve all cost lines
+    var lineAmounts = {};
+    var byCategory = { acquisition: 0, build: 0, finance: 0, holding: 0, selling: 0, admin: 0 };
+    var breakdownLines = [];
+
+    // Land is core acquisition cost
+    breakdownLines.push({ category: 'acquisition', label: 'Land cost', amount: landCost });
+    byCategory.acquisition += landCost;
+
+    COST_LINES.forEach(function (lineDef) {
+      var lineState = state.lines[lineDef.id] || {};
+      var amount = resolveLineAmount(lineDef, lineState, ctx);
+      lineAmounts[lineDef.id] = amount;
+      byCategory[lineDef.category] += amount;
+      breakdownLines.push({ category: lineDef.category, label: lineDef.label, amount: amount });
+    });
+
+    // Custom costs
+    state.customCosts.forEach(function (row) {
+      var amt = Math.max(0, parseFloat(row.amount) || 0);
+      var cat = row.category || 'admin';
+      if (!byCategory[cat]) cat = 'admin';
+      byCategory[cat] += amt;
+      breakdownLines.push({ category: cat, label: row.label || 'Custom cost', amount: amt, custom: true });
+    });
+
+    // Build cost as core line
+    byCategory.build += buildCost;
+    breakdownLines.splice(
+      breakdownLines.findIndex(function (l) { return l.label === 'Planning / approval fees'; }),
+      0,
+      { category: 'build', label: 'Build / construction cost', amount: buildCost }
+    );
+
+    var totalProjectCost = Object.keys(byCategory).reduce(function (s, k) { return s + byCategory[k]; }, 0);
+
+    // Outputs
+    var grossProfit = salePrice - totalProjectCost;
+    var netProfit = grossProfit; // v1: pre-tax, no separate tax layer
+    var profitMargin = salePrice > 0 ? grossProfit / salePrice : 0;
+    var equityRequired = totalProjectCost - totalLoan;
+    var roi = equityRequired > 0 ? netProfit / equityRequired : 0;
+    var breakEvenPrice = totalProjectCost;
+    var monthlyHolding = byCategory.holding / months;
+
+    return {
+      landCost: landCost,
+      buildCost: buildCost,
+      salePrice: salePrice,
+      months: months,
+      lvr: lvr,
+      totalLoan: totalLoan,
+      totalProjectCost: totalProjectCost,
+      financeTotal: byCategory.finance,
+      holdingTotal: byCategory.holding,
+      sellingTotal: byCategory.selling,
+      acquisitionTotal: byCategory.acquisition,
+      buildTotal: byCategory.build,
+      grossProfit: grossProfit,
+      netProfit: netProfit,
+      profitMargin: profitMargin,
+      equityRequired: equityRequired,
+      totalCashRequired: equityRequired,
+      roi: roi,
+      breakEvenPrice: breakEvenPrice,
+      monthlyHolding: monthlyHolding,
+      lineAmounts: lineAmounts,
+      byCategory: byCategory,
+      breakdownLines: breakdownLines,
+      computedInterest: ctx.computedInterest,
+      contingencyAmount: lineAmounts.contingency || 0,
+      agentAmount: lineAmounts.agent || 0
+    };
+  }
+
+  // ── Warnings (non-blocking — never alter calculations) ──
+  function evaluateWarnings(r) {
+    var messages = [];
+
+    if (r.salePrice > 0 && r.salePrice < r.breakEvenPrice) {
+      messages.push({ type: 'error', text: 'Sale price below break-even' });
+    }
+    if (r.grossProfit < 0 || r.roi < 0) {
+      messages.push({ type: 'error', text: 'Project is loss-making' });
+    }
+    if (r.months > WARN_HOLDING_MONTHS) {
+      messages.push({ type: 'warn', text: 'Extended hold — verify holding costs' });
+    }
+    if (r.totalProjectCost > 0 && r.financeTotal > WARN_FINANCE_PCT_OF_COST * r.totalProjectCost) {
+      messages.push({ type: 'warn', text: 'Finance-heavy — review debt structure' });
+    }
+    if (r.lvr > WARN_LVR) {
+      messages.push({ type: 'warn', text: 'High leverage — limited equity buffer' });
+    }
+    if (r.salePrice > 0 && r.profitMargin < WARN_MARGIN && r.grossProfit >= 0) {
+      messages.push({ type: 'warn', text: 'Thin margin' });
+    }
+    if (r.buildCost > 0 && r.contingencyAmount < WARN_CONTINGENCY_PCT_OF_BUILD * r.buildCost) {
+      messages.push({ type: 'warn', text: 'Low contingency — build overruns likely' });
+    }
+    if (r.salePrice > 0 && r.agentAmount === 0) {
+      messages.push({ type: 'warn', text: 'No selling costs entered — verify' });
+    }
+
+    if (messages.length === 0) {
+      messages.push({ type: 'ok', text: 'All checks passed' });
+    }
+    return messages;
+  }
+
+  // ── DOM helpers ──
+  function num(id) {
+    var input = document.getElementById(id);
+    if (!input) return 0;
+    return parseRaw(input.value);
+  }
+
+  function clamp(v, min, max) { return Math.min(max, Math.max(min, v)); }
+
+  function el(id) { return document.getElementById(id); }
+
+  // ── Build cost line input UI ──
+  function renderCostLineFields() {
+    var sections = { acquisition: 'acquisitionLines', build: 'buildLines', finance: 'financeLines', holding: 'holdingLines', selling: 'sellingLines' };
+    Object.keys(sections).forEach(function (section) {
+      var container = el(sections[section]);
+      container.innerHTML = '';
+      COST_LINES.filter(function (l) { return l.section === section; }).forEach(function (lineDef) {
+        container.appendChild(buildCostLineEl(lineDef));
+      });
+    });
+  }
+
+  function amountColHtml(lineId) {
+    return '<div class="cost-line-result">' +
+      '<span class="amt-label">Calculated</span>' +
+      '<span class="amt-value" id="amount_' + lineId + '">—</span>' +
+    '</div>';
+  }
+
+  function buildCostLineEl(lineDef) {
+    var lineState = state.lines[lineDef.id] || {};
+    var wrap = document.createElement('div');
+    wrap.className = 'cost-line';
+    wrap.dataset.lineId = lineDef.id;
+
+    if (lineDef.isInterest) {
+      wrap.innerHTML =
+        '<div class="cost-line-grid">' +
+          '<div class="field">' +
+            '<label for="line_' + lineDef.id + '">' + lineDef.label + '</label>' +
+            '<div class="field-row">' +
+              '<div class="value-wrap">' +
+                '<input type="text" id="line_' + lineDef.id + '" inputmode="numeric" autocomplete="off" class="fmt-money ' + (interestIsManual ? '' : 'auto-calc') + '">' +
+              '</div>' +
+            '</div>' +
+            '<span class="hint">Auto: land loan × rate × months/12 + build loan × rate × months/12 × avg draw%. Land drawn from day 1.</span>' +
+            '<div id="interestResetWrap" style="margin-top:4px;display:' + (interestIsManual ? 'block' : 'none') + '">' +
+              '<button type="button" class="link-btn" id="btnInterestReset">↺ Reset to auto</button>' +
+            '</div>' +
+          '</div>' +
+          amountColHtml(lineDef.id) +
+        '</div>';
+      return wrap;
+    }
+
+    var hint = lineDef.hint || ('Default: % of ' + (BASE_LABELS[lineState.base || lineDef.base] || lineDef.base));
+    var mode = lineState.mode || lineDef.defaultMode;
+    var baseSwitch = '';
+    if (lineDef.allowBaseSwitch && mode === 'percent') {
+      var curBase = lineState.base || lineDef.base;
+      baseSwitch =
+        '<div class="base-select field">' +
+          '<select id="base_' + lineDef.id + '" aria-label="Percentage base for ' + lineDef.label + '">' +
+            '<option value="build"' + (curBase === 'build' ? ' selected' : '') + '>% of build cost</option>' +
+            '<option value="landBuild"' + (curBase === 'landBuild' ? ' selected' : '') + '>% of land + build</option>' +
+          '</select>' +
+        '</div>';
+    }
+
+    var isMoney = lineDef.base === 'monthly' || mode === 'fixed';
+    wrap.innerHTML =
+      '<div class="cost-line-grid">' +
+        '<div class="field">' +
+          '<label for="line_' + lineDef.id + '">' + lineDef.label + '</label>' +
+          '<div class="field-row">' +
+            '<div class="value-wrap">' +
+              '<input type="' + (isMoney ? 'text' : 'number') + '" id="line_' + lineDef.id + '"' +
+                (isMoney ? ' class="fmt-money" inputmode="numeric" autocomplete="off"' : ' min="0" step="0.1"') + '>' +
+            '</div>' +
+            (lineDef.base === 'monthly' ? '' :
+              '<div class="mode-toggle" data-line="' + lineDef.id + '">' +
+                '<button type="button" data-mode="percent"' + (mode === 'percent' ? ' class="active"' : '') + '>%</button>' +
+                '<button type="button" data-mode="fixed"' + (mode === 'fixed' ? ' class="active"' : '') + '>$</button>' +
+              '</div>') +
+          '</div>' +
+          baseSwitch +
+          '<span class="hint">' + hint + '</span>' +
+        '</div>' +
+        amountColHtml(lineDef.id) +
+      '</div>';
+    return wrap;
+  }
+
+  function syncInputsFromState() {
+    el('landCost').value = fmtMoneyInput(state.landCost);
+    el('buildCost').value = fmtMoneyInput(state.buildCost);
+    el('salePrice').value = fmtMoneyInput(state.salePrice);
+    el('holdingMonths').value = state.holdingMonths;
+    el('lvr').value = state.lvr;
+    el('loanRate').value = state.loanRate;
+    el('avgDraw').value = state.avgDraw;
+
+    COST_LINES.forEach(function (lineDef) {
+      var input = el('line_' + lineDef.id);
+      if (!input) return;
+      if (lineDef.isInterest) {
+        var r = calculatePreviewInterest();
+        input.value = fmtMoneyInput(interestIsManual && interestManualValue !== null
+          ? interestManualValue
+          : r);
+        input.classList.toggle('auto-calc', !interestIsManual);
+        var resetWrap = el('interestResetWrap');
+        if (resetWrap) resetWrap.style.display = interestIsManual ? 'block' : 'none';
+        return;
+      }
+      var ls = state.lines[lineDef.id];
+      if (!ls) return;
+      var lineMode = ls.mode || lineDef.defaultMode;
+      var isMoney = lineDef.base === 'monthly' || lineMode === 'fixed';
+      input.value = isMoney ? fmtMoneyInput(ls.value) : ls.value;
+    });
+
+    renderCustomCosts();
+  }
+
+  function calculatePreviewInterest() {
+    var landCost = Math.max(0, state.landCost);
+    var buildCost = Math.max(0, state.buildCost);
+    var months = Math.max(1, state.holdingMonths);
+    var lvr = clamp(state.lvr, 0, 100);
+    var loanRate = Math.max(0, state.loanRate);
+    var avgDraw = clamp(state.avgDraw, 0, 100);
+    if (lvr <= 0) return 0;
+    var landLoan = landCost * (lvr / 100);
+    var buildLoan = buildCost * (lvr / 100);
+    return (landLoan * (loanRate / 100) * months / 12) +
+           (buildLoan * (loanRate / 100) * months / 12 * (avgDraw / 100));
+  }
+
+  function readStateFromInputs() {
+    state.landCost = Math.max(0, num('landCost'));
+    state.buildCost = Math.max(0, num('buildCost'));
+    state.salePrice = Math.max(0, num('salePrice'));
+    state.holdingMonths = Math.max(1, num('holdingMonths'));
+    state.lvr = clamp(num('lvr'), 0, 100);
+    state.loanRate = Math.max(0, num('loanRate'));
+    state.avgDraw = clamp(num('avgDraw'), 0, 100);
+
+    COST_LINES.forEach(function (lineDef) {
+      if (lineDef.isInterest) return;
+      var input = el('line_' + lineDef.id);
+      if (!input || !state.lines[lineDef.id]) return;
+      state.lines[lineDef.id].value = Math.max(0, parseRaw(input.value));
+      var baseSel = el('base_' + lineDef.id);
+      if (baseSel) state.lines[lineDef.id].base = baseSel.value;
+    });
+  }
+
+  // ── Custom costs UI ──
+  function renderCustomCosts() {
+    var container = el('customCostsContainer');
+    var empty = el('customEmpty');
+    container.innerHTML = '';
+
+    if (state.customCosts.length === 0) {
+      empty.style.display = 'block';
+      return;
+    }
+    empty.style.display = 'none';
+
+    state.customCosts.forEach(function (row, idx) {
+      var card = document.createElement('div');
+      card.className = 'custom-row-card';
+      card.innerHTML =
+        '<div class="custom-row-inner">' +
+          '<div class="field field-desc">' +
+            '<label>Description</label>' +
+            '<input type="text" data-idx="' + idx + '" data-field="label" value="' + esc(row.label || '') + '" placeholder="e.g. Soil test">' +
+          '</div>' +
+          '<div class="field">' +
+            '<label>Amount</label>' +
+            '<input type="text" class="fmt-money" inputmode="numeric" autocomplete="off" data-idx="' + idx + '" data-field="amount" value="' + fmtMoneyInput(row.amount || 0) + '">' +
+          '</div>' +
+          '<div class="field">' +
+            '<label>Category</label>' +
+            '<select data-idx="' + idx + '" data-field="category">' +
+              Object.keys(CATEGORIES).map(function (k) {
+                return '<option value="' + k + '"' + (row.category === k ? ' selected' : '') + '>' + CATEGORIES[k] + '</option>';
+              }).join('') +
+            '</select>' +
+          '</div>' +
+          '<div class="field-remove">' +
+            '<button type="button" class="btn-remove" data-idx="' + idx + '" title="Remove cost" aria-label="Remove cost">×</button>' +
+          '</div>' +
+        '</div>';
+      container.appendChild(card);
+    });
+  }
+
+  function esc(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+  }
+
+  function addCustomCost() {
+    if (state.customCosts.length >= MAX_CUSTOM) return;
+    state.customCosts.push({ id: Date.now(), label: '', amount: 0, category: 'admin' });
+    renderCustomCosts();
+    recalc();
+  }
+
+  function removeCustomCost(idx) {
+    state.customCosts.splice(idx, 1);
+    renderCustomCosts();
+    recalc();
+  }
+
+  // ── Render outputs ──
+  function render(result) {
+    var warnings = evaluateWarnings(result);
+    var surplus = result.salePrice - result.breakEvenPrice;
+
+    function setMetric(id, value, isPct) {
+      el(id).textContent = isPct ? fmtPct(value) : fmtCur.format(value);
+    }
+
+    function setMoneyRow(id, value, colorize) {
+      var node = el(id);
+      node.textContent = fmtCur.format(value);
+      if (colorize) {
+        node.classList.toggle('positive', value >= 0);
+        node.classList.toggle('negative', value < 0);
+      }
+    }
+
+    el('outSale').textContent = fmtCur.format(result.salePrice);
+    setMetric('outMargin', result.profitMargin, true);
+    setMetric('outRoi', result.roi, true);
+    setMetric('outEquity', result.equityRequired, false);
+    setMoneyRow('outSurplus', surplus, true);
+    el('boxSurplus').className = 'metric-box ' + (surplus >= 0 ? 'positive' : 'negative');
+
+    setMetric('outTotalCost', result.totalProjectCost, false);
+    setMetric('outBreakEven', result.breakEvenPrice, false);
+    setMoneyRow('outGross', result.grossProfit, true);
+    setMoneyRow('outNet', result.netProfit, true);
+    setMetric('outCash', result.totalCashRequired, false);
+    setMetric('outAcquisition', result.acquisitionTotal, false);
+    setMetric('outBuildCat', result.buildTotal, false);
+    setMetric('outFinance', result.financeTotal, false);
+    setMetric('outHolding', result.holdingTotal, false);
+    setMetric('outSelling', result.sellingTotal, false);
+    setMetric('outMonthlyHolding', result.monthlyHolding, false);
+    setMetric('outLoan', result.totalLoan, false);
+
+    el('boxMargin').className = 'metric-box highlight ' + (result.profitMargin >= 0 ? 'positive' : 'negative');
+    el('boxRoi').className = 'metric-box highlight ' + (result.roi >= 0 ? 'positive' : 'negative');
+
+    // Project basics quick stats
+    el('projectQuickStats').innerHTML =
+      '<span>Land <strong>' + fmtCur.format(result.landCost) + '</strong></span>' +
+      '<span>Build <strong>' + fmtCur.format(result.buildCost) + '</strong></span>' +
+      '<span>Hard costs <strong>' + fmtCur.format(result.landCost + result.buildCost) + '</strong></span>' +
+      '<span>Sale price <strong>' + fmtCur.format(result.salePrice) + '</strong></span>' +
+      '<span>Hold <strong>' + result.months + ' mo</strong></span>';
+
+    // Live calculated amounts on each cost line
+    COST_LINES.forEach(function (lineDef) {
+      var amtEl = el('amount_' + lineDef.id);
+      if (amtEl) amtEl.textContent = fmtCur.format(result.lineAmounts[lineDef.id] || 0);
+    });
+
+    // Update interest field if auto mode
+    var interestInput = el('line_interest');
+    if (interestInput && !interestIsManual && document.activeElement !== interestInput) {
+      interestInput.value = fmtMoneyInput(Math.round(result.computedInterest));
+      interestInput.classList.add('auto-calc');
+    }
+
+    // Warnings panel
+    el('warningsPanel').innerHTML = warnings.map(function (w) {
+      return '<div class="alert ' + w.type + '">' + w.text + '</div>';
+    }).join('');
+
+    // Breakdown table
+    var tbody = el('breakdownBody');
+    var html = '';
+    var catOrder = ['acquisition', 'build', 'finance', 'holding', 'selling', 'admin'];
+    catOrder.forEach(function (cat) {
+      var lines = result.breakdownLines.filter(function (l) { return l.category === cat; });
+      if (lines.length === 0) return;
+      var subtotal = lines.reduce(function (s, l) { return s + l.amount; }, 0);
+      html += '<tr class="cat-header"><td colspan="2">' + CATEGORIES[cat] + '</td></tr>';
+      lines.forEach(function (l) {
+        html += '<tr><td>' + esc(l.label) + '</td><td>' + fmtCur.format(l.amount) + '</td></tr>';
+      });
+      html += '<tr class="subtotal"><td>Subtotal — ' + CATEGORIES[cat] + '</td><td>' + fmtCur.format(subtotal) + '</td></tr>';
+    });
+    html += '<tr class="grand"><td>Total project cost</td><td>' + fmtCur.format(result.totalProjectCost) + '</td></tr>';
+    html += '<tr class="revenue"><td>Expected sale price</td><td>' + fmtCur.format(result.salePrice) + '</td></tr>';
+    html += '<tr class="profit-row ' + (result.grossProfit >= 0 ? 'positive' : 'negative') + '">' +
+      '<td>Gross profit</td><td>' + fmtCur.format(result.grossProfit) + '</td></tr>';
+    tbody.innerHTML = html;
+  }
+
+  function recalc() {
+    readStateFromInputs();
+    var result = calculate();
+    render(result);
+    saveState();
+  }
+
+  // ── Persistence ──
+  function saveState() {
+    var payload = {
+      landCost: state.landCost,
+      buildCost: state.buildCost,
+      salePrice: state.salePrice,
+      holdingMonths: state.holdingMonths,
+      lvr: state.lvr,
+      loanRate: state.loanRate,
+      avgDraw: state.avgDraw,
+      lines: state.lines,
+      interestIsManual: interestIsManual,
+      interestManualValue: interestManualValue,
+      customCosts: state.customCosts
+    };
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(payload)); } catch (e) { /* ignore */ }
+  }
+
+  function loadState() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return false;
+      var saved = JSON.parse(raw);
+      Object.assign(state, DEFAULTS, saved);
+      // Merge line defaults for any new lines added in updates
+      COST_LINES.forEach(function (line) {
+        if (line.isInterest) return;
+        if (!state.lines[line.id]) {
+          state.lines[line.id] = JSON.parse(JSON.stringify(DEFAULTS.lines[line.id]));
+        }
+      });
+      interestIsManual = !!saved.interestIsManual;
+      interestManualValue = saved.interestManualValue;
+      if (!Array.isArray(state.customCosts)) state.customCosts = [];
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function resetAll() {
+    state = JSON.parse(JSON.stringify(DEFAULTS));
+    interestIsManual = false;
+    interestManualValue = null;
+    try { localStorage.removeItem(STORAGE_KEY); } catch (e) { /* ignore */ }
+    renderCostLineFields();
+    syncInputsFromState();
+    recalc();
+  }
+
+  // ── Event binding ──
+  function bindEvents() {
+    var coreIds = ['landCost', 'buildCost', 'salePrice', 'holdingMonths', 'lvr', 'loanRate', 'avgDraw'];
+    coreIds.forEach(function (id) {
+      var input = el(id);
+      input.addEventListener('input', function () {
+        if (input.classList.contains('fmt-money')) onMoneyInput(input);
+        recalc();
+      });
+      input.addEventListener('blur', function () {
+        if (input.classList.contains('fmt-money')) {
+          formatMoneyEl(input);
+        } else if (parseFloat(input.value) < 0 || input.value === '') {
+          input.value = Math.max(0, parseFloat(input.value) || 0);
+        }
+        recalc();
+      });
+    });
+
+    document.body.addEventListener('input', function (e) {
+      var t = e.target;
+      if (t.classList && t.classList.contains('fmt-money') && !coreIds.includes(t.id)) {
+        onMoneyInput(t);
+      }
+      if (t.id && t.id.startsWith('line_')) {
+        if (t.id === 'line_interest') {
+          interestIsManual = true;
+          interestManualValue = Math.max(0, parseRaw(t.value));
+          t.classList.remove('auto-calc');
+          var rw = el('interestResetWrap');
+          if (rw) rw.style.display = 'block';
+        }
+        recalc();
+      }
+      if (t.dataset && t.dataset.idx !== undefined) {
+        var idx = parseInt(t.dataset.idx, 10);
+        var field = t.dataset.field;
+        if (state.customCosts[idx]) {
+          state.customCosts[idx][field] = field === 'amount' ? Math.max(0, parseRaw(t.value)) : t.value;
+          recalc();
+        }
+      }
+    });
+
+    document.body.addEventListener('blur', function (e) {
+      if (e.target.classList && e.target.classList.contains('fmt-money')) {
+        formatMoneyEl(e.target);
+      }
+    }, true);
+
+    document.body.addEventListener('change', function (e) {
+      if (e.target.id && e.target.id.startsWith('base_')) {
+        var lineId = e.target.id.replace('base_', '');
+        if (state.lines[lineId]) {
+          state.lines[lineId].base = e.target.value;
+          recalc();
+        }
+      }
+    });
+
+    document.body.addEventListener('click', function (e) {
+      // Mode toggle
+      var toggleBtn = e.target.closest('.mode-toggle button');
+      if (toggleBtn) {
+        var lineId = toggleBtn.parentElement.dataset.line;
+        var mode = toggleBtn.dataset.mode;
+        if (state.lines[lineId]) {
+          state.lines[lineId].mode = mode;
+          toggleBtn.parentElement.querySelectorAll('button').forEach(function (b) {
+            b.classList.toggle('active', b.dataset.mode === mode);
+          });
+          renderCostLineFields();
+          syncInputsFromState();
+          recalc();
+        }
+        return;
+      }
+
+      if (e.target.id === 'btnInterestReset') {
+        interestIsManual = false;
+        interestManualValue = null;
+        recalc();
+        return;
+      }
+
+      if (e.target.id === 'btnAddCustom') { addCustomCost(); return; }
+      if (e.target.id === 'btnReset') { resetAll(); return; }
+
+      if (e.target.classList.contains('btn-remove')) {
+        removeCustomCost(parseInt(e.target.dataset.idx, 10));
+      }
+    });
+  }
+
+  // ── Init ──
+  function init() {
+    loadState();
+    renderCostLineFields();
+    syncInputsFromState();
+    bindEvents();
+    recalc();
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>
