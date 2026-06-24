@@ -1,42 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.macrobusiness.com.au/2026/06/will-the-budgets-tax-changes-help-or-hinder-housing-supply/",
-      "title": "Will the budget\u2019s tax changes help or hinder housing supply?",
-      "title_fp": "willthebudgetstaxchangeshelporhinderhousingsupply",
-      "sent_at": "2026-06-10T21:01:23.847729+00:00"
-    },
-    {
-      "url": "https://the-decoder.com/googles-new-open-model-diffusiongemma-generates-text-from-noise-instead-of-word-by-word/",
-      "title": "Google's new open model DiffusionGemma generates text from noise instead of word by word",
-      "title_fp": "googlesnewopenmodeldiffusiongemmageneratestextfromnoiseinsteadofwordbyword",
-      "sent_at": "2026-06-10T21:01:23.847729+00:00"
-    },
-    {
-      "url": "https://techcrunch.com/2026/06/10/fresh-off-bond-sale-amazon-borrows-17-5-billion-from-banks-as-ai-spending-continues/",
-      "title": "Fresh off bond sale, Amazon borrows $17.5B from banks as AI spending continues",
-      "title_fp": "freshoffbondsaleamazonborrows175bfrombanksasaispendingcontinues",
-      "sent_at": "2026-06-10T21:01:23.847729+00:00"
-    },
-    {
-      "url": "https://www.ufc.com/news/main-event-spotlight-topuria-gaethje-freedom-250",
-      "title": "Main Event Spotlight | Ilia Topuria vs Justin Gaethje | UFC Freedom 250",
-      "title_fp": "maineventspotlightiliatopuriavsjustingaethjeufcfreedom250",
-      "sent_at": "2026-06-10T21:01:23.847729+00:00"
-    },
-    {
-      "url": "https://www.sherdog.com/news/news/Islam-Makhachev-shares-his-prediction-for-UFC-White-House-main-event-201474",
-      "title": "Islam Makhachev shares his prediction for UFC White House main event",
-      "title_fp": "islammakhachevshareshispredictionforufcwhitehousemainevent",
-      "sent_at": "2026-06-10T21:01:23.847729+00:00"
-    },
-    {
-      "url": "https://www.sherdog.com/news/news/Diego-Lopes-details-why-he-is-backing-Justin-Gaethje-to-beat-Ilia-Topuria-201480",
-      "title": "Diego Lopes details why he is backing Justin Gaethje to beat Ilia Topuria",
-      "title_fp": "diegolopesdetailswhyheisbackingjustingaethjetobeatiliatopuria",
-      "sent_at": "2026-06-10T21:01:23.847729+00:00"
-    },
-    {
       "url": "https://www.investing.com/news/stock-market-news/sp-global-ratings-upgrades-nvidia-to-aa-on-explosive-artificial-intelligence-dema-4738414",
       "title": "S&P Global Ratings upgrades Nvidia to AA on explosive AI demand",
       "title_fp": "spglobalratingsupgradesnvidiatoaaonexplosiveaidemand",
@@ -251,6 +215,72 @@
       "title": "UFC AND META UNVEIL META UFC RANKINGS",
       "title_fp": "ufcandmetaunveilmetaufcrankings",
       "sent_at": "2026-06-23T21:01:27.032329+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-06-25/worker-accomodation-open-in-horsham/106836666",
+      "title": "Housing fix in town where mining and medical workers can't find rentals",
+      "title_fp": "housingfixintownwhereminingandmedicalworkerscantfindrentals",
+      "sent_at": "2026-06-24T21:01:24.474702+00:00"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/06/24/micron-mu-earnings-report-q3-2026.html",
+      "title": "Micron stock jumps 16% as soaring prices from memory crunch lead to quadrupling of revenue",
+      "title_fp": "micronstockjumps16assoaringpricesfrommemorycrunchleadtoquadruplingofrevenue",
+      "sent_at": "2026-06-24T21:01:24.474702+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/06/25/these-asx-mining-stocks-soared-185-then-tumbled-what-now/",
+      "title": "These ASX mining stocks soared 185%+, then tumbled. What now?",
+      "title_fp": "theseasxminingstockssoared185thentumbledwhatnow",
+      "sent_at": "2026-06-24T21:01:24.474702+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/06/25/2-asx-200-shares-id-buy-for-powerful-growth/",
+      "title": "2 ASX 200 shares I'd buy for powerful growth",
+      "title_fp": "2asx200sharesidbuyforpowerfulgrowth",
+      "sent_at": "2026-06-24T21:01:24.474702+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/06/25/5-things-to-watch-on-the-asx-200-on-thursday-25-june-2026/",
+      "title": "5 things to watch on the ASX 200 on Thursday",
+      "title_fp": "5thingstowatchontheasx200onthursday",
+      "sent_at": "2026-06-24T21:01:24.474702+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/06/25/5000-buys-194-shares-in-these-2-top-asx-dividend-stocks/",
+      "title": "$5,000 buys 194 shares in these 2 top ASX dividend stocks",
+      "title_fp": "5000buys194sharesinthese2topasxdividendstocks",
+      "sent_at": "2026-06-24T21:01:24.474702+00:00"
+    },
+    {
+      "url": "https://the-decoder.com/openai-says-chatgpt-instant-now-better-understands-what-users-actually-want/",
+      "title": "OpenAI says ChatGPT Instant now better understands what users actually want",
+      "title_fp": "openaisayschatgptinstantnowbetterunderstandswhatusersactuallywant",
+      "sent_at": "2026-06-24T21:01:24.474702+00:00"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/24/companies-are-scrambling-to-stop-employees-from-maxing-out-ai-budgets-with-small-tasks/",
+      "title": "Companies are scrambling to stop employees from maxing out AI budgets with small tasks",
+      "title_fp": "companiesarescramblingtostopemployeesfrommaxingoutaibudgetswithsmalltasks",
+      "sent_at": "2026-06-24T21:01:24.474702+00:00"
+    },
+    {
+      "url": "https://www.sherdog.com/news/news/Title-challenger-signs-with-Eddie-Hearn-ahead-of-UFC-330-main-event-201641",
+      "title": "Title challenger signs with Eddie Hearn ahead of UFC 330 main event",
+      "title_fp": "titlechallengersignswitheddiehearnaheadofufc330mainevent",
+      "sent_at": "2026-06-24T21:01:24.474702+00:00"
+    },
+    {
+      "url": "https://www.sherdog.com/news/news/Charles-Oliveira-calls-for-rematch-with-Justin-Gaethje-The-fight-the-world-wants-to-see-201619",
+      "title": "Charles Oliveira calls for rematch with Justin Gaethje: 'The fight the world wants to see'",
+      "title_fp": "charlesoliveiracallsforrematchwithjustingaethjethefighttheworldwantstosee",
+      "sent_at": "2026-06-24T21:01:24.474702+00:00"
+    },
+    {
+      "url": "https://www.lowkickmma.com/tom-aspinall-comeback-revealed-by-eddie-hearn/",
+      "title": "Tom Aspinall\u2019s Comeback Timeline Revealed by Eddie Hearn",
+      "title_fp": "tomaspinallscomebacktimelinerevealedbyeddiehearn",
+      "sent_at": "2026-06-24T21:01:24.474702+00:00"
     }
   ]
 }
