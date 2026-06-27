@@ -1,12 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.investing.com/news/stock-market-news/sp-global-ratings-upgrades-nvidia-to-aa-on-explosive-artificial-intelligence-dema-4738414",
-      "title": "S&P Global Ratings upgrades Nvidia to AA on explosive AI demand",
-      "title_fp": "spglobalratingsupgradesnvidiatoaaonexplosiveaidemand",
-      "sent_at": "2026-06-11T21:01:35.752967+00:00"
-    },
-    {
       "url": "https://www.abc.net.au/news/2026-06-13/ai-agency-tool-australia-plan-tech-design-policy-institute/106786938",
       "title": "Australia has valuable cards to play in the AI future, new report finds",
       "title_fp": "australiahasvaluablecardstoplayintheaifuturenewreportfinds",
@@ -287,6 +281,72 @@
       "title": "Inside the small coastal town on the brink of an over-50s resort boom",
       "title_fp": "insidethesmallcoastaltownonthebrinkofanover50sresortboom",
       "sent_at": "2026-06-25T21:01:33.758717+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-06-28/wind-drought-stress-tests-south-australia-energy/106847354",
+      "title": "Wind 'drought' tests renewable energy poster child",
+      "title_fp": "winddroughttestsrenewableenergyposterchild",
+      "sent_at": "2026-06-27T21:01:21.629108+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-06-28/naracoorte-migrant-economy-volunteerism-multiculturism/106798482",
+      "title": "Housing shortage does not deter town from embracing migrants",
+      "title_fp": "housingshortagedoesnotdetertownfromembracingmigrants",
+      "sent_at": "2026-06-27T21:01:21.629108+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/06/28/asx-200-retail-shares-outperform-on-growing-hopes-interest-rates-have-peaked-week-26-2026/",
+      "title": "ASX 200 retail shares outperform on growing hopes interest rates have peaked",
+      "title_fp": "asx200retailsharesoutperformongrowinghopesinterestrateshavepeaked",
+      "sent_at": "2026-06-27T21:01:21.629108+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/06/28/2-quality-asx-200-shares-at-52-week-lows-to-buy-now/",
+      "title": "2 quality ASX 200 shares at 52-week lows to buy now",
+      "title_fp": "2qualityasx200sharesat52weeklowstobuynow",
+      "sent_at": "2026-06-27T21:01:21.629108+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/06/28/why-wesfarmers-shares-still-look-like-a-top-buy-to-me/",
+      "title": "Why Wesfarmers shares still look like a top buy to me",
+      "title_fp": "whywesfarmerssharesstilllooklikeatopbuytome",
+      "sent_at": "2026-06-27T21:01:21.629108+00:00"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/2026/jun/28/unit-owners-stratas-australia",
+      "title": "Unit owners are wresting back control of their stratas: \u2018If I don\u2019t do it, the building will fall into the street\u2019",
+      "title_fp": "unitownersarewrestingbackcontroloftheirstratasifidontdoitthebuildingwillfallintothestreet",
+      "sent_at": "2026-06-27T21:01:21.629108+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-06-28/naracoorte-migrant-economy-volunteerism-multiculturism/106798482",
+      "title": "Housing shortage does not deter town from embracing migrants",
+      "title_fp": "housingshortagedoesnotdetertownfromembracingmigrants",
+      "sent_at": "2026-06-27T21:01:21.629108+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-06-28/naracoorte-migrant-economy-volunteerism-multiculturism/106798482",
+      "title": "Housing shortage does not deter town from embracing migrants",
+      "title_fp": "housingshortagedoesnotdetertownfromembracingmigrants",
+      "sent_at": "2026-06-27T21:01:21.629108+00:00"
+    },
+    {
+      "url": "https://www.lowkickmma.com/rafael-fiziev-vs-manuel-torres-ufc-baku-results/",
+      "title": "Rafael Fiziev Returns To Winning Ways With Spectacular Spinning Kick KO Of Manuel Torres In UFC Baku Main Event",
+      "title_fp": "rafaelfizievreturnstowinningwayswithspectacularspinningkickkoofmanueltorresinufcbakumainevent",
+      "sent_at": "2026-06-27T21:01:21.629108+00:00"
+    },
+    {
+      "url": "https://www.lowkickmma.com/shara-magomedov-defeats-michel-pereira-ufc-baku/",
+      "title": "Shara Magomedov Escapes Early Disaster, Defeats Michel Pereira In UFC Baku Co-Main Event",
+      "title_fp": "sharamagomedovescapesearlydisasterdefeatsmichelpereirainufcbakucomainevent",
+      "sent_at": "2026-06-27T21:01:21.629108+00:00"
+    },
+    {
+      "url": "https://www.sherdog.com/news/news/UFC-Baku-Prelims-AbdulRakhman-Yakhyaev-shreds-Julius-Walker-in-eight-seconds-201660",
+      "title": "UFC Baku Prelims: Abdul-Rakhman Yakhyaev shreds Julius Walker in eight seconds",
+      "title_fp": "ufcbakuprelimsabdulrakhmanyakhyaevshredsjuliuswalkerineightseconds",
+      "sent_at": "2026-06-27T21:01:21.629108+00:00"
     }
   ]
 }
