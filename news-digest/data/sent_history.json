@@ -1,42 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.abc.net.au/news/2026-06-13/ai-agency-tool-australia-plan-tech-design-policy-institute/106786938",
-      "title": "Australia has valuable cards to play in the AI future, new report finds",
-      "title_fp": "australiahasvaluablecardstoplayintheaifuturenewreportfinds",
-      "sent_at": "2026-06-13T21:01:35.303866+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-06-15/ai-data-centre-energy-impact-ireland-cautionary-tale/106758928",
-      "title": "Ireland is a data centre 'cautionary tale'. This is the impact on locals",
-      "title_fp": "irelandisadatacentrecautionarytalethisistheimpactonlocals",
-      "sent_at": "2026-06-14T21:01:36.382056+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/06/15/what-are-the-big-four-banks-expecting-at-tomorrows-rba-cash-rate-meeting/",
-      "title": "What are the big four banks expecting at tomorrow's RBA cash rate meeting?",
-      "title_fp": "whatarethebigfourbanksexpectingattomorrowsrbacashratemeeting",
-      "sent_at": "2026-06-14T21:01:36.382056+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/06/15/6-asx-shares-with-35-to-75-growth-ahead-of-them-experts/",
-      "title": "6 ASX shares with 35% to 75% growth ahead of them: experts",
-      "title_fp": "6asxshareswith35to75growthaheadofthemexperts",
-      "sent_at": "2026-06-14T21:01:36.382056+00:00"
-    },
-    {
-      "url": "https://www.realestate.com.au/news/warning-as-common-items-linked-to-surge-in-household-fires/",
-      "title": "Warning as common items linked to surge in household fires",
-      "title_fp": "warningascommonitemslinkedtosurgeinhouseholdfires",
-      "sent_at": "2026-06-14T21:01:36.382056+00:00"
-    },
-    {
-      "url": "https://www.realestate.com.au/news/bachelors-matty-j-and-laura-byrne-forced-to-rent-out-dream-home-amid-mountain-of-debt/",
-      "title": "Bachelor\u2019s Matty J and Laura Byrne forced to rent out dream home amid \u2018mountain of debt\u2019",
-      "title_fp": "bachelorsmattyjandlaurabyrneforcedtorentoutdreamhomeamidmountainofdebt",
-      "sent_at": "2026-06-14T21:01:36.382056+00:00"
-    },
-    {
       "url": "https://www.macrobusiness.com.au/2026/06/financial-markets-backtrack-on-rba-rate-hikes/",
       "title": "Financial markets backtrack on RBA rate hikes",
       "title_fp": "financialmarketsbacktrackonrbaratehikes",
@@ -347,6 +311,42 @@
       "title": "UFC Baku Prelims: Abdul-Rakhman Yakhyaev shreds Julius Walker in eight seconds",
       "title_fp": "ufcbakuprelimsabdulrakhmanyakhyaevshredsjuliuswalkerineightseconds",
       "sent_at": "2026-06-27T21:01:21.629108+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-06-30/crackdown-on-ndis-shell-companies-amid-registration-requirements/106847702",
+      "title": "NDIS shell company boom sparks crackdown",
+      "title_fp": "ndisshellcompanyboomsparkscrackdown",
+      "sent_at": "2026-06-29T21:01:22.529630+00:00"
+    },
+    {
+      "url": "https://techcrunch.com/2026/06/29/geminis-personalized-ai-image-generation-is-now-free-for-u-s-users/",
+      "title": "Gemini\u2019s personalized AI image generation is now free for US users",
+      "title_fp": "geminispersonalizedaiimagegenerationisnowfreeforususers",
+      "sent_at": "2026-06-29T21:01:22.529630+00:00"
+    },
+    {
+      "url": "https://www.themandarin.com.au/315390-ato-office-staff-vote-up-24-three-year-pay-claim-by-asu/",
+      "title": "ATO staff vote-up 24%, three-year pay claim by ASU",
+      "title_fp": "atostaffvoteup24threeyearpayclaimbyasu",
+      "sent_at": "2026-06-29T21:01:22.529630+00:00"
+    },
+    {
+      "url": "https://www.lowkickmma.com/islam-makhachev-vs-ian-machado-garry-early-odds-released/",
+      "title": "Islam Makhachev vs. Ian Machado Garry Early Odds Released",
+      "title_fp": "islammakhachevvsianmachadogarryearlyoddsreleased",
+      "sent_at": "2026-06-29T21:01:22.529630+00:00"
+    },
+    {
+      "url": "https://www.sherdog.com/news/news/Jon-Jones-shares-pick-for-UFC-330-headliner-201671",
+      "title": "Jon Jones shares pick for UFC 330 headliner",
+      "title_fp": "jonjonessharespickforufc330headliner",
+      "sent_at": "2026-06-29T21:01:22.529630+00:00"
+    },
+    {
+      "url": "https://www.lowkickmma.com/khamzat-chimaev-put-belt-on-sean-strickland-to-clean-wants-rematch/",
+      "title": "Khamzat Chimaev Claims He Put the Belt on Sean Strickland To \u201cClean\u201d It, Pushes for Immediate Title Rematch",
+      "title_fp": "khamzatchimaevclaimsheputthebeltonseanstricklandtocleanitpushesforimmediatetitlerematch",
+      "sent_at": "2026-06-29T21:01:22.529630+00:00"
     }
   ]
 }
