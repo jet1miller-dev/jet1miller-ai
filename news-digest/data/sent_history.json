@@ -1,78 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.macrobusiness.com.au/2026/06/financial-markets-backtrack-on-rba-rate-hikes/",
-      "title": "Financial markets backtrack on RBA rate hikes",
-      "title_fp": "financialmarketsbacktrackonrbaratehikes",
-      "sent_at": "2026-06-15T21:03:50.641646+00:00"
-    },
-    {
-      "url": "https://www.marketwatch.com/story/even-nvidia-is-joining-the-ai-borrowing-spree-with-a-historic-20-billion-bond-deal-a054cff4?mod=mw_rss_topstories",
-      "title": "Even Nvidia is joining the AI borrowing spree, with a historic $20 billion bond deal",
-      "title_fp": "evennvidiaisjoiningtheaiborrowingspreewithahistoric20billionbonddeal",
-      "sent_at": "2026-06-15T21:03:50.641646+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-06-16/transgrid-seeks-billion-dollar-bailout-over-bungled-power-line/106772276",
-      "title": "Feud erupts as consumers on the hook for billion-dollar grid blowout",
-      "title_fp": "feuderuptsasconsumersonthehookforbilliondollargridblowout",
-      "sent_at": "2026-06-15T21:03:50.641646+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-06-15/economists-defend-capital-gains-changes/106800112",
-      "title": "Labor's CGT plan flawed but better than what we have, economists tell inquiry",
-      "title_fp": "laborscgtplanflawedbutbetterthanwhatwehaveeconomiststellinquiry",
-      "sent_at": "2026-06-15T21:03:50.641646+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-06-15/nt-government-introduces-new-air-quality-testing-monitoring/106798150",
-      "title": "Air quality monitoring to be upgraded in the NT after Inpex under-reporting",
-      "title_fp": "airqualitymonitoringtobeupgradedinthentafterinpexunderreporting",
-      "sent_at": "2026-06-15T21:03:50.641646+00:00"
-    },
-    {
-      "url": "https://www.investing.com/news/stock-market-news/qualcomm-in-talks-to-buy-tenstorrent-the-information-reports-4743281",
-      "title": "Qualcomm in talks to buy Tenstorrent, The Information reports",
-      "title_fp": "qualcommintalkstobuytenstorrenttheinformationreports",
-      "sent_at": "2026-06-15T21:03:50.641646+00:00"
-    },
-    {
-      "url": "https://www.investing.com/news/stock-market-news/britain-announces-sweeping-social-media-ban-for-under16s-4741351",
-      "title": "Britain announces sweeping social media ban for under-16s",
-      "title_fp": "britainannouncessweepingsocialmediabanforunder16s",
-      "sent_at": "2026-06-15T21:03:50.641646+00:00"
-    },
-    {
-      "url": "https://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms/",
-      "title": "Meta\u2019s new \u2018AI Mode\u2019 on Facebook pulls from public info across its platforms",
-      "title_fp": "metasnewaimodeonfacebookpullsfrompublicinfoacrossitsplatforms",
-      "sent_at": "2026-06-15T21:03:50.641646+00:00"
-    },
-    {
-      "url": "https://www.lowkickmma.com/justin-gaethje-ends-ilia-topurias-reign-at-ufc-freedom-250-arman-tsarukyan-conor-mcgregor-islam-makhachev-jake-paul-and-others-react/",
-      "title": "Justin Gaethje Ends Ilia Topuria\u2019s Reign at UFC Freedom 250: Arman Tsarukyan, Conor McGregor, Islam Makhachev, Jake Paul, and Others React",
-      "title_fp": "justingaethjeendsiliatopuriasreignatufcfreedom250armantsarukyanconormcgregorislammakhachevjakepaulan",
-      "sent_at": "2026-06-15T21:03:50.641646+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-06-17/queensland-sets-recycling-target-of-65pc-by-2035/106805094",
-      "title": "Queensland sets 65 pc recycling target as waste outstrips growth",
-      "title_fp": "queenslandsets65pcrecyclingtargetaswasteoutstripsgrowth",
-      "sent_at": "2026-06-16T21:01:31.788854+00:00"
-    },
-    {
-      "url": "https://the-decoder.com/microsofts-copilot-cowork-moves-to-usage-based-billing-and-may-tap-deepseek/",
-      "title": "Microsoft's Copilot Cowork moves to usage-based billing and may tap DeepSeek",
-      "title_fp": "microsoftscopilotcoworkmovestousagebasedbillingandmaytapdeepseek",
-      "sent_at": "2026-06-16T21:01:31.788854+00:00"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/live/2026/jun/17/australia-news-live-victoria-marines-weapons-pauline-hanson-one-nation-national-press-club-labor-childcare-medicare-anthony-albanese-ntwnfb",
-      "title": "Australia news live: US marines plan permanent weapons stockpile in Victoria; Pauline Hanson to address National Press Club",
-      "title_fp": "australianewsliveusmarinesplanpermanentweaponsstockpileinvictoriapaulinehansontoaddressnationalpress",
-      "sent_at": "2026-06-16T21:01:31.788854+00:00"
-    },
-    {
       "url": "https://www.lowkickmma.com/breaking-islam-makhachevs-ufc-330-fight-announced/",
       "title": "BREAKING: Islam Makhachev\u2019s UFC 330 Fight Announced",
       "title_fp": "breakingislammakhachevsufc330fightannounced",
@@ -347,6 +275,48 @@
       "title": "Khamzat Chimaev Claims He Put the Belt on Sean Strickland To \u201cClean\u201d It, Pushes for Immediate Title Rematch",
       "title_fp": "khamzatchimaevclaimsheputthebeltonseanstricklandtocleanitpushesforimmediatetitlerematch",
       "sent_at": "2026-06-29T21:01:22.529630+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-01/relief-homes-spared-from-resumption-the-wave-sunshine-coast/106859614",
+      "title": "Relief for home owners in limbo after property acquisition backflip",
+      "title_fp": "reliefforhomeownersinlimboafterpropertyacquisitionbackflip",
+      "sent_at": "2026-06-30T21:01:32.857331+00:00"
+    },
+    {
+      "url": "https://www.macrobusiness.com.au/2026/06/budget-helps-home-buyers-but-hurts-young-investors/",
+      "title": "Budget helps home buyers but hurts young investors",
+      "title_fp": "budgethelpshomebuyersbuthurtsyounginvestors",
+      "sent_at": "2026-06-30T21:01:32.857331+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-06-30/what-critics-are-saying-about-legally-blonde-prequel-elle/106862144",
+      "title": "From 'dull and deluded' to 'a peppy, hot pink delight': What critics think of Elle",
+      "title_fp": "fromdullanddeludedtoapeppyhotpinkdelightwhatcriticsthinkofelle",
+      "sent_at": "2026-06-30T21:01:32.857331+00:00"
+    },
+    {
+      "url": "https://www.theverge.com/tech/959778/google-notebooklm-ai-clips",
+      "title": "Google\u2019s NotebookLM can sum up your research in a TikTok-style clip",
+      "title_fp": "googlesnotebooklmcansumupyourresearchinatiktokstyleclip",
+      "sent_at": "2026-06-30T21:01:32.857331+00:00"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/live/2026/jul/01/australia-politics-live-labor-kpmg-daniel-mulino-jim-chalmers-anthony-albanese-question-time-coalition-angus-taylor-one-nation-pauline-hanson-ntwnfb",
+      "title": "Australia politics live: Labor makes move to crack down on consultants after latest scandal",
+      "title_fp": "australiapoliticslivelabormakesmovetocrackdownonconsultantsafterlatestscandal",
+      "sent_at": "2026-06-30T21:01:32.857331+00:00"
+    },
+    {
+      "url": "https://www.lowkickmma.com/ufc-baku-power-rankings-rating-the-nights-big-winners-in-azerbaijan/",
+      "title": "UFC Baku Power Rankings: Rating The Night\u2019s Big Winners In Azerbaijan",
+      "title_fp": "ufcbakupowerrankingsratingthenightsbigwinnersinazerbaijan",
+      "sent_at": "2026-06-30T21:01:32.857331+00:00"
+    },
+    {
+      "url": "https://www.sherdog.com/news/news/Khamzat-Chimaev-urges-Sean-Strickland-to-accept-UFC-title-rematch-201689",
+      "title": "Khamzat Chimaev urges Sean Strickland to accept UFC title rematch",
+      "title_fp": "khamzatchimaevurgesseanstricklandtoacceptufctitlerematch",
+      "sent_at": "2026-06-30T21:01:32.857331+00:00"
     }
   ]
 }
