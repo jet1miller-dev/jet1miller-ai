@@ -1,24 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.lowkickmma.com/breaking-islam-makhachevs-ufc-330-fight-announced/",
-      "title": "BREAKING: Islam Makhachev\u2019s UFC 330 Fight Announced",
-      "title_fp": "breakingislammakhachevsufc330fightannounced",
-      "sent_at": "2026-06-17T21:01:34.030504+00:00"
-    },
-    {
-      "url": "https://www.sherdog.com/news/news/Two-title-fights-official-for-UFC-330-in-Philadelphia-201562",
-      "title": "Two title fights official for UFC 330 in Philadelphia",
-      "title_fp": "twotitlefightsofficialforufc330inphiladelphia",
-      "sent_at": "2026-06-17T21:01:34.030504+00:00"
-    },
-    {
-      "url": "https://www.ufc.com/news/dana-white-announces-two-title-fights-ufcs-return-philadelphia",
-      "title": "Dana White Announces Two Title Fights For UFC's Return To Philadelphia",
-      "title_fp": "danawhiteannouncestwotitlefightsforufcsreturntophiladelphia",
-      "sent_at": "2026-06-17T21:01:34.030504+00:00"
-    },
-    {
       "url": "https://www.cnbc.com/2026/06/18/next-weeks-inflation-data-is-vitally-important-whats-ahead-for-the-market.html",
       "title": "Next week's inflation data just got even more important. Here's what's ahead for the market",
       "title_fp": "nextweeksinflationdatajustgotevenmoreimportanthereswhatsaheadforthemarket",
@@ -317,6 +299,54 @@
       "title": "Khamzat Chimaev urges Sean Strickland to accept UFC title rematch",
       "title_fp": "khamzatchimaevurgesseanstricklandtoacceptufctitlerematch",
       "sent_at": "2026-06-30T21:01:32.857331+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-02/plan-to-turn-empty-regional-shops-into-houses/106859536",
+      "title": "As main street shops vanish, could they help solve housing shortages?",
+      "title_fp": "asmainstreetshopsvanishcouldtheyhelpsolvehousingshortages",
+      "sent_at": "2026-07-01T21:01:42.921123+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-01/households-facing-heavy-home-loan-interest-burden-kpmg-rba/106864920",
+      "title": "Life now tougher for borrowers than 17pc interest days, analysis finds",
+      "title_fp": "lifenowtougherforborrowersthan17pcinterestdaysanalysisfinds",
+      "sent_at": "2026-07-01T21:01:42.921123+00:00"
+    },
+    {
+      "url": "https://www.brisbanetimes.com.au/national/australia-news-live-investigations-into-nsw-liberals-victorian-cfmeu-canberra-celebrates-midwinter-ball-us-iran-talks-to-conclude-20260702-p60bv5.html?ref=rss",
+      "title": "Australia news LIVE: Investigations into NSW Liberals, Victorian CFMEU, Canberra celebrates Midwinter Ball, US-Iran talks to conclude",
+      "title_fp": "australianewsliveinvestigationsintonswliberalsvictoriancfmeucanberracelebratesmidwinterballusirantal",
+      "sent_at": "2026-07-01T21:01:42.921123+00:00"
+    },
+    {
+      "url": "https://the-decoder.com/spacex-shows-investors-a-slim-ai-smartphone-prototype-powered-by-xai-technology/",
+      "title": "SpaceX shows investors a slim AI smartphone prototype powered by xAI technology",
+      "title_fp": "spacexshowsinvestorsaslimaismartphoneprototypepoweredbyxaitechnology",
+      "sent_at": "2026-07-01T21:01:42.921123+00:00"
+    },
+    {
+      "url": "https://techcrunch.com/2026/07/01/spacex-has-an-ai-device-prototype-and-it-sure-sounds-phone-ish/",
+      "title": "SpaceX has an AI device prototype, and it sure sounds phone-ish",
+      "title_fp": "spacexhasanaideviceprototypeanditsuresoundsphoneish",
+      "sent_at": "2026-07-01T21:01:42.921123+00:00"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/live/2026/jul/02/australia-politics-live-defence-aukus-conroy-national-press-club-anthony-albanese-labor-question-time-angus-taylor-coalition-tax-reform-one-nation-pauline-hanson-ntwnfb",
+      "title": "Australia politics live: defence industry minister to spruik Labor\u2019s \u2018progressive patriotism\u2019 as audits reveal waste",
+      "title_fp": "australiapoliticslivedefenceindustryministertospruiklaborsprogressivepatriotismasauditsrevealwaste",
+      "sent_at": "2026-07-01T21:01:42.921123+00:00"
+    },
+    {
+      "url": "https://combatpress.com/2026/07/ufc-330-heads-to-philadelphia-with-championship-doubleheader/",
+      "title": "UFC 330 Heads to Philadelphia with Championship Doubleheader",
+      "title_fp": "ufc330headstophiladelphiawithchampionshipdoubleheader",
+      "sent_at": "2026-07-01T21:01:42.921123+00:00"
+    },
+    {
+      "url": "https://www.ufc.com/news/blockbuster-welterweight-main-event-between-c-islam-makhachev-and-1-ian-machado-garry",
+      "title": "BLOCKBUSTER WELTERWEIGHT MAIN EVENT BETWEEN (C) ISLAM MAKHACHEV AND (#1) IAN MACHADO GARRY HEADLINES UFC RETURN TO PHILADELPHIA",
+      "title_fp": "blockbusterwelterweightmaineventbetweencislammakhachevand1ianmachadogarryheadlinesufcreturntophilade",
+      "sent_at": "2026-07-01T21:01:42.921123+00:00"
     }
   ]
 }
