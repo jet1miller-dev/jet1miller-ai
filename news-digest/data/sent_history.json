@@ -1,54 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.abc.net.au/news/2026-06-19/ravenswood-gold-secures-refinancing-deal/106819762",
-      "title": "Caution urged after Qld's largest gold mine's lifesaving $1.4bn deal",
-      "title_fp": "cautionurgedafterqldslargestgoldmineslifesaving14bndeal",
-      "sent_at": "2026-06-19T21:01:24.820113+00:00"
-    },
-    {
-      "url": "https://www.brisbanetimes.com.au/politics/queensland/voters-back-lnp-s-2032-games-preparations-but-there-s-a-catch-20260616-p60765.html?ref=rss",
-      "title": "Voters back LNP\u2019s 2032 Games preparations \u2013 but there\u2019s a catch",
-      "title_fp": "votersbacklnps2032gamespreparationsbuttheresacatch",
-      "sent_at": "2026-06-19T21:01:24.820113+00:00"
-    },
-    {
-      "url": "https://the-decoder.com/google-deepmind-loses-another-top-ai-researcher-as-nobel-laureate-john-jumper-leaves-for-anthropic/",
-      "title": "Google Deepmind loses another top AI researcher as Nobel laureate John Jumper leaves for Anthropic",
-      "title_fp": "googledeepmindlosesanothertopairesearcherasnobellaureatejohnjumperleavesforanthropic",
-      "sent_at": "2026-06-19T21:01:24.820113+00:00"
-    },
-    {
-      "url": "https://www.ufc.com/news/ufc-fight-night-kape-vs-horiguchi-main-card-results-highlights-interviews",
-      "title": "Main Card Results | UFC Fight Night: Kape vs Horiguchi",
-      "title_fp": "maincardresultsufcfightnightkapevshoriguchi",
-      "sent_at": "2026-06-19T21:01:24.820113+00:00"
-    },
-    {
-      "url": "https://www.sherdog.com/news/news/UFC-Vegas-119-Kape-vs-Horiguchi-2-playbyplay-results-round-scoring-201574",
-      "title": "UFC Vegas 119 \u2018Kape vs. Horiguchi 2\u2019 play-by-play, results & round scoring",
-      "title_fp": "ufcvegas119kapevshoriguchi2playbyplayresultsroundscoring",
-      "sent_at": "2026-06-19T21:01:24.820113+00:00"
-    },
-    {
-      "url": "https://www.ufc.com/news/ufc-fight-night-kape-vs-horiguchi-official-judges-scorecards",
-      "title": "Official Scorecards | UFC Fight Night: Kape vs Horiguchi",
-      "title_fp": "officialscorecardsufcfightnightkapevshoriguchi",
-      "sent_at": "2026-06-19T21:01:24.820113+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/06/21/term-deposits-or-asx-dividend-shares-as-the-rba-holds/",
-      "title": "Term deposits or ASX dividend shares as the RBA holds?",
-      "title_fp": "termdepositsorasxdividendsharesastherbaholds",
-      "sent_at": "2026-06-20T21:01:21.588814+00:00"
-    },
-    {
-      "url": "https://www.brisbanetimes.com.au/politics/nsw/time-for-new-thinking-government-goes-big-on-pre-made-homes-to-solve-housing-crisis-20260620-p608m8.html?ref=rss",
-      "title": "\u2018Time for new thinking\u2019: Government goes big on pre-made homes to solve housing crisis",
-      "title_fp": "timefornewthinkinggovernmentgoesbigonpremadehomestosolvehousingcrisis",
-      "sent_at": "2026-06-20T21:01:21.588814+00:00"
-    },
-    {
       "url": "https://www.sherdog.com/news/news/Manel-Kape-avenges-2017-loss-blasts-Kyoji-Horiguchi-in-UFC-Vegas-119-rematch-201576",
       "title": "Manel Kape avenges 2017 loss, blasts Kyoji Horiguchi in UFC Vegas 119 rematch",
       "title_fp": "manelkapeavenges2017lossblastskyojihoriguchiinufcvegas119rematch",
@@ -425,6 +377,42 @@
       "title": "Lightweight banger booked for UFC Vegas 120 main attraction",
       "title_fp": "lightweightbangerbookedforufcvegas120mainattraction",
       "sent_at": "2026-07-03T21:01:24.462217+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-05/small-businesses-struggling-to-survive-amid-rising-costs/106870676",
+      "title": "Pay increase the final straw for struggling small businesses",
+      "title_fp": "payincreasethefinalstrawforstrugglingsmallbusinesses",
+      "sent_at": "2026-07-04T21:01:33.775006+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-05/urana-residents-welcome-new-supermarket/106859750",
+      "title": "Residents farewell frozen bread and long-life milk as supermarket opens",
+      "title_fp": "residentsfarewellfrozenbreadandlonglifemilkassupermarketopens",
+      "sent_at": "2026-07-04T21:01:33.775006+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/07/05/5-best-asx-200-financial-shares-of-fy26/",
+      "title": "5 best ASX 200 financial shares of FY26",
+      "title_fp": "5bestasx200financialsharesoffy26",
+      "sent_at": "2026-07-04T21:01:33.775006+00:00"
+    },
+    {
+      "url": "https://the-decoder.com/open-source-tool-pxpipe-hides-text-in-pngs-to-cut-claude-code-and-fable-5-token-costs-up-to-70/",
+      "title": "Open-source tool pxpipe hides text in PNGs to cut Claude Code and Fable 5 token costs up to 70%",
+      "title_fp": "opensourcetoolpxpipehidestextinpngstocutclaudecodeandfable5tokencostsupto70",
+      "sent_at": "2026-07-04T21:01:33.775006+00:00"
+    },
+    {
+      "url": "https://www.lowkickmma.com/max-holloway-isnt-buying-conor-mcgregors-mind-games-ahead-of-ufc-329-i-get-to-assault-this-guy/",
+      "title": "Max Holloway Isn\u2019t Buying Conor McGregor\u2019s Mind Games Ahead of UFC 329: \u201cI get to assault this guy\u201d",
+      "title_fp": "maxhollowayisntbuyingconormcgregorsmindgamesaheadofufc329igettoassaultthisguy",
+      "sent_at": "2026-07-04T21:01:33.775006+00:00"
+    },
+    {
+      "url": "https://www.lowkickmma.com/alexander-volkanovski-if-conor-mcgregor-beats-max-holloway-ufc-329/",
+      "title": "Alexander Volkanovski predicts whether Conor McGregor can beat Max Holloway at UFC 329",
+      "title_fp": "alexandervolkanovskipredictswhetherconormcgregorcanbeatmaxhollowayatufc329",
+      "sent_at": "2026-07-04T21:01:33.775006+00:00"
     }
   ]
 }
