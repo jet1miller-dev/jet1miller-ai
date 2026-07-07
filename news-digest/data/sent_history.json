@@ -1,24 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.cnbc.com/2026/06/23/cerebras-cbrs-q1-earnings-report-2026.html",
-      "title": "Cerebras reports 92% revenue growth in chipmaker's first earnings report since IPO",
-      "title_fp": "cerebrasreports92revenuegrowthinchipmakersfirstearningsreportsinceipo",
-      "sent_at": "2026-06-23T21:01:27.032329+00:00"
-    },
-    {
-      "url": "https://www.sherdog.com/news/news/UFC-officially-launches-Metabased-rankings-system-201615",
-      "title": "UFC officially launches Meta-based rankings system",
-      "title_fp": "ufcofficiallylaunchesmetabasedrankingssystem",
-      "sent_at": "2026-06-23T21:01:27.032329+00:00"
-    },
-    {
-      "url": "https://www.ufc.com/news/ufc-and-meta-unveil-meta-ufc-rankings",
-      "title": "UFC AND META UNVEIL META UFC RANKINGS",
-      "title_fp": "ufcandmetaunveilmetaufcrankings",
-      "sent_at": "2026-06-23T21:01:27.032329+00:00"
-    },
-    {
       "url": "https://www.abc.net.au/news/2026-06-25/worker-accomodation-open-in-horsham/106836666",
       "title": "Housing fix in town where mining and medical workers can't find rentals",
       "title_fp": "housingfixintownwhereminingandmedicalworkerscantfindrentals",
@@ -467,6 +449,72 @@
       "title": "Conor McGregor's trainer in advance of UFC 329: This is the best shape he\u2019s ever been in",
       "title_fp": "conormcgregorstrainerinadvanceofufc329thisisthebestshapeheseverbeenin",
       "sent_at": "2026-07-06T21:01:41.213429+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-08/government-report-finds-ai-not-yet-causing-mass-job-losses/106889304",
+      "title": "Government report says AI not causing mass job lay-offs, yet",
+      "title_fp": "governmentreportsaysainotcausingmassjoblayoffsyet",
+      "sent_at": "2026-07-07T21:02:01.495639+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/07/08/your-tax-rate-just-dropped-here-is-exactly-how-much-more-you-will-take-home-from-1-july/",
+      "title": "Your tax rate just dropped. Here is exactly how much more you will take home from 1 July",
+      "title_fp": "yourtaxratejustdroppedhereisexactlyhowmuchmoreyouwilltakehomefrom1july",
+      "sent_at": "2026-07-07T21:02:01.495639+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/07/08/why-i-want-to-own-these-asx-shares-brokers-rate-as-buys/",
+      "title": "Why I want to own these ASX shares brokers rate as buys",
+      "title_fp": "whyiwanttoowntheseasxsharesbrokersrateasbuys",
+      "sent_at": "2026-07-07T21:02:01.495639+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/07/08/what-is-bell-potter-saying-about-a2-milk-shares-after-its-results/",
+      "title": "What is Bell Potter saying about A2 Milk shares after its results?",
+      "title_fp": "whatisbellpottersayingabouta2milksharesafteritsresults",
+      "sent_at": "2026-07-07T21:02:01.495639+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/07/08/is-this-asx-300-stock-a-buy-low-candidate-after-crashing-20-this-year/",
+      "title": "Is this ASX 300 stock a buy-low candidate after crashing 20% this year?",
+      "title_fp": "isthisasx300stockabuylowcandidateaftercrashing20thisyear",
+      "sent_at": "2026-07-07T21:02:01.495639+00:00"
+    },
+    {
+      "url": "https://www.realestate.com.au/news/tax-reforms-will-spark-mass-exodus-of-property-investors-experts-warn/",
+      "title": "Tax reforms will spark mass exodus of property investors, experts warn",
+      "title_fp": "taxreformswillsparkmassexodusofpropertyinvestorsexpertswarn",
+      "sent_at": "2026-07-07T21:02:01.495639+00:00"
+    },
+    {
+      "url": "https://www.brisbanetimes.com.au/sport/nrl/daley-lost-for-words-over-decider-20260707-p60dbj.html?ref=rss",
+      "title": "Daley lost for words over decider",
+      "title_fp": "daleylostforwordsoverdecider",
+      "sent_at": "2026-07-07T21:02:01.495639+00:00"
+    },
+    {
+      "url": "https://www.brisbanetimes.com.au/national/australia-news-as-it-happened-telstra-investigates-outage-albanese-s-origin-diplomacy-push-farage-resigns-from-parliament-20260708-p60dh2.html?ref=rss",
+      "title": "Australia news as it happened: Telstra investigates outage, Albanese\u2019s Origin diplomacy push; Farage resigns from parliament",
+      "title_fp": "australianewsasithappenedtelstrainvestigatesoutagealbanesesorigindiplomacypushfarageresignsfromparli",
+      "sent_at": "2026-07-07T21:02:01.495639+00:00"
+    },
+    {
+      "url": "https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram",
+      "title": "Meta\u2019s new Muse Image model can pull other Instagram users into AI photos",
+      "title_fp": "metasnewmuseimagemodelcanpullotherinstagramusersintoaiphotos",
+      "sent_at": "2026-07-07T21:02:01.495639+00:00"
+    },
+    {
+      "url": "https://www.themandarin.com.au/315861-appointments-to-lift-new-wa-2050-commission/",
+      "title": "Appointments to lift new WA 2050 Commission",
+      "title_fp": "appointmentstoliftnewwa2050commission",
+      "sent_at": "2026-07-07T21:02:01.495639+00:00"
+    },
+    {
+      "url": "https://www.sherdog.com/news/news/UFC-Shanghai-reportedly-adds-flyweight-bout-for-return-to-China-201796",
+      "title": "UFC Shanghai reportedly adds flyweight bout for return to China",
+      "title_fp": "ufcshanghaireportedlyaddsflyweightboutforreturntochina",
+      "sent_at": "2026-07-07T21:02:01.495639+00:00"
     }
   ]
 }
