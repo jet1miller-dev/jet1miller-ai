@@ -1,12 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.abc.net.au/news/2026-06-26/small-coastal-town-on-brink-of-over-50s-resort-boom/106758102",
-      "title": "Inside the small coastal town on the brink of an over-50s resort boom",
-      "title_fp": "insidethesmallcoastaltownonthebrinkofanover50sresortboom",
-      "sent_at": "2026-06-25T21:01:33.758717+00:00"
-    },
-    {
       "url": "https://www.abc.net.au/news/2026-06-28/wind-drought-stress-tests-south-australia-energy/106847354",
       "title": "Wind 'drought' tests renewable energy poster child",
       "title_fp": "winddroughttestsrenewableenergyposterchild",
@@ -455,6 +449,132 @@
       "title": "SpaceXAI releases Grok 4.5, which Elon describes as an \u2018Opus-class model\u2019",
       "title_fp": "spacexaireleasesgrok45whichelondescribesasanopusclassmodel",
       "sent_at": "2026-07-08T21:01:49.036352+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-10/nsw-snowy-hydro-worksafe-nsw-hearings-contractor/106898778",
+      "title": "Snowy Hydro contractor denies claims it exposed workers to risk of death",
+      "title_fp": "snowyhydrocontractordeniesclaimsitexposedworkerstoriskofdeath",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-10/buildings-for-lease-in-gold-mining-village-hill-end/106888642",
+      "title": "Morgue, pub and mine for lease as village ponders return to golden days",
+      "title_fp": "morguepubandmineforleaseasvillagepondersreturntogoldendays",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-10/telstra-warned-about-vulnerability-before-national-outage/106896906",
+      "title": "Government, experts repeatedly warned of issue that caused Telstra outage",
+      "title_fp": "governmentexpertsrepeatedlywarnedofissuethatcausedtelstraoutage",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.macrobusiness.com.au/2026/07/australia-opened-the-door-to-indias-fake-degree-problem/",
+      "title": "Australia opened the door to India\u2019s fake degree problem",
+      "title_fp": "australiaopenedthedoortoindiasfakedegreeproblem",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.marketwatch.com/story/metas-stock-rebounds-as-agentic-ai-coding-and-custom-chips-ease-spending-fears-16d1cb24?mod=mw_rss_topstories",
+      "title": "Meta\u2019s stock rebounds as agentic AI coding and custom chips ease spending fears",
+      "title_fp": "metasstockreboundsasagenticaicodingandcustomchipseasespendingfears",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.marketwatch.com/story/a-slower-ai-payoff-risks-tipping-the-economy-into-recession-apollo-says-5d495f6c?mod=mw_rss_topstories",
+      "title": "A slower AI payoff risks tipping the economy into recession, Apollo says",
+      "title_fp": "asloweraipayoffriskstippingtheeconomyintorecessionapollosays",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/07/09/florida-airport-palm-beach-internationa-donald-j-trump.html",
+      "title": "Florida's Palm Beach airport renamed for Trump",
+      "title_fp": "floridaspalmbeachairportrenamedfortrump",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/07/10/3-betashares-etfs-id-buy-with-10000/",
+      "title": "3 Betashares ETFs I'd buy with $10,000",
+      "title_fp": "3betasharesetfsidbuywith10000",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/07/10/3-asx-blue-chip-shares-that-could-be-strong-long-term-value-plays/",
+      "title": "3 ASX blue-chip shares that could be strong long-term value plays",
+      "title_fp": "3asxbluechipsharesthatcouldbestronglongtermvalueplays",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/07/10/buy-hold-sell-netwealth-silver-mines-and-qantas-shares/",
+      "title": "Buy, hold, sell: Netwealth, Silver Mines, and Qantas shares",
+      "title_fp": "buyholdsellnetwealthsilverminesandqantasshares",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.brisbanetimes.com.au/national/households-avoiding-winter-home-heating-20260710-p60e60.html?ref=rss",
+      "title": "Households avoiding winter home heating",
+      "title_fp": "householdsavoidingwinterhomeheating",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.brisbanetimes.com.au/national/australia-news-live-indian-prime-minister-narendra-modi-joins-prime-minister-anthony-albanese-telstra-boss-vicki-brady-returning-amid-crisis-over-nationwide-outage-blocked-triple-zero-calls-neil-the-seal-returns-to-the-sea-20260710-p60e5r.html?ref=rss",
+      "title": "Australia News LIVE: Modi joins Albanese, Telstra boss returns amid crisis, Neil the seal returns to sea",
+      "title_fp": "australianewslivemodijoinsalbanesetelstrabossreturnsamidcrisisneilthesealreturnstosea",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.brisbanetimes.com.au/sport/soccer/fifa-world-cup-2026-live-updates-france-take-on-morocco-as-quarter-finals-get-under-way-20260709-p60e0q.html?ref=rss",
+      "title": "FIFA World Cup 2026 LIVE updates: Mbappe penalty saved to leave France and Morocco deadlocked quarter-finals get under way",
+      "title_fp": "fifaworldcup2026liveupdatesmbappepenaltysavedtoleavefranceandmoroccodeadlockedquarterfinalsgetunderw",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.brisbanetimes.com.au/world/north-america/charlie-kirk-s-accused-killer-said-he-wished-he-hadn-t-done-it-court-hears-20260710-p60e5k.html?ref=rss",
+      "title": "Charlie Kirk\u2019s accused killer said he wished he \u2018hadn\u2019t done it\u2019, court hears",
+      "title_fp": "charliekirksaccusedkillersaidhewishedhehadntdoneitcourthears",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/963654/openai-chatgpt-atlas-ai-browser-shut-down-sunset",
+      "title": "The ChatGPT browser is already dead",
+      "title_fp": "thechatgptbrowserisalreadydead",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/963628/google-ai-generated-ads-label",
+      "title": "Google will now tell you if an ad was made with AI",
+      "title_fp": "googlewillnowtellyouifanadwasmadewithai",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.themandarin.com.au/316033-adf-ushers-in-change-of-command/",
+      "title": "ADF ushers in change of command",
+      "title_fp": "adfushersinchangeofcommand",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-10/kaylee-mckeown-medically-withdraws-commonwealth-games/106900100",
+      "title": "McKeown 'gutted' as illness forces Commonwealth Games withdrawal",
+      "title_fp": "mckeownguttedasillnessforcescommonwealthgameswithdrawal",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.sherdog.com/news/news/Topranked-heavyweights-to-duke-it-out-at-Noche-UFC-4-on-Sept-19-201832",
+      "title": "Top-ranked heavyweights to duke it out at Noche UFC 4 on Sept. 19",
+      "title_fp": "toprankedheavyweightstodukeitoutatnocheufc4onsept19",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.sherdog.com/news/news/UFC-329-betting-picks-Sean-Sheehans-best-bets-include-Holloway-over-McGregor-201831",
+      "title": "UFC 329 betting picks: Sean Sheehan\u2019s best bets include Holloway over McGregor",
+      "title_fp": "ufc329bettingpicksseansheehansbestbetsincludehollowayovermcgregor",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
+    },
+    {
+      "url": "https://www.sherdog.com/news/news/Merab-Dvalishvili-makes-surprising-pick-for-UFC-329s-McGregor-vs-Holloway-2-201828",
+      "title": "Merab Dvalishvili makes surprising pick for UFC 329's McGregor vs. Holloway 2",
+      "title_fp": "merabdvalishvilimakessurprisingpickforufc329smcgregorvsholloway2",
+      "sent_at": "2026-07-09T21:02:01.431009+00:00"
     }
   ]
 }
