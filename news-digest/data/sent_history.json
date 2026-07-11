@@ -1,72 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.abc.net.au/news/2026-06-28/wind-drought-stress-tests-south-australia-energy/106847354",
-      "title": "Wind 'drought' tests renewable energy poster child",
-      "title_fp": "winddroughttestsrenewableenergyposterchild",
-      "sent_at": "2026-06-27T21:01:21.629108+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-06-28/naracoorte-migrant-economy-volunteerism-multiculturism/106798482",
-      "title": "Housing shortage does not deter town from embracing migrants",
-      "title_fp": "housingshortagedoesnotdetertownfromembracingmigrants",
-      "sent_at": "2026-06-27T21:01:21.629108+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/06/28/asx-200-retail-shares-outperform-on-growing-hopes-interest-rates-have-peaked-week-26-2026/",
-      "title": "ASX 200 retail shares outperform on growing hopes interest rates have peaked",
-      "title_fp": "asx200retailsharesoutperformongrowinghopesinterestrateshavepeaked",
-      "sent_at": "2026-06-27T21:01:21.629108+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/06/28/2-quality-asx-200-shares-at-52-week-lows-to-buy-now/",
-      "title": "2 quality ASX 200 shares at 52-week lows to buy now",
-      "title_fp": "2qualityasx200sharesat52weeklowstobuynow",
-      "sent_at": "2026-06-27T21:01:21.629108+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/06/28/why-wesfarmers-shares-still-look-like-a-top-buy-to-me/",
-      "title": "Why Wesfarmers shares still look like a top buy to me",
-      "title_fp": "whywesfarmerssharesstilllooklikeatopbuytome",
-      "sent_at": "2026-06-27T21:01:21.629108+00:00"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/2026/jun/28/unit-owners-stratas-australia",
-      "title": "Unit owners are wresting back control of their stratas: \u2018If I don\u2019t do it, the building will fall into the street\u2019",
-      "title_fp": "unitownersarewrestingbackcontroloftheirstratasifidontdoitthebuildingwillfallintothestreet",
-      "sent_at": "2026-06-27T21:01:21.629108+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-06-28/naracoorte-migrant-economy-volunteerism-multiculturism/106798482",
-      "title": "Housing shortage does not deter town from embracing migrants",
-      "title_fp": "housingshortagedoesnotdetertownfromembracingmigrants",
-      "sent_at": "2026-06-27T21:01:21.629108+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-06-28/naracoorte-migrant-economy-volunteerism-multiculturism/106798482",
-      "title": "Housing shortage does not deter town from embracing migrants",
-      "title_fp": "housingshortagedoesnotdetertownfromembracingmigrants",
-      "sent_at": "2026-06-27T21:01:21.629108+00:00"
-    },
-    {
-      "url": "https://www.lowkickmma.com/rafael-fiziev-vs-manuel-torres-ufc-baku-results/",
-      "title": "Rafael Fiziev Returns To Winning Ways With Spectacular Spinning Kick KO Of Manuel Torres In UFC Baku Main Event",
-      "title_fp": "rafaelfizievreturnstowinningwayswithspectacularspinningkickkoofmanueltorresinufcbakumainevent",
-      "sent_at": "2026-06-27T21:01:21.629108+00:00"
-    },
-    {
-      "url": "https://www.lowkickmma.com/shara-magomedov-defeats-michel-pereira-ufc-baku/",
-      "title": "Shara Magomedov Escapes Early Disaster, Defeats Michel Pereira In UFC Baku Co-Main Event",
-      "title_fp": "sharamagomedovescapesearlydisasterdefeatsmichelpereirainufcbakucomainevent",
-      "sent_at": "2026-06-27T21:01:21.629108+00:00"
-    },
-    {
-      "url": "https://www.sherdog.com/news/news/UFC-Baku-Prelims-AbdulRakhman-Yakhyaev-shreds-Julius-Walker-in-eight-seconds-201660",
-      "title": "UFC Baku Prelims: Abdul-Rakhman Yakhyaev shreds Julius Walker in eight seconds",
-      "title_fp": "ufcbakuprelimsabdulrakhmanyakhyaevshredsjuliuswalkerineightseconds",
-      "sent_at": "2026-06-27T21:01:21.629108+00:00"
-    },
-    {
       "url": "https://www.abc.net.au/news/2026-06-30/crackdown-on-ndis-shell-companies-amid-registration-requirements/106847702",
       "title": "NDIS shell company boom sparks crackdown",
       "title_fp": "ndisshellcompanyboomsparkscrackdown",
@@ -641,6 +575,54 @@
       "title": "Main Card Results | UFC 329: McGregor vs Holloway 2",
       "title_fp": "maincardresultsufc329mcgregorvsholloway2",
       "sent_at": "2026-07-10T21:01:59.407386+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-12/housing-market-falling-prices-affordability/106005822",
+      "title": "What falling home prices mean for affordability",
+      "title_fp": "whatfallinghomepricesmeanforaffordability",
+      "sent_at": "2026-07-11T21:01:42.152388+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-12/melbourne-the-easiest-city-to-build-housing-density/106901712",
+      "title": "Most Australian cities make it hard to build homes, but one is bucking the trend",
+      "title_fp": "mostaustraliancitiesmakeithardtobuildhomesbutoneisbuckingthetrend",
+      "sent_at": "2026-07-11T21:01:42.152388+00:00"
+    },
+    {
+      "url": "https://www.theguardian.com/business/2026/jul/12/one-nation-australia-economy-stagflation-impulse-ntwnfb",
+      "title": "One Nation is capitalising on Australians\u2019 economic pessimism like never before. Is a \u2018stagflation impulse\u2019 to blame?",
+      "title_fp": "onenationiscapitalisingonaustralianseconomicpessimismlikeneverbeforeisastagflationimpulsetoblame",
+      "sent_at": "2026-07-11T21:01:42.152388+00:00"
+    },
+    {
+      "url": "https://the-decoder.com/openais-gpt-5-6-sol-ultra-reportedly-solves-a-50-year-old-math-problem-in-under-an-hour/",
+      "title": "OpenAI's GPT-5.6 Sol Ultra reportedly solves a 50-year-old math problem in under an hour",
+      "title_fp": "openaisgpt56solultrareportedlysolvesa50yearoldmathprobleminunderanhour",
+      "sent_at": "2026-07-11T21:01:42.152388+00:00"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2026/jul/12/ai-australia-will-labor-water-down-copyright-laws-datacentres",
+      "title": "AI companies want to water down Australia\u2019s copyright laws. Artists are outraged, Labor is split",
+      "title_fp": "aicompanieswanttowaterdownaustraliascopyrightlawsartistsareoutragedlaborissplit",
+      "sent_at": "2026-07-11T21:01:42.152388+00:00"
+    },
+    {
+      "url": "https://www.sherdog.com/news/news/UFC-329-McGregor-vs-Holloway-2-playbyplay-results-round-scoring-201842",
+      "title": "UFC 329 \u2018McGregor vs. Holloway 2\u2019 play-by-play, results & round scoring",
+      "title_fp": "ufc329mcgregorvsholloway2playbyplayresultsroundscoring",
+      "sent_at": "2026-07-11T21:01:42.152388+00:00"
+    },
+    {
+      "url": "https://www.ufc.com/news/ufc-329-mcgregor-vs-holloway-2-prelim-results",
+      "title": "Prelim Results | UFC 329: McGregor vs Holloway 2",
+      "title_fp": "prelimresultsufc329mcgregorvsholloway2",
+      "sent_at": "2026-07-11T21:01:42.152388+00:00"
+    },
+    {
+      "url": "https://www.ufc.com/news/ufc-329-mcgregor-vs-holloway-2-scorecards",
+      "title": "Official Scorecards | UFC 329: McGregor vs Holloway 2",
+      "title_fp": "officialscorecardsufc329mcgregorvsholloway2",
+      "sent_at": "2026-07-11T21:01:42.152388+00:00"
     }
   ]
 }
