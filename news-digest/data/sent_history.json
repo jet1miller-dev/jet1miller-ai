@@ -1,48 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.abc.net.au/news/2026-07-01/relief-homes-spared-from-resumption-the-wave-sunshine-coast/106859614",
-      "title": "Relief for home owners in limbo after property acquisition backflip",
-      "title_fp": "reliefforhomeownersinlimboafterpropertyacquisitionbackflip",
-      "sent_at": "2026-06-30T21:01:32.857331+00:00"
-    },
-    {
-      "url": "https://www.macrobusiness.com.au/2026/06/budget-helps-home-buyers-but-hurts-young-investors/",
-      "title": "Budget helps home buyers but hurts young investors",
-      "title_fp": "budgethelpshomebuyersbuthurtsyounginvestors",
-      "sent_at": "2026-06-30T21:01:32.857331+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-06-30/what-critics-are-saying-about-legally-blonde-prequel-elle/106862144",
-      "title": "From 'dull and deluded' to 'a peppy, hot pink delight': What critics think of Elle",
-      "title_fp": "fromdullanddeludedtoapeppyhotpinkdelightwhatcriticsthinkofelle",
-      "sent_at": "2026-06-30T21:01:32.857331+00:00"
-    },
-    {
-      "url": "https://www.theverge.com/tech/959778/google-notebooklm-ai-clips",
-      "title": "Google\u2019s NotebookLM can sum up your research in a TikTok-style clip",
-      "title_fp": "googlesnotebooklmcansumupyourresearchinatiktokstyleclip",
-      "sent_at": "2026-06-30T21:01:32.857331+00:00"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/live/2026/jul/01/australia-politics-live-labor-kpmg-daniel-mulino-jim-chalmers-anthony-albanese-question-time-coalition-angus-taylor-one-nation-pauline-hanson-ntwnfb",
-      "title": "Australia politics live: Labor makes move to crack down on consultants after latest scandal",
-      "title_fp": "australiapoliticslivelabormakesmovetocrackdownonconsultantsafterlatestscandal",
-      "sent_at": "2026-06-30T21:01:32.857331+00:00"
-    },
-    {
-      "url": "https://www.lowkickmma.com/ufc-baku-power-rankings-rating-the-nights-big-winners-in-azerbaijan/",
-      "title": "UFC Baku Power Rankings: Rating The Night\u2019s Big Winners In Azerbaijan",
-      "title_fp": "ufcbakupowerrankingsratingthenightsbigwinnersinazerbaijan",
-      "sent_at": "2026-06-30T21:01:32.857331+00:00"
-    },
-    {
-      "url": "https://www.sherdog.com/news/news/Khamzat-Chimaev-urges-Sean-Strickland-to-accept-UFC-title-rematch-201689",
-      "title": "Khamzat Chimaev urges Sean Strickland to accept UFC title rematch",
-      "title_fp": "khamzatchimaevurgesseanstricklandtoacceptufctitlerematch",
-      "sent_at": "2026-06-30T21:01:32.857331+00:00"
-    },
-    {
       "url": "https://www.abc.net.au/news/2026-07-02/plan-to-turn-empty-regional-shops-into-houses/106859536",
       "title": "As main street shops vanish, could they help solve housing shortages?",
       "title_fp": "asmainstreetshopsvanishcouldtheyhelpsolvehousingshortages",
@@ -695,6 +653,54 @@
       "title": "Chael Sonnen says Conor McGregor \u2018cannot main event\u2019 UFC cards",
       "title_fp": "chaelsonnensaysconormcgregorcannotmaineventufccards",
       "sent_at": "2026-07-13T21:01:50.731479+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-15/csiro-says-batteries-cheaper-than-gas-as-ai-drives-turbine-costs/106914550",
+      "title": "Batteries charge ahead as data centres fuel gas turbine costs: CSIRO",
+      "title_fp": "batterieschargeaheadasdatacentresfuelgasturbinecostscsiro",
+      "sent_at": "2026-07-14T21:01:43.625879+00:00"
+    },
+    {
+      "url": "https://www.marketwatch.com/story/another-warning-sign-is-flashing-for-tech-stocks-and-this-one-comes-from-outside-the-u-s-d51d6bfd?mod=mw_rss_topstories",
+      "title": "Your stock portfolio is tied to the Japanese yen \u2014 and a looming intervention is flashing a major warning sign",
+      "title_fp": "yourstockportfolioistiedtothejapaneseyenandaloominginterventionisflashingamajorwarningsign",
+      "sent_at": "2026-07-14T21:01:43.625879+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/07/15/this-asx-gold-stock-could-jump-more-than-40-broker/",
+      "title": "This ASX gold stock could jump more than 40%: Broker",
+      "title_fp": "thisasxgoldstockcouldjumpmorethan40broker",
+      "sent_at": "2026-07-14T21:01:43.625879+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/07/15/how-to-invest-20000-in-asx-etfs-in-july/",
+      "title": "How to invest $20,000 in ASX ETFs in July",
+      "title_fp": "howtoinvest20000inasxetfsinjuly",
+      "sent_at": "2026-07-14T21:01:43.625879+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/07/15/how-much-passive-income-can-i-earn-off-a-50000-portfolio/",
+      "title": "How much passive income can I earn off a $50,000 portfolio?",
+      "title_fp": "howmuchpassiveincomecaniearnoffa50000portfolio",
+      "sent_at": "2026-07-14T21:01:43.625879+00:00"
+    },
+    {
+      "url": "https://www.brisbanetimes.com.au/national/concern-for-australias-fuel-supply-20260715-p60fd0.html?ref=rss",
+      "title": "Concern for Australia's fuel supply",
+      "title_fp": "concernforaustraliasfuelsupply",
+      "sent_at": "2026-07-14T21:01:43.625879+00:00"
+    },
+    {
+      "url": "https://techcrunch.com/2026/07/14/apple-opens-its-new-siri-ai-to-everyone-with-the-ios-27-public-beta/",
+      "title": "Apple opens its new Siri AI to everyone with the iOS 27 public beta",
+      "title_fp": "appleopensitsnewsiriaitoeveryonewiththeios27publicbeta",
+      "sent_at": "2026-07-14T21:01:43.625879+00:00"
+    },
+    {
+      "url": "https://www.theguardian.com/australia-news/live/2026/jul/15/australia-news-live-ceo-pay-anthony-albanese-palestine-gaza-ai-artificial-intelligence-datacentres-copyright-royal-commission-antisemitism-labor-ntwnfb",
+      "title": "Australia news live: top 100 CEOs bank 16% pay rise; Husic warns Labor over Gaza policy",
+      "title_fp": "australianewslivetop100ceosbank16payrisehusicwarnslaborovergazapolicy",
+      "sent_at": "2026-07-14T21:01:43.625879+00:00"
     }
   ]
 }
