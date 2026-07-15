@@ -1,54 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.abc.net.au/news/2026-07-02/plan-to-turn-empty-regional-shops-into-houses/106859536",
-      "title": "As main street shops vanish, could they help solve housing shortages?",
-      "title_fp": "asmainstreetshopsvanishcouldtheyhelpsolvehousingshortages",
-      "sent_at": "2026-07-01T21:01:42.921123+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-07-01/households-facing-heavy-home-loan-interest-burden-kpmg-rba/106864920",
-      "title": "Life now tougher for borrowers than 17pc interest days, analysis finds",
-      "title_fp": "lifenowtougherforborrowersthan17pcinterestdaysanalysisfinds",
-      "sent_at": "2026-07-01T21:01:42.921123+00:00"
-    },
-    {
-      "url": "https://www.brisbanetimes.com.au/national/australia-news-live-investigations-into-nsw-liberals-victorian-cfmeu-canberra-celebrates-midwinter-ball-us-iran-talks-to-conclude-20260702-p60bv5.html?ref=rss",
-      "title": "Australia news LIVE: Investigations into NSW Liberals, Victorian CFMEU, Canberra celebrates Midwinter Ball, US-Iran talks to conclude",
-      "title_fp": "australianewsliveinvestigationsintonswliberalsvictoriancfmeucanberracelebratesmidwinterballusirantal",
-      "sent_at": "2026-07-01T21:01:42.921123+00:00"
-    },
-    {
-      "url": "https://the-decoder.com/spacex-shows-investors-a-slim-ai-smartphone-prototype-powered-by-xai-technology/",
-      "title": "SpaceX shows investors a slim AI smartphone prototype powered by xAI technology",
-      "title_fp": "spacexshowsinvestorsaslimaismartphoneprototypepoweredbyxaitechnology",
-      "sent_at": "2026-07-01T21:01:42.921123+00:00"
-    },
-    {
-      "url": "https://techcrunch.com/2026/07/01/spacex-has-an-ai-device-prototype-and-it-sure-sounds-phone-ish/",
-      "title": "SpaceX has an AI device prototype, and it sure sounds phone-ish",
-      "title_fp": "spacexhasanaideviceprototypeanditsuresoundsphoneish",
-      "sent_at": "2026-07-01T21:01:42.921123+00:00"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/live/2026/jul/02/australia-politics-live-defence-aukus-conroy-national-press-club-anthony-albanese-labor-question-time-angus-taylor-coalition-tax-reform-one-nation-pauline-hanson-ntwnfb",
-      "title": "Australia politics live: defence industry minister to spruik Labor\u2019s \u2018progressive patriotism\u2019 as audits reveal waste",
-      "title_fp": "australiapoliticslivedefenceindustryministertospruiklaborsprogressivepatriotismasauditsrevealwaste",
-      "sent_at": "2026-07-01T21:01:42.921123+00:00"
-    },
-    {
-      "url": "https://combatpress.com/2026/07/ufc-330-heads-to-philadelphia-with-championship-doubleheader/",
-      "title": "UFC 330 Heads to Philadelphia with Championship Doubleheader",
-      "title_fp": "ufc330headstophiladelphiawithchampionshipdoubleheader",
-      "sent_at": "2026-07-01T21:01:42.921123+00:00"
-    },
-    {
-      "url": "https://www.ufc.com/news/blockbuster-welterweight-main-event-between-c-islam-makhachev-and-1-ian-machado-garry",
-      "title": "BLOCKBUSTER WELTERWEIGHT MAIN EVENT BETWEEN (C) ISLAM MAKHACHEV AND (#1) IAN MACHADO GARRY HEADLINES UFC RETURN TO PHILADELPHIA",
-      "title_fp": "blockbusterwelterweightmaineventbetweencislammakhachevand1ianmachadogarryheadlinesufcreturntophilade",
-      "sent_at": "2026-07-01T21:01:42.921123+00:00"
-    },
-    {
       "url": "https://www.marketwatch.com/story/spacex-panic-sends-verizon-and-at-t-shares-toward-their-worst-week-in-years-ba5879a8?mod=mw_rss_topstories",
       "title": "SpaceX panic sends AT&T stock to its worst week in years",
       "title_fp": "spacexpanicsendsattstocktoitsworstweekinyears",
@@ -701,6 +653,18 @@
       "title": "Australia news live: top 100 CEOs bank 16% pay rise; Husic warns Labor over Gaza policy",
       "title_fp": "australianewslivetop100ceosbank16payrisehusicwarnslaborovergazapolicy",
       "sent_at": "2026-07-14T21:01:43.625879+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-16/petrol-temperature-check-what-happens-with-prices/106917442",
+      "title": "Why Australians shouldn't panic about fuel prices as war in Iran escalates again",
+      "title_fp": "whyaustraliansshouldntpanicaboutfuelpricesaswariniranescalatesagain",
+      "sent_at": "2026-07-15T21:01:54.341441+00:00"
+    },
+    {
+      "url": "https://the-decoder.com/openai-is-now-using-ai-to-attack-its-own-ai-and-its-working-better-than-humans-ever-did/",
+      "title": "OpenAI is now using AI to attack its own AI, and it's working better than humans ever did",
+      "title_fp": "openaiisnowusingaitoattackitsownaianditsworkingbetterthanhumanseverdid",
+      "sent_at": "2026-07-15T21:01:54.341441+00:00"
     }
   ]
 }
