@@ -1,42 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.fool.com.au/2026/07/04/10-of-the-best-asx-shares-to-buy-in-fy-2027/",
-      "title": "10 of the best ASX shares to buy in FY 2027",
-      "title_fp": "10ofthebestasxsharestobuyinfy2027",
-      "sent_at": "2026-07-03T21:01:24.462217+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/07/04/three-asx-200-companies-macquarie-says-are-a-buy-right-now/",
-      "title": "Three ASX 200 companies Macquarie says are a buy right now",
-      "title_fp": "threeasx200companiesmacquariesaysareabuyrightnow",
-      "sent_at": "2026-07-03T21:01:24.462217+00:00"
-    },
-    {
-      "url": "https://www.realestate.com.au/news/plans-approved-to-transform-historic-shafston-house-into-luxury-global-address/",
-      "title": "Plans approved to transform historic Shafston House into luxury global address",
-      "title_fp": "plansapprovedtotransformhistoricshafstonhouseintoluxuryglobaladdress",
-      "sent_at": "2026-07-03T21:01:24.462217+00:00"
-    },
-    {
-      "url": "https://the-decoder.com/microsoft-follows-anthropic-and-openai-into-the-ai-super-app-race-with-overhauled-copilot-and-autopilot-agents/",
-      "title": "Microsoft follows Anthropic and OpenAI into the AI super app race with overhauled Copilot and AutoPilot agents",
-      "title_fp": "microsoftfollowsanthropicandopenaiintotheaisuperappracewithoverhauledcopilotandautopilotagents",
-      "sent_at": "2026-07-03T21:01:24.462217+00:00"
-    },
-    {
-      "url": "https://www.sherdog.com/news/news/Santiago-Ponzinibbio-returns-against-British-finisher-at-UFC-Abu-Dhabi-201758",
-      "title": "Santiago Ponzinibbio returns against British finisher at UFC Abu Dhabi",
-      "title_fp": "santiagoponzinibbioreturnsagainstbritishfinisheratufcabudhabi",
-      "sent_at": "2026-07-03T21:01:24.462217+00:00"
-    },
-    {
-      "url": "https://www.sherdog.com/news/news/Lightweight-banger-booked-for-UFC-Vegas-120-main-attraction-201740",
-      "title": "Lightweight banger booked for UFC Vegas 120 main attraction",
-      "title_fp": "lightweightbangerbookedforufcvegas120mainattraction",
-      "sent_at": "2026-07-03T21:01:24.462217+00:00"
-    },
-    {
       "url": "https://www.abc.net.au/news/2026-07-05/small-businesses-struggling-to-survive-amid-rising-costs/106870676",
       "title": "Pay increase the final straw for struggling small businesses",
       "title_fp": "payincreasethefinalstrawforstrugglingsmallbusinesses",
@@ -641,6 +605,90 @@
       "title": "Kimi's open model K3 nears GPT-5.6 Sol and Fable 5 while signaling the end of super cheap Chinese AI",
       "title_fp": "kimisopenmodelk3nearsgpt56solandfable5whilesignalingtheendofsupercheapchineseai",
       "sent_at": "2026-07-16T21:01:31.740317+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-18/ai-music-copyright-training-office-of-ai/106901562",
+      "title": "'Unethical': Minister admits big tech firms use Aussie content without artists' permission",
+      "title_fp": "unethicalministeradmitsbigtechfirmsuseaussiecontentwithoutartistspermission",
+      "sent_at": "2026-07-17T21:01:31.327382+00:00"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html",
+      "title": "Chinese AI has leveled up, and brought renewed focus on the open weight model shift",
+      "title_fp": "chineseaihasleveledupandbroughtrenewedfocusontheopenweightmodelshift",
+      "sent_at": "2026-07-17T21:01:31.327382+00:00"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/07/17/prepare-your-portfolio-for-inflation-risk-with-these-moves.html",
+      "title": "Prepare your portfolio for inflation risk with these moves",
+      "title_fp": "prepareyourportfolioforinflationriskwiththesemoves",
+      "sent_at": "2026-07-17T21:01:31.327382+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-18/battery-installation-rates-collapse-solar-coaster-strikes-back/106909726",
+      "title": "Subsidy changes prompt battery installation collapse",
+      "title_fp": "subsidychangespromptbatteryinstallationcollapse",
+      "sent_at": "2026-07-17T21:01:31.327382+00:00"
+    },
+    {
+      "url": "https://www.marketwatch.com/story/chip-stocks-enter-bear-market-territory-a-bofa-analyst-says-not-to-panic-4d34df17?mod=mw_rss_topstories",
+      "title": "Chip stocks have entered a bear market. A BofA analyst says not to panic.",
+      "title_fp": "chipstockshaveenteredabearmarketabofaanalystsaysnottopanic",
+      "sent_at": "2026-07-17T21:01:31.327382+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-18/gulf-nations-building-alternatives-to-strait-of-hormuz/106928846",
+      "title": "The race to find routes around the Strait of Hormuz and which nation is winning",
+      "title_fp": "theracetofindroutesaroundthestraitofhormuzandwhichnationiswinning",
+      "sent_at": "2026-07-17T21:01:31.327382+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/07/18/the-asx-etf-market-is-set-for-a-record-year-here-are-the-best-performers-so-far-in-2026/",
+      "title": "The ASX ETF market is set for a record year \u2013 Here are the best performers so far in 2026",
+      "title_fp": "theasxetfmarketissetforarecordyearherearethebestperformerssofarin2026",
+      "sent_at": "2026-07-17T21:01:31.327382+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/07/18/should-you-buy-hold-or-sell-wesfarmers-shares/",
+      "title": "Should you buy, hold, or sell Wesfarmers shares?",
+      "title_fp": "shouldyoubuyholdorsellwesfarmersshares",
+      "sent_at": "2026-07-17T21:01:31.327382+00:00"
+    },
+    {
+      "url": "https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard/",
+      "title": "Agility Robotics plants its flag in Tesla\u2019s backyard",
+      "title_fp": "agilityroboticsplantsitsflaginteslasbackyard",
+      "sent_at": "2026-07-17T21:01:31.327382+00:00"
+    },
+    {
+      "url": "https://techcrunch.com/2026/07/17/ai-driven-memory-crunch-jolts-indias-smartphone-market/",
+      "title": "AI-driven memory crunch jolts India\u2019s smartphone market",
+      "title_fp": "aidrivenmemorycrunchjoltsindiassmartphonemarket",
+      "sent_at": "2026-07-17T21:01:31.327382+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-18/ai-music-copyright-training-office-of-ai/106901562",
+      "title": "'Unethical': Minister admits big tech firms use Aussie content without artists' permission",
+      "title_fp": "unethicalministeradmitsbigtechfirmsuseaussiecontentwithoutartistspermission",
+      "sent_at": "2026-07-17T21:01:31.327382+00:00"
+    },
+    {
+      "url": "https://www.lowkickmma.com/kamaru-usman-vs-dricus-du-plessis-ufc-champs-crucial-main-event/",
+      "title": "Kamaru Usman vs. Dricus du Plessis: Former UFC Champions Meet in Crucial Main Event",
+      "title_fp": "kamaruusmanvsdricusduplessisformerufcchampionsmeetincrucialmainevent",
+      "sent_at": "2026-07-17T21:01:31.327382+00:00"
+    },
+    {
+      "url": "https://combatpress.com/2026/07/ufc-fight-night-du-plessis-vs-usman-preview-and-predictions/",
+      "title": "UFC Fight Night: Du Plessis vs. Usman Preview and Predictions",
+      "title_fp": "ufcfightnightduplessisvsusmanpreviewandpredictions",
+      "sent_at": "2026-07-17T21:01:31.327382+00:00"
+    },
+    {
+      "url": "https://www.sherdog.com/news/news/Jan-Blachowicz-draws-undefeated-replacement-foe-for-UFC-Belgrade-card-201955",
+      "title": "Jan Blachowicz draws undefeated replacement foe for UFC Belgrade card",
+      "title_fp": "janblachowiczdrawsundefeatedreplacementfoeforufcbelgradecard",
+      "sent_at": "2026-07-17T21:01:31.327382+00:00"
     }
   ]
 }
