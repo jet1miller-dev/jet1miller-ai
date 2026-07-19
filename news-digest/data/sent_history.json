@@ -1,42 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.abc.net.au/news/2026-07-05/small-businesses-struggling-to-survive-amid-rising-costs/106870676",
-      "title": "Pay increase the final straw for struggling small businesses",
-      "title_fp": "payincreasethefinalstrawforstrugglingsmallbusinesses",
-      "sent_at": "2026-07-04T21:01:33.775006+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-07-05/urana-residents-welcome-new-supermarket/106859750",
-      "title": "Residents farewell frozen bread and long-life milk as supermarket opens",
-      "title_fp": "residentsfarewellfrozenbreadandlonglifemilkassupermarketopens",
-      "sent_at": "2026-07-04T21:01:33.775006+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/07/05/5-best-asx-200-financial-shares-of-fy26/",
-      "title": "5 best ASX 200 financial shares of FY26",
-      "title_fp": "5bestasx200financialsharesoffy26",
-      "sent_at": "2026-07-04T21:01:33.775006+00:00"
-    },
-    {
-      "url": "https://the-decoder.com/open-source-tool-pxpipe-hides-text-in-pngs-to-cut-claude-code-and-fable-5-token-costs-up-to-70/",
-      "title": "Open-source tool pxpipe hides text in PNGs to cut Claude Code and Fable 5 token costs up to 70%",
-      "title_fp": "opensourcetoolpxpipehidestextinpngstocutclaudecodeandfable5tokencostsupto70",
-      "sent_at": "2026-07-04T21:01:33.775006+00:00"
-    },
-    {
-      "url": "https://www.lowkickmma.com/max-holloway-isnt-buying-conor-mcgregors-mind-games-ahead-of-ufc-329-i-get-to-assault-this-guy/",
-      "title": "Max Holloway Isn\u2019t Buying Conor McGregor\u2019s Mind Games Ahead of UFC 329: \u201cI get to assault this guy\u201d",
-      "title_fp": "maxhollowayisntbuyingconormcgregorsmindgamesaheadofufc329igettoassaultthisguy",
-      "sent_at": "2026-07-04T21:01:33.775006+00:00"
-    },
-    {
-      "url": "https://www.lowkickmma.com/alexander-volkanovski-if-conor-mcgregor-beats-max-holloway-ufc-329/",
-      "title": "Alexander Volkanovski predicts whether Conor McGregor can beat Max Holloway at UFC 329",
-      "title_fp": "alexandervolkanovskipredictswhetherconormcgregorcanbeatmaxhollowayatufc329",
-      "sent_at": "2026-07-04T21:01:33.775006+00:00"
-    },
-    {
       "url": "https://www.macrobusiness.com.au/2026/07/criticism-of-budget-dismissed-as-barely-coherent-noise/",
       "title": "Criticism of budget dismissed as \u201cbarely coherent noise\u201d",
       "title_fp": "criticismofbudgetdismissedasbarelycoherentnoise",
@@ -689,6 +653,60 @@
       "title": "Jan Blachowicz draws undefeated replacement foe for UFC Belgrade card",
       "title_fp": "janblachowiczdrawsundefeatedreplacementfoeforufcbelgradecard",
       "sent_at": "2026-07-17T21:01:31.327382+00:00"
+    },
+    {
+      "url": "https://www.macrobusiness.com.au/2026/07/rba-in-tug-of-war-between-inflation-and-unemployment/",
+      "title": "RBA in tug-of-war between inflation and unemployment",
+      "title_fp": "rbaintugofwarbetweeninflationandunemployment",
+      "sent_at": "2026-07-19T21:01:21.379471+00:00"
+    },
+    {
+      "url": "https://finance.yahoo.com/technology/ai/articles/alphabets-gemini-3-5-pro-204300449.html",
+      "title": "Alphabet's Gemini 3.5 Pro Is Late and the Stock Is Slipping. Is the AI Leader Falling Behind?",
+      "title_fp": "alphabetsgemini35proislateandthestockisslippingistheaileaderfallingbehind",
+      "sent_at": "2026-07-19T21:01:21.379471+00:00"
+    },
+    {
+      "url": "https://www.macrobusiness.com.au/2026/07/pauline-dives-one-nation-into-australias-mainstream-political-merde/",
+      "title": "Pauline dives One Nation into Australia\u2019s mainstream political merde",
+      "title_fp": "paulinedivesonenationintoaustraliasmainstreampoliticalmerde",
+      "sent_at": "2026-07-19T21:01:21.379471+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-19/bek-condello-doomsday-church-can-you-handle-a-girl-like-me/106901606",
+      "title": "Bek never thought she would grow old until she left her church behind",
+      "title_fp": "bekneverthoughtshewouldgrowolduntilsheleftherchurchbehind",
+      "sent_at": "2026-07-19T21:01:21.379471+00:00"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/07/19/justice-department-activates-court-for-alien-terrorist-deportations.html",
+      "title": "Justice Department activates untested court for 'alien terrorist' deportations",
+      "title_fp": "justicedepartmentactivatesuntestedcourtforalienterroristdeportations",
+      "sent_at": "2026-07-19T21:01:21.379471+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/07/20/is-this-asx-share-the-best-way-to-play-the-ai-demand-growth/",
+      "title": "Is this ASX share the best way to play the AI demand growth?",
+      "title_fp": "isthisasxsharethebestwaytoplaytheaidemandgrowth",
+      "sent_at": "2026-07-19T21:01:21.379471+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/07/20/what-is-morgans-updated-view-on-rio-tinto-and-bhp-shares/",
+      "title": "What is Morgan's updated view on Rio Tinto and BHP shares?",
+      "title_fp": "whatismorgansupdatedviewonriotintoandbhpshares",
+      "sent_at": "2026-07-19T21:01:21.379471+00:00"
+    },
+    {
+      "url": "https://www.brisbanetimes.com.au/sport/soccer/argentinian-fans-gather-at-opera-house-forecourt-20260720-p60gop.html?ref=rss",
+      "title": "Argentinian fans gather at Opera House forecourt",
+      "title_fp": "argentinianfansgatheratoperahouseforecourt",
+      "sent_at": "2026-07-19T21:01:21.379471+00:00"
+    },
+    {
+      "url": "https://www.lowkickmma.com/dricus-du-plessis-excels-in-every-department-to-outclass-kamaru-usman-at-ufc-oklahoma-city/",
+      "title": "Dricus du Plessis Excels in Every Department to Outclass Kamaru Usman at UFC Oklahoma City",
+      "title_fp": "dricusduplessisexcelsineverydepartmenttooutclasskamaruusmanatufcoklahomacity",
+      "sent_at": "2026-07-19T21:01:21.379471+00:00"
     }
   ]
 }
