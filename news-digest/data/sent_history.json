@@ -1,66 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.macrobusiness.com.au/2026/07/criticism-of-budget-dismissed-as-barely-coherent-noise/",
-      "title": "Criticism of budget dismissed as \u201cbarely coherent noise\u201d",
-      "title_fp": "criticismofbudgetdismissedasbarelycoherentnoise",
-      "sent_at": "2026-07-06T21:01:41.213429+00:00"
-    },
-    {
-      "url": "https://www.abc.net.au/news/2026-07-07/can-i-claim-my-phone-as-a-tax-deduction/106752738",
-      "title": "What you need to know before claiming your phone as a tax deduction",
-      "title_fp": "whatyouneedtoknowbeforeclaimingyourphoneasataxdeduction",
-      "sent_at": "2026-07-06T21:01:41.213429+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/07/07/asx-financials-went-from-the-best-sector-in-fy25-to-negative-growth-in-fy26-heres-what-changed/",
-      "title": "ASX financials went from the best sector in FY25 to negative growth in FY26. Here's what changed",
-      "title_fp": "asxfinancialswentfromthebestsectorinfy25tonegativegrowthinfy26hereswhatchanged",
-      "sent_at": "2026-07-06T21:01:41.213429+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/07/07/looking-to-target-high-upside-shares-with-your-tax-return-heres-where-vaneck-sees-opportunity/",
-      "title": "Looking to target high upside shares with your tax return? Here's where VanEck sees opportunity",
-      "title_fp": "lookingtotargethighupsideshareswithyourtaxreturnhereswherevaneckseesopportunity",
-      "sent_at": "2026-07-06T21:01:41.213429+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/07/07/2-asx-200-healthcare-shares-to-buy-after-sector-rebounds-23-in-a-month/",
-      "title": "2 ASX 200 healthcare shares to buy after sector rebounds 23% in a month",
-      "title_fp": "2asx200healthcaresharestobuyaftersectorrebounds23inamonth",
-      "sent_at": "2026-07-06T21:01:41.213429+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/07/07/up-33-are-woolworths-shares-still-a-good-buy-for-passive-income/",
-      "title": "Up 33%, are Woolworths shares still a good buy for passive income?",
-      "title_fp": "up33arewoolworthssharesstillagoodbuyforpassiveincome",
-      "sent_at": "2026-07-06T21:01:41.213429+00:00"
-    },
-    {
-      "url": "https://www.theguardian.com/australia-news/live/2026/jul/07/australia-news-live-penny-wong-china-missile-test-pacific-anthony-albanese-solomon-islands-defence-royal-commission-antisemitism-meta-ntwnfb",
-      "title": "Australia news live: Wong says China\u2019s missile test in Pacific a \u2018destabilising act\u2019 that could \u2018lead to miscalculation\u2019",
-      "title_fp": "australianewslivewongsayschinasmissiletestinpacificadestabilisingactthatcouldleadtomiscalculation",
-      "sent_at": "2026-07-06T21:01:41.213429+00:00"
-    },
-    {
-      "url": "https://www.sherdog.com/news/news/UFC-referee-firestorm-grows-as-Charles-Oliveira-targets-Herb-Dean-201773",
-      "title": "UFC referee firestorm grows as Charles Oliveira targets Herb Dean",
-      "title_fp": "ufcrefereefirestormgrowsascharlesoliveiratargetsherbdean",
-      "sent_at": "2026-07-06T21:01:41.213429+00:00"
-    },
-    {
-      "url": "https://www.sherdog.com/news/news/Video-UFC-star-Raul-Rosas-Jr-captures-grappling-title-in-Moscow-201764",
-      "title": "Video: UFC star Raul Rosas Jr. captures grappling title in Moscow",
-      "title_fp": "videoufcstarraulrosasjrcapturesgrapplingtitleinmoscow",
-      "sent_at": "2026-07-06T21:01:41.213429+00:00"
-    },
-    {
-      "url": "https://www.sherdog.com/news/news/Conor-McGregors-trainer-in-advance-of-UFC-329-This-is-the-best-shape-hes-ever-been-in-201767",
-      "title": "Conor McGregor's trainer in advance of UFC 329: This is the best shape he\u2019s ever been in",
-      "title_fp": "conormcgregorstrainerinadvanceofufc329thisisthebestshapeheseverbeenin",
-      "sent_at": "2026-07-06T21:01:41.213429+00:00"
-    },
-    {
       "url": "https://www.abc.net.au/news/2026-07-08/government-report-finds-ai-not-yet-causing-mass-job-losses/106889304",
       "title": "Government report says AI not causing mass job lay-offs, yet",
       "title_fp": "governmentreportsaysainotcausingmassjoblayoffsyet",
@@ -707,6 +647,12 @@
       "title": "Dricus du Plessis Excels in Every Department to Outclass Kamaru Usman at UFC Oklahoma City",
       "title_fp": "dricusduplessisexcelsineverydepartmenttooutclasskamaruusmanatufcoklahomacity",
       "sent_at": "2026-07-19T21:01:21.379471+00:00"
+    },
+    {
+      "url": "https://www.brisbanetimes.com.au/national/australia-news-live-sydney-developer-bypasses-council-250-home-approval-gatto-tax-for-victorian-unit-buyers-labor-racks-up-millions-in-gambling-donations-20260722-p60hd7.html?ref=rss",
+      "title": "Australia news LIVE: Sydney developer bypasses council 250-home approval; \u2018Gatto tax\u2019 for Victorian unit buyers; Labor racks up millions in gambling donations",
+      "title_fp": "australianewslivesydneydeveloperbypassescouncil250homeapprovalgattotaxforvictorianunitbuyerslaborrac",
+      "sent_at": "2026-07-21T21:01:25.630117+00:00"
     }
   ]
 }
