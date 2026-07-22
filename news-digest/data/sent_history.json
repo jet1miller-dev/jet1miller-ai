@@ -1,78 +1,6 @@
 {
   "entries": [
     {
-      "url": "https://www.abc.net.au/news/2026-07-08/government-report-finds-ai-not-yet-causing-mass-job-losses/106889304",
-      "title": "Government report says AI not causing mass job lay-offs, yet",
-      "title_fp": "governmentreportsaysainotcausingmassjoblayoffsyet",
-      "sent_at": "2026-07-07T21:02:01.495639+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/07/08/your-tax-rate-just-dropped-here-is-exactly-how-much-more-you-will-take-home-from-1-july/",
-      "title": "Your tax rate just dropped. Here is exactly how much more you will take home from 1 July",
-      "title_fp": "yourtaxratejustdroppedhereisexactlyhowmuchmoreyouwilltakehomefrom1july",
-      "sent_at": "2026-07-07T21:02:01.495639+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/07/08/why-i-want-to-own-these-asx-shares-brokers-rate-as-buys/",
-      "title": "Why I want to own these ASX shares brokers rate as buys",
-      "title_fp": "whyiwanttoowntheseasxsharesbrokersrateasbuys",
-      "sent_at": "2026-07-07T21:02:01.495639+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/07/08/what-is-bell-potter-saying-about-a2-milk-shares-after-its-results/",
-      "title": "What is Bell Potter saying about A2 Milk shares after its results?",
-      "title_fp": "whatisbellpottersayingabouta2milksharesafteritsresults",
-      "sent_at": "2026-07-07T21:02:01.495639+00:00"
-    },
-    {
-      "url": "https://www.fool.com.au/2026/07/08/is-this-asx-300-stock-a-buy-low-candidate-after-crashing-20-this-year/",
-      "title": "Is this ASX 300 stock a buy-low candidate after crashing 20% this year?",
-      "title_fp": "isthisasx300stockabuylowcandidateaftercrashing20thisyear",
-      "sent_at": "2026-07-07T21:02:01.495639+00:00"
-    },
-    {
-      "url": "https://www.realestate.com.au/news/tax-reforms-will-spark-mass-exodus-of-property-investors-experts-warn/",
-      "title": "Tax reforms will spark mass exodus of property investors, experts warn",
-      "title_fp": "taxreformswillsparkmassexodusofpropertyinvestorsexpertswarn",
-      "sent_at": "2026-07-07T21:02:01.495639+00:00"
-    },
-    {
-      "url": "https://www.brisbanetimes.com.au/sport/nrl/daley-lost-for-words-over-decider-20260707-p60dbj.html?ref=rss",
-      "title": "Daley lost for words over decider",
-      "title_fp": "daleylostforwordsoverdecider",
-      "sent_at": "2026-07-07T21:02:01.495639+00:00"
-    },
-    {
-      "url": "https://www.brisbanetimes.com.au/national/australia-news-as-it-happened-telstra-investigates-outage-albanese-s-origin-diplomacy-push-farage-resigns-from-parliament-20260708-p60dh2.html?ref=rss",
-      "title": "Australia news as it happened: Telstra investigates outage, Albanese\u2019s Origin diplomacy push; Farage resigns from parliament",
-      "title_fp": "australianewsasithappenedtelstrainvestigatesoutagealbanesesorigindiplomacypushfarageresignsfromparli",
-      "sent_at": "2026-07-07T21:02:01.495639+00:00"
-    },
-    {
-      "url": "https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram",
-      "title": "Meta\u2019s new Muse Image model can pull other Instagram users into AI photos",
-      "title_fp": "metasnewmuseimagemodelcanpullotherinstagramusersintoaiphotos",
-      "sent_at": "2026-07-07T21:02:01.495639+00:00"
-    },
-    {
-      "url": "https://www.themandarin.com.au/315861-appointments-to-lift-new-wa-2050-commission/",
-      "title": "Appointments to lift new WA 2050 Commission",
-      "title_fp": "appointmentstoliftnewwa2050commission",
-      "sent_at": "2026-07-07T21:02:01.495639+00:00"
-    },
-    {
-      "url": "https://www.sherdog.com/news/news/UFC-Shanghai-reportedly-adds-flyweight-bout-for-return-to-China-201796",
-      "title": "UFC Shanghai reportedly adds flyweight bout for return to China",
-      "title_fp": "ufcshanghaireportedlyaddsflyweightboutforreturntochina",
-      "sent_at": "2026-07-07T21:02:01.495639+00:00"
-    },
-    {
-      "url": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/",
-      "title": "SpaceXAI releases Grok 4.5, which Elon describes as an \u2018Opus-class model\u2019",
-      "title_fp": "spacexaireleasesgrok45whichelondescribesasanopusclassmodel",
-      "sent_at": "2026-07-08T21:01:49.036352+00:00"
-    },
-    {
       "url": "https://www.abc.net.au/news/2026-07-10/nsw-snowy-hydro-worksafe-nsw-hearings-contractor/106898778",
       "title": "Snowy Hydro contractor denies claims it exposed workers to risk of death",
       "title_fp": "snowyhydrocontractordeniesclaimsitexposedworkerstoriskofdeath",
@@ -653,6 +581,78 @@
       "title": "Australia news LIVE: Sydney developer bypasses council 250-home approval; \u2018Gatto tax\u2019 for Victorian unit buyers; Labor racks up millions in gambling donations",
       "title_fp": "australianewslivesydneydeveloperbypassescouncil250homeapprovalgattotaxforvictorianunitbuyerslaborrac",
       "sent_at": "2026-07-21T21:01:25.630117+00:00"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html",
+      "title": "Alphabet earnings updates: Stakes in Anthropic and SpaceX fuel $99 billion in equity gains",
+      "title_fp": "alphabetearningsupdatesstakesinanthropicandspacexfuel99billioninequitygains",
+      "sent_at": "2026-07-22T21:06:44.955679+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-23/firmus-urged-to-be-good-corporate-citizen/106870000",
+      "title": "Data company urged to be 'good' after water plan slip reveals intentions",
+      "title_fp": "datacompanyurgedtobegoodafterwaterplansliprevealsintentions",
+      "sent_at": "2026-07-22T21:06:44.955679+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-23/us-saudi-arabia-to-reach-nuclear-deal/106947110",
+      "title": "US and Saudi Arabia set to unveil nuclear power deal, media reports say",
+      "title_fp": "usandsaudiarabiasettounveilnuclearpowerdealmediareportssay",
+      "sent_at": "2026-07-22T21:06:44.955679+00:00"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/07/22/trump-saudi-arabia-nuclear-power.html",
+      "title": "U.S. signs nuclear power agreement with Saudi Arabia",
+      "title_fp": "ussignsnuclearpoweragreementwithsaudiarabia",
+      "sent_at": "2026-07-22T21:06:44.955679+00:00"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/07/22/southwest-airlines-luv-2q-2026-earnings.html",
+      "title": "Southwest Airlines' third-quarter forecast falls short as fuel bill climbs",
+      "title_fp": "southwestairlinesthirdquarterforecastfallsshortasfuelbillclimbs",
+      "sent_at": "2026-07-22T21:06:44.955679+00:00"
+    },
+    {
+      "url": "https://www.fool.com.au/2026/07/23/why-paladin-energy-shares-could-rise-60/",
+      "title": "Why Paladin Energy shares could rise 60%",
+      "title_fp": "whypaladinenergysharescouldrise60",
+      "sent_at": "2026-07-22T21:06:44.955679+00:00"
+    },
+    {
+      "url": "https://www.brisbanetimes.com.au/technology/us-accuses-chinese-ai-company-of-stealing-secrets-20260723-p60hql.html?ref=rss",
+      "title": "\u2018Heist\u2019: Chinese giant accused by US of stealing AI secrets",
+      "title_fp": "heistchinesegiantaccusedbyusofstealingaisecrets",
+      "sent_at": "2026-07-22T21:06:44.955679+00:00"
+    },
+    {
+      "url": "https://techcrunch.com/2026/07/22/treasury-threatens-sanctions-after-white-house-claims-moonshot-distilled-anthropics-fable/",
+      "title": "Treasury threatens sanctions after White House claims Moonshot distilled Anthropic\u2019s Fable",
+      "title_fp": "treasurythreatenssanctionsafterwhitehouseclaimsmoonshotdistilledanthropicsfable",
+      "sent_at": "2026-07-22T21:06:44.955679+00:00"
+    },
+    {
+      "url": "https://the-decoder.com/anthropics-1-5b-piracy-settlement-with-book-authors-is-a-record-loss-that-hands-ai-labs-their-biggest-legal-win/",
+      "title": "Anthropic's $1.5B piracy settlement with book authors is a record loss that hands AI labs their biggest legal win",
+      "title_fp": "anthropics15bpiracysettlementwithbookauthorsisarecordlossthathandsailabstheirbiggestlegalwin",
+      "sent_at": "2026-07-22T21:06:44.955679+00:00"
+    },
+    {
+      "url": "https://www.abc.net.au/news/2026-07-23/captain-cook-shopping-centre-renamed-in-gumatj-corporation-sale/106941960",
+      "title": "Captain Cook Shopping Centre sold to Arnhem Land Aboriginal corporation",
+      "title_fp": "captaincookshoppingcentresoldtoarnhemlandaboriginalcorporation",
+      "sent_at": "2026-07-22T21:06:44.955679+00:00"
+    },
+    {
+      "url": "https://www.sherdog.com/news/news/Brandon-Royval-claims-social-media-followers-cost-him-UFC-main-event-202016",
+      "title": "Brandon Royval claims social media followers cost him UFC main event",
+      "title_fp": "brandonroyvalclaimssocialmediafollowerscosthimufcmainevent",
+      "sent_at": "2026-07-22T21:06:44.955679+00:00"
+    },
+    {
+      "url": "https://www.sherdog.com/news/news/Jon-Jones-says-alcohol-cost-him-a-greater-UFC-legacy-202023",
+      "title": "Jon Jones says alcohol cost him a greater UFC legacy",
+      "title_fp": "jonjonessaysalcoholcosthimagreaterufclegacy",
+      "sent_at": "2026-07-22T21:06:44.955679+00:00"
     }
   ]
 }
